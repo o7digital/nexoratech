@@ -52,6 +52,20 @@ export default function Home() {
           <a href="#contacto">Contacto</a>
         </nav>
         <a className="header-cta" href="#contacto">Hablemos <Arrow /></a>
+        <details className="mobile-menu">
+          <summary aria-label="Abrir menú">
+            <span />
+            <span />
+            <span />
+          </summary>
+          <nav aria-label="Navegación móvil">
+            <a href="#servicios">Servicios</a>
+            <a href="#enfoque">Enfoque</a>
+            <a href="#casos">Casos</a>
+            <a href="#contacto">Contacto</a>
+            <a className="mobile-menu-cta" href="#contacto">Solicitar diagnóstico <Arrow /></a>
+          </nav>
+        </details>
       </header>
 
       <section className="hero" id="inicio">
