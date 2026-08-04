@@ -1,0 +1,23 @@
+---
+const items = ["Windows Server", "Linux", "Cloud", "On-premise", "Monitoring", "Backups", "Alertas", "Parches"];
+---
+
+<section class="infrastructure section-pad" id="infraestructura">
+  <div>
+    <p class="section-kicker">Infraestructura</p>
+    <h2>Servidores administrados con evidencia, alertas y continuidad.</h2>
+    <p>Administramos ambientes Windows, Linux, nube y on-premise con monitoreo, respaldos, politicas de acceso y documentacion clara para auditoria.</p>
+  </div>
+  <div class="infra-board">
+    {items.map((item, index) => <article><span>{String(index + 1).padStart(2, "0")}</span><b>{item}</b><i></i></article>)}
+  </div>
+</section>
+<section class="equipment section-pad" id="equipos">
+  <p class="section-kicker">Equipos y refacciones</p>
+  <h2>Reparacion, compra, venta e instalacion sin improvisacion.</h2>
+  <div class="equipment-grid">
+    <article><h3>Reparacion</h3><p>Diagnostico tecnico, mantenimiento preventivo, correctivo y recuperacion de equipos criticos.</p></article>
+    <article><h3>Equipos</h3><p>Laptops, desktops, servidores y perifericos nuevos, seminuevos y reacondicionados.</p></article>
+    <article><h3>Refacciones</h3><p>Componentes compatibles, instalacion controlada, pruebas y entrega documentada.</p></article>
+  </div>
+</section>

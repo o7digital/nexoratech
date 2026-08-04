@@ -1,0 +1,16 @@
+---
+const steps = [
+  ["01", "Entender", "Levantamos usuarios, activos, urgencias, riesgos y restricciones reales."],
+  ["02", "Resolver", "Atacamos primero lo que detiene la operacion o expone informacion critica."],
+  ["03", "Documentar", "Dejamos evidencia, bitacoras, recomendaciones y responsables claros."],
+  ["04", "Mejorar", "Convertimos soporte reactivo en controles, monitoreo y mantenimiento recurrente."],
+];
+---
+
+<section class="method section-pad" id="metodo">
+  <p class="section-kicker">Metodo</p>
+  <h2>Entender, resolver, documentar, mejorar.</h2>
+  <div class="steps">
+    {steps.map(([n, title, text]) => <article><span>{n}</span><h3>{title}</h3><p>{text}</p></article>)}
+  </div>
+</section>

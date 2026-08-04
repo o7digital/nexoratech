@@ -1,0 +1,59 @@
+---
+import "../styles/global.css";
+
+const title = "NexaCore IT | Soporte tecnico IT y ciberseguridad Mexico";
+const description =
+  "Soporte tecnico IT Mexico, Help Desk, auditoria de ciberseguridad Mexico, administracion de servidores, reparacion, equipos y refacciones.";
+const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).toString() : Astro.url.toString();
+
+const localBusiness = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "NexaCore IT",
+  url: canonical,
+  areaServed: ["Ciudad de Mexico", "Estado de Mexico", "Mexico"],
+  address: { "@type": "PostalAddress", addressCountry: "MX", addressRegion: "CDMX" },
+  description,
+  makesOffer: [
+    "Help Desk remoto y en sitio",
+    "Auditoria de ciberseguridad",
+    "Administracion de servidores",
+    "Reparacion y mantenimiento de equipos",
+    "Compra y venta de equipos",
+    "Venta e instalacion de refacciones",
+  ],
+};
+
+const services = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  serviceType: "Soporte tecnico IT y ciberseguridad",
+  provider: { "@type": "LocalBusiness", name: "NexaCore IT" },
+  areaServed: { "@type": "Country", name: "Mexico" },
+};
+---
+
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="NexaCore IT" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(localBusiness)} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(services)} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

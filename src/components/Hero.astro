@@ -1,0 +1,32 @@
+---
+const metrics = [
+  ["SLA", "02:15", "promedio respuesta"],
+  ["Tickets", "18", "abiertos hoy"],
+  ["Endpoints", "142", "monitoreados"],
+];
+---
+
+<section class="hero" id="inicio">
+  <div class="hero-copy">
+    <p class="eyebrow">Help Desk + Cyber Audit + Infraestructura</p>
+    <h1><span>Tu operacion</span><span>no puede esperar</span></h1>
+    <p class="hero-text">Soporte tecnico IT para empresas mexicanas que necesitan continuidad, seguridad y control operativo sin depender de proveedores dispersos.</p>
+    <div class="hero-actions">
+      <a class="button button-primary" href="#helpdesk">Obtener soporte <span aria-hidden="true">↗</span></a>
+      <a class="button button-secondary" href="#cyber">Solicitar auditoria</a>
+    </div>
+    <div class="trust-line"><span class="trust-dot"></span> Atencion remota nacional y visitas en CDMX / Estado de Mexico</div>
+  </div>
+  <div class="control-center" aria-label="Control Center IT simulado">
+    <div class="cc-top"><span>CONTROL CENTER IT</span><b>LIVE</b></div>
+    <div class="cc-grid">
+      {metrics.map(([k, v, d]) => <article><span>{k}</span><strong>{v}</strong><small>{d}</small></article>)}
+    </div>
+    <div class="network-map"><i></i><i></i><i></i><i></i><b></b></div>
+    <div class="ticket-stream">
+      <p><span></span> VPN usuario finanzas <b>resuelto</b></p>
+      <p><span></span> Backup servidor contable <b>verificado</b></p>
+      <p><span></span> Alerta MFA proveedor <b>critica</b></p>
+    </div>
+  </div>
+</section>

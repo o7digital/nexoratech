@@ -1,0 +1,30 @@
+---
+const nav = [
+  ["Servicios", "#servicios"],
+  ["Help Desk", "#helpdesk"],
+  ["Cyber Audit", "#cyber"],
+  ["Infraestructura", "#infraestructura"],
+  ["Contacto", "#contacto"],
+];
+---
+
+<div class="status-bar" aria-label="Estado de cobertura">
+  <span><i></i> Soporte activo</span>
+  <span>CDMX</span>
+  <span>Estado de Mexico</span>
+  <span>Remoto nacional</span>
+</div>
+<header class="site-header">
+  <a class="brand" href="#inicio" aria-label="NexaCore IT inicio">NEXA<span>CORE</span></a>
+  <nav class="desktop-nav" aria-label="Navegacion principal">
+    {nav.map(([label, href]) => <a href={href}>{label}</a>)}
+  </nav>
+  <a class="header-cta" href="#helpdesk">Obtener soporte <span aria-hidden="true">↗</span></a>
+  <details class="mobile-menu">
+    <summary aria-label="Abrir menu"><span></span><span></span><span></span></summary>
+    <nav aria-label="Navegacion movil">
+      {nav.map(([label, href]) => <a href={href}>{label}</a>)}
+      <a class="mobile-menu-cta" href="#helpdesk">Obtener soporte <span aria-hidden="true">↗</span></a>
+    </nav>
+  </details>
+</header>
