@@ -1,32 +1,33 @@
 ---
-const metrics = [
-  ["SLA", "02:15", "promedio respuesta"],
-  ["Tickets", "18", "abiertos hoy"],
-  ["Endpoints", "142", "monitoreados"],
+const indicators = [
+  ["02:15", "respuesta promedio"],
+  ["99.9%", "continuidad objetivo"],
+  ["30/60/90", "plan de mejora"],
 ];
 ---
 
 <section class="hero" id="inicio">
   <div class="hero-copy">
-    <p class="eyebrow">Help Desk + Cyber Audit + Infraestructura</p>
-    <h1><span>Tu operacion</span><span>no puede esperar</span></h1>
-    <p class="hero-text">Soporte tecnico IT para empresas mexicanas que necesitan continuidad, seguridad y control operativo sin depender de proveedores dispersos.</p>
+    <p class="eyebrow">Tecnologia sin interrupciones</p>
+    <h1><span>TU OPERACIÓN</span><span>NO PUEDE</span><span class="outline">ESPERAR.</span></h1>
+    <p class="hero-text">Help Desk, ciberseguridad, servidores, reparacion, equipos y refacciones para empresas que necesitan continuidad real en Mexico.</p>
     <div class="hero-actions">
-      <a class="button button-primary" href="#helpdesk">Obtener soporte <span aria-hidden="true">↗</span></a>
-      <a class="button button-secondary" href="#cyber">Solicitar auditoria</a>
+      <a class="button button-dark" href="#helpdesk">Abrir ticket ahora <span aria-hidden="true">↗</span></a>
+      <a class="text-action" href="#cyber">Solicitar diagnostico</a>
     </div>
-    <div class="trust-line"><span class="trust-dot"></span> Atencion remota nacional y visitas en CDMX / Estado de Mexico</div>
+    <div class="hero-indicators">
+      {indicators.map(([value, label]) => <article><strong>{value}</strong><span>{label}</span></article>)}
+    </div>
   </div>
-  <div class="control-center" aria-label="Control Center IT simulado">
-    <div class="cc-top"><span>CONTROL CENTER IT</span><b>LIVE</b></div>
-    <div class="cc-grid">
-      {metrics.map(([k, v, d]) => <article><span>{k}</span><strong>{v}</strong><small>{d}</small></article>)}
+  <div class="hero-dashboard" aria-label="Dashboard Control Center">
+    <div class="dash-header"><span>CONTROL CENTER</span><b>SISTEMAS ONLINE</b></div>
+    <div class="availability"><span>Disponibilidad</span><strong>99.94%</strong></div>
+    <div class="lime-chart"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="dash-grid">
+      <article><span>Tickets activos</span><strong>18</strong></article>
+      <article><span>Dispositivos protegidos</span><strong>142</strong></article>
     </div>
-    <div class="network-map"><i></i><i></i><i></i><i></i><b></b></div>
-    <div class="ticket-stream">
-      <p><span></span> VPN usuario finanzas <b>resuelto</b></p>
-      <p><span></span> Backup servidor contable <b>verificado</b></p>
-      <p><span></span> Alerta MFA proveedor <b>critica</b></p>
-    </div>
+    <div class="incident"><span></span><p>Incidente resuelto: VPN usuario finanzas</p><b>08:42</b></div>
+    <div class="remote-card"><b>Soporte remoto conectado</b><span>Sesion autorizada · agente MX-04</span></div>
   </div>
 </section>

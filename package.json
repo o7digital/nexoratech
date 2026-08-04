@@ -1,5 +1,5 @@
 {
-  "name": "nexacore-it-mexico",
+  "name": "nexora-tech-mexico",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -38,5 +38,5 @@
     "wrangler": "4.92.0"
   },
   "type": "module",
-  "displayName": "NexaCore IT Mexico"
+  "displayName": "Nexora Tech Mexico"
 }
