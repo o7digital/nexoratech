@@ -68,7 +68,7 @@ button, input, select, textarea { font: inherit; }
   min-height: calc(100vh - 124px);
   display: grid;
   grid-template-columns: 52fr 48fr;
-  background: linear-gradient(90deg, var(--paper) 0 52%, var(--ink) 52% 100%);
+  background: linear-gradient(90deg, #F3EFC8 0 52%, var(--ink) 52% 100%);
 }
 .hero-copy { min-width: 0; padding: clamp(54px, 7vw, 100px) clamp(22px, 5vw, 72px); align-self: center; }
 .eyebrow, .section-kicker {
@@ -210,7 +210,7 @@ h3 { margin: 0; font-size: clamp(26px, 2.3vw, 38px); line-height: .95; letter-sp
   .site-header { grid-template-columns: 1fr auto auto; }
   .desktop-nav { display: none; }
   .mobile-menu { display: block; }
-  .hero { grid-template-columns: 1fr; background: var(--paper); }
+  .hero { grid-template-columns: 1fr; background: #F3EFC8; }
   .hero-dashboard { margin-top: 0; background: var(--ink); }
   .capability-rail, .service-grid { grid-template-columns: repeat(2, 1fr); }
   .section-head, .support, .cyber, .infrastructure, .contact { grid-template-columns: 1fr; }
