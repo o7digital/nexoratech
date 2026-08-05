@@ -1,9 +1,19 @@
 ---
 const year = new Date().getFullYear();
+import type { SiteCopy } from "../content/i18n";
+
+interface Props {
+  copy: SiteCopy;
+}
+
+const { copy } = Astro.props;
 ---
 
 <footer class="footer">
   <a class="brand" href="#inicio">NEXORA <span>TECH</span></a>
-  <p>Soporte tecnico IT Mexico · Ciberseguridad Mexico · Servidores · Equipos · Refacciones</p>
+  <div>
+    <p>{copy.footer}</p>
+    <a class="privacy-link" href={copy.privacyHref}>{copy.privacy.title}</a>
+  </div>
   <span>© {year} Nexora Tech</span>
 </footer>

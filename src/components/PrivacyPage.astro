@@ -1,0 +1,34 @@
+---
+import Header from "./Header.astro";
+import Footer from "./Footer.astro";
+import type { SiteCopy } from "../content/i18n";
+
+interface Props {
+  copy: SiteCopy;
+}
+
+const { copy } = Astro.props;
+const homeHref = copy.langTag === "fr" ? "/fr/" : "/en/";
+---
+
+<Header copy={copy} homeHref={homeHref} />
+<main>
+  <section class="privacy-page section-pad">
+    <div class="privacy-head">
+      <p class="section-kicker">{copy.privacy.updated}</p>
+      <h1>{copy.privacy.title}</h1>
+      <p>{copy.privacy.intro}</p>
+    </div>
+    <div class="privacy-grid">
+      {copy.privacy.sections.map(([title, items]) => (
+        <article class="privacy-section">
+          <h2>{title}</h2>
+          <ul>
+            {items.map((item) => <li>{item}</li>)}
+          </ul>
+        </article>
+      ))}
+    </div>
+  </section>
+</main>
+<Footer copy={copy} />

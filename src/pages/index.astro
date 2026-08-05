@@ -1,26 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Header from "../components/Header.astro";
-import Hero from "../components/Hero.astro";
-import Services from "../components/Services.astro";
-import SupportDesk from "../components/SupportDesk";
-import CyberAudit from "../components/CyberAudit";
-import Infrastructure from "../components/Infrastructure.astro";
-import Method from "../components/Method.astro";
-import ContactForm from "../components/ContactForm";
-import Footer from "../components/Footer.astro";
+import LandingPage from "../components/LandingPage.astro";
+import { siteCopy } from "../content/i18n";
+
+const copy = siteCopy.en;
 ---
 
-<BaseLayout>
-  <Header />
-  <main>
-    <Hero />
-    <Services />
-    <SupportDesk client:load />
-    <CyberAudit client:load />
-    <Infrastructure />
-    <Method />
-    <ContactForm client:load />
-  </main>
-  <Footer />
+<BaseLayout copy={copy}>
+  <LandingPage copy={copy} />
 </BaseLayout>

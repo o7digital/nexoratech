@@ -1,9 +1,13 @@
 ---
 import "../styles/global.css";
+import type { SiteCopy } from "../content/i18n";
 
-const title = "Nexora Tech | Soporte tecnico IT y ciberseguridad Mexico";
-const description =
-  "Soporte tecnico IT Mexico, Help Desk, auditoria de ciberseguridad Mexico, administracion de servidores, reparacion, equipos y refacciones.";
+interface Props {
+  copy: SiteCopy;
+}
+
+const { copy } = Astro.props;
+const { title, description } = copy;
 const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).toString() : Astro.url.toString();
 
 const localBusiness = {
@@ -13,28 +17,21 @@ const localBusiness = {
   url: canonical,
   areaServed: ["Ciudad de Mexico", "Estado de Mexico", "Mexico"],
   address: { "@type": "PostalAddress", addressCountry: "MX", addressRegion: "CDMX" },
-  description,
-  makesOffer: [
-    "Help Desk remoto y en sitio",
-    "Auditoria de ciberseguridad",
-    "Administracion de servidores",
-    "Reparacion y mantenimiento de equipos",
-    "Compra y venta de equipos",
-    "Venta e instalacion de refacciones",
-  ],
+  description: copy.businessDescription,
+  makesOffer: copy.offers,
 };
 
 const services = {
   "@context": "https://schema.org",
   "@type": "Service",
-  serviceType: "Soporte tecnico IT y ciberseguridad",
+  serviceType: copy.serviceType,
   provider: { "@type": "LocalBusiness", name: "Nexora Tech" },
   areaServed: { "@type": "Country", name: "Mexico" },
 };
 ---
 
 <!doctype html>
-<html lang="es-MX">
+<html lang={copy.langTag}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -44,7 +41,7 @@ const services = {
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta property="og:type" content="website" />
-    <meta property="og:locale" content="es_MX" />
+    <meta property="og:locale" content={copy.locale} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />

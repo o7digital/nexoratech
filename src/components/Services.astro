@@ -1,29 +1,30 @@
 ---
-const capabilities = ["Help Desk", "Cyber Audit", "Servidores", "Reparacion", "Equipos", "Refacciones"];
-const services = [
-  ["01", "Help Desk remoto y en sitio", "Mesa de ayuda, seguimiento SLA, soporte a usuarios, conectividad, impresoras, correo, VPN y estaciones de trabajo."],
-  ["02", "Auditoria de ciberseguridad", "Revision NIST CSF, matriz de riesgos, controles prioritarios, reporte ejecutivo y plan 30/60/90."],
-  ["03", "Administracion de servidores", "Windows, Linux, cloud, on-premise, monitoreo, respaldos, hardening, parches y alertas."],
-  ["04", "Reparacion y mantenimiento", "Diagnostico, mantenimiento preventivo, correctivo, limpieza, optimizacion y recuperacion operativa."],
-  ["05", "Equipos nuevos y seminuevos", "Compra y venta de laptops, desktops, servidores y perifericos nuevos, seminuevos y reacondicionados."],
-  ["06", "Refacciones instaladas", "Venta e instalacion de memoria, discos, pantallas, baterias, fuentes, teclados y componentes."],
-];
+import type { SiteCopy } from "../content/i18n";
+
+interface Props {
+  copy: SiteCopy["services"];
+}
+
+const { copy } = Astro.props;
 ---
 
 <section class="capability-rail" aria-label="Capacidades">
-  {capabilities.map((item) => <a href="#servicios"><span>{item}</span><b aria-hidden="true">+</b></a>)}
+  {copy.capabilities.map((item) => <a href="#servicios"><span>{item}</span><b aria-hidden="true">+</b></a>)}
 </section>
 <section class="services-detail section-pad" id="servicios">
   <div class="section-head">
-    <p class="section-kicker">Servicios Nexora Tech</p>
-    <h2>Operacion, seguridad y equipos bajo una misma disciplina.</h2>
+    <p class="section-kicker">{copy.kicker}</p>
+    <h2>{copy.title}</h2>
   </div>
   <div class="service-grid">
-    {services.map(([id, title, text]) => (
+    {copy.items.map(([id, title, text, details]) => (
       <article class="service-card">
         <span>{id}</span>
         <h3>{title}</h3>
         <p>{text}</p>
+        <ul>
+          {details.map((detail) => <li>{detail}</li>)}
+        </ul>
       </article>
     ))}
   </div>

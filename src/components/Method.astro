@@ -1,16 +1,17 @@
 ---
-const steps = [
-  ["01", "Entender", "Usuarios, activos, urgencias, riesgos y restricciones."],
-  ["02", "Resolver", "Primero lo que detiene operacion o expone datos."],
-  ["03", "Documentar", "Bitacoras, evidencia, responsables y proximas acciones."],
-  ["04", "Mejorar", "Controles, monitoreo y mantenimiento recurrente."],
-];
+import type { SiteCopy } from "../content/i18n";
+
+interface Props {
+  copy: SiteCopy["method"];
+}
+
+const { copy } = Astro.props;
 ---
 
 <section class="method section-pad" id="metodo">
-  <p class="section-kicker">Metodo</p>
-  <h2><span>MENOS RUIDO.</span><span class="outline">MAS CONTROL.</span></h2>
+  <p class="section-kicker">{copy.kicker}</p>
+  <h2><span>{copy.title[0]}</span><span class="outline">{copy.title[1]}</span></h2>
   <div class="steps">
-    {steps.map(([n, title, text]) => <article><span>{n}</span><h3>{title}</h3><p>{text}</p></article>)}
+    {copy.steps.map(([n, title, text]) => <article><span>{n}</span><h3>{title}</h3><p>{text}</p></article>)}
   </div>
 </section>
