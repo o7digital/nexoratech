@@ -42,7 +42,7 @@ export const siteCopy = {
       ],
     },
     support: { kicker: "Help Desk", title: ["RESPUESTA RÁPIDA.", "CONTROL DOCUMENTADO."], modes: { remote: "Conexión asistida para correo, VPN, sistema operativo, aplicaciones, impresoras y accesos.", onsite: "Visita técnica para red local, equipos, servidores, refacciones, instalaciones y fallas físicas." }, remoteButton: "Soporte remoto", onsiteButton: "Visita en sitio", fallback: "Solicitar enlace de soporte", aria: "Tipo de soporte", steps: ["Ticket", "Asignación", "Resolución", "Documentación"], close: "cierre", satisfaction: "satisfacción de atención" },
-    cyber: { kicker: "Cyber Audit", title: "RIESGO CLARO. PLAN EJECUTABLE.", text: "Diagnóstico basado en NIST CSF para priorizar identidad, correo, endpoints, red, cloud, respaldos, proveedores y respuesta a incidentes.", tabsAria: "Contenido de auditoría", scope: "Alcance técnico", deliverables: "Entregables", nist: ["NIST CSF", "Identidad y acceso", "MFA", "Correo", "Endpoints", "Red", "Cloud", "Respaldos", "Políticas", "Proveedores", "Respuesta a incidentes"], academy: ["Academia Cyber", "Antiphishing", "Contraseñas", "MFA", "Datos sensibles", "Reporte de incidentes"], deliverableItems: [["Matriz de riesgos", "Probabilidad, impacto, criticidad y responsables."], ["Reporte ejecutivo", "Lectura accionable para dirección."], ["Plan 30/60/90", "Roadmap por prioridad, esfuerzo y urgencia."]], maturity: "Madurez", alerts: [["Crítica", "MFA ausente en 9 cuentas"], ["Alta", "Respaldos sin prueba reciente"], ["Media", "SPF/DKIM incompleto"]] },
+    cyber: { kicker: "Cyber Audit", title: "RIESGO CLARO. PLAN EJECUTABLE.", text: "Diagnóstico basado en NIST CSF para priorizar identidad, correo, endpoints, red, cloud, respaldos, proveedores y respuesta a incidentes.", tabsAria: "Contenido de auditoría", scope: "Alcance técnico", deliverables: "Entregables", nist: ["NIST CSF", "Identidad y acceso", "MFA", "Correo", "Endpoints", "Red", "Cloud", "Respaldos", "Políticas", "Proveedores", "Respuesta a incidentes"], academy: ["Academia Cyber", "Antiphishing", "Contraseñas", "MFA", "Datos sensibles", "Reporte de incidentes"], deliverableItems: [["Matriz de riesgos", "Probabilidad, impacto, criticidad y responsables."], ["Reporte ejecutivo", "Lectura accionable para dirección."], ["Plan 30/60/90", "Roadmap por prioridad, esfuerzo y urgencia."]], maturity: "Madurez", alerts: [["Crítica", "MFA ausente en 9 cuentas"], ["Alta", "Respaldos sin prueba reciente"], ["Media", "SPF/DKIM incompleto"]], nistOffer: { eyebrow: "Acreditación NIST para nearshoring", title: "Diagnóstico NIST CSF en 48 horas.", text: "Para PYMES mexicanas que venden o quieren vender a clientes de Estados Unidos y Canadá, evaluamos la madurez real de ciberseguridad sin detener la operación.", outcomes: ["Reporte ejecutivo de madurez actual", "Análisis de brechas críticas técnicas, legales y comerciales", "Roadmap priorizado de 90 días", "Acreditación digital N1A verificable en blockchain"], uses: ["Evidencia para propuestas comerciales y RFP", "Sello de confianza para sitio corporativo", "Soporte para evaluaciones de proveedores"] } },
     infrastructure: { servers: ["Windows", "Linux", "Cloud", "On-premise", "Monitoreo", "Respaldos", "Alertas", "Parches"], kicker: "Infraestructura y equipos", title: "DE LA NUBE AL TORNILLO.", text: "Administración de servidores, monitoreo, respaldos y soporte físico para mantener la operación completa bajo control.", serverTitle: "ADMINISTRACIÓN DE SERVIDORES", online: "ONLINE", equipmentKicker: "Equipos y refacciones", equipmentTitle: "REPARAR, COMPRAR, VENDER E INSTALAR.", equipment: [["Reparación", "Diagnóstico, mantenimiento preventivo, correctivo, limpieza, optimización y recuperación operativa."], ["Compra / venta", "Equipos nuevos, seminuevos y reacondicionados para usuarios, dirección, servidores y puntos críticos."], ["Refacciones", "Memoria, discos, pantallas, baterías, fuentes, teclados y componentes instalados con pruebas."]] },
     method: { kicker: "Método", title: ["MENOS RUIDO.", "MÁS CONTROL."], steps: [["01", "Entender", "Usuarios, activos, urgencias, riesgos y restricciones."], ["02", "Resolver", "Primero lo que detiene operación o expone datos."], ["03", "Documentar", "Bitácoras, evidencia, responsables y próximas acciones."], ["04", "Mejorar", "Controles, monitoreo y mantenimiento recurrente."]] },
     contact: { kicker: "Contacto", title: "HABLEMOS DE TU OPERACIÓN.", text: "Describe la falla, riesgo, servidor, equipo o refacción que necesitas. Respondemos con el siguiente paso técnico.", meta: ["Respuesta en menos de 1 día hábil", "CDMX - Estado de México - Remoto nacional"], fields: { name: "Nombre", company: "Empresa", email: "Email", phone: "WhatsApp / Teléfono", service: "Servicio", select: "Selecciona", message: "Mensaje" }, options: ["Help Desk", "Cyber Audit", "Servidores", "Reparación", "Equipos", "Refacciones"], loading: "Enviando...", submit: "Enviar solicitud", success: "Solicitud registrada. Nexora Tech preparará el siguiente paso.", error: "La solicitud no pudo enviarse. Inténtalo de nuevo." },
@@ -150,6 +150,22 @@ export const siteCopy = {
         ["High", "Backups without recent test"],
         ["Medium", "SPF/DKIM incomplete"],
       ],
+      nistOffer: {
+        eyebrow: "NIST accreditation for nearshoring",
+        title: "48-hour NIST CSF assessment.",
+        text: "For Mexican SMEs selling or preparing to sell to customers in the United States and Canada, we evaluate real cybersecurity maturity without disrupting operations.",
+        outcomes: [
+          "Executive report with current maturity level",
+          "Critical technical, legal and commercial gap analysis",
+          "Prioritized 90-day roadmap",
+          "N1A digital accreditation verifiable on blockchain",
+        ],
+        uses: [
+          "Evidence for commercial proposals and RFPs",
+          "Trust seal for a corporate website",
+          "Support for supplier evaluations",
+        ],
+      },
     },
     infrastructure: {
       servers: ["Windows", "Linux", "Cloud", "On-premise", "Monitoring", "Backups", "Alerts", "Patches"],
@@ -313,6 +329,22 @@ export const siteCopy = {
         ["Élevée", "Sauvegardes sans test récent"],
         ["Moyenne", "SPF/DKIM incomplet"],
       ],
+      nistOffer: {
+        eyebrow: "Accréditation NIST pour le nearshoring",
+        title: "Diagnostic NIST CSF en 48 heures.",
+        text: "Pour les PME mexicaines qui vendent ou préparent des ventes à des clients aux États-Unis et au Canada, nous évaluons la maturité réelle en cybersécurité sans interrompre l'opération.",
+        outcomes: [
+          "Rapport exécutif avec niveau de maturité actuel",
+          "Analyse des écarts critiques techniques, légaux et commerciaux",
+          "Roadmap priorisée sur 90 jours",
+          "Accréditation digitale N1A vérifiable sur blockchain",
+        ],
+        uses: [
+          "Preuve pour propositions commerciales et RFP",
+          "Sceau de confiance pour site corporate",
+          "Support pour évaluations fournisseurs",
+        ],
+      },
     },
     infrastructure: {
       servers: ["Windows", "Linux", "Cloud", "On-premise", "Supervision", "Sauvegardes", "Alertes", "Correctifs"],

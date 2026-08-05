@@ -33,6 +33,27 @@ export default function CyberAudit({ copy }: { copy: SiteCopy["cyber"] }) {
         </div>
         <div className="roadmap"><span>30</span><span>60</span><span>90</span></div>
       </aside>
+      <div className="nist-offer">
+        <div>
+          <p className="section-kicker">{copy.nistOffer.eyebrow}</p>
+          <h3>{copy.nistOffer.title}</h3>
+          <p>{copy.nistOffer.text}</p>
+        </div>
+        <div className="nist-offer-lists">
+          <article>
+            <b>NIST CSF</b>
+            <ul>
+              {copy.nistOffer.outcomes.map((item) => <li key={item}>{item}</li>)}
+            </ul>
+          </article>
+          <article>
+            <b>N1A</b>
+            <ul>
+              {copy.nistOffer.uses.map((item) => <li key={item}>{item}</li>)}
+            </ul>
+          </article>
+        </div>
+      </div>
     </section>
   );
 }

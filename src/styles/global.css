@@ -184,6 +184,14 @@ h3 { margin: 0; font-size: clamp(26px, 2.3vw, 38px); line-height: .95; letter-sp
 .alerts b { color: var(--lime); margin-right: 8px; }
 .roadmap { margin-top: 18px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
 .roadmap span { min-height: 56px; display: grid; place-items: center; border: 1px solid rgba(241,240,232,.2); color: var(--lime); font-weight: 900; }
+.nist-offer { grid-column: 1 / -1; display: grid; grid-template-columns: .9fr 1.1fr; gap: 32px; padding: 30px; border: 1px solid var(--ink); background: var(--paper); box-shadow: 12px 12px 0 var(--ink); }
+.nist-offer h3 { max-width: 680px; }
+.nist-offer p:not(.section-kicker) { margin: 20px 0 0; max-width: 680px; color: var(--muted); line-height: 1.65; }
+.nist-offer-lists { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--ink); border: 1px solid var(--ink); }
+.nist-offer-lists article { min-height: 260px; padding: 24px; background: #e6e5dd; }
+.nist-offer-lists b { display: block; color: #4d6500; font: 900 13px/1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .12em; }
+.nist-offer-lists ul { margin: 26px 0 0; padding-left: 18px; color: var(--muted); line-height: 1.55; }
+.nist-offer-lists li + li { margin-top: 10px; }
 
 .infrastructure { display: grid; grid-template-columns: .82fr 1.18fr; gap: 58px; background: var(--paper); }
 .infrastructure p:not(.section-kicker) { color: var(--muted); line-height: 1.65; }
@@ -238,7 +246,7 @@ h3 { margin: 0; font-size: clamp(26px, 2.3vw, 38px); line-height: .95; letter-sp
   .hero { grid-template-columns: 1fr; background: #F3EFC8; }
   .hero-dashboard { margin-top: 0; background: var(--ink); }
   .capability-rail, .service-grid, .privacy-grid { grid-template-columns: repeat(2, 1fr); }
-  .section-head, .support, .cyber, .infrastructure, .contact { grid-template-columns: 1fr; }
+  .section-head, .support, .cyber, .infrastructure, .contact, .nist-offer { grid-template-columns: 1fr; }
   .steps, .equipment-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
@@ -256,7 +264,7 @@ h3 { margin: 0; font-size: clamp(26px, 2.3vw, 38px); line-height: .95; letter-sp
   h2 { font-size: clamp(42px, 13vw, 60px); }
   .hero-actions, .button { width: 100%; }
   .text-action { width: fit-content; }
-  .hero-indicators, .dash-grid, .capability-rail, .service-grid, .sla-panel, .nist-grid, .steps, .equipment-grid, .contact-form, .privacy-grid { grid-template-columns: 1fr; }
+  .hero-indicators, .dash-grid, .capability-rail, .service-grid, .sla-panel, .nist-grid, .nist-offer-lists, .steps, .equipment-grid, .contact-form, .privacy-grid { grid-template-columns: 1fr; }
   .hero-dashboard { margin: 0 16px 56px; }
   .remote-card { position: static; width: 100%; margin-top: 16px; }
   .section-pad { padding: 72px 16px; }
