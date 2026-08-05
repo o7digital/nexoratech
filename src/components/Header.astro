@@ -8,7 +8,6 @@ interface Props {
 
 const { copy, homeHref = "" } = Astro.props;
 const hrefFor = (href: string) => `${homeHref}${href}`;
-const alternateLang = copy.alternateHref.includes("/fr") ? "fr" : "en";
 ---
 
 <div class="status-bar" aria-label="Estado de cobertura">
@@ -23,7 +22,7 @@ const alternateLang = copy.alternateHref.includes("/fr") ? "fr" : "en";
   <div class="header-actions">
     <details class="language-switch">
       <summary aria-label="Change language">{copy.languageLabel}<span aria-hidden="true">⌄</span></summary>
-      <a href={copy.alternateHref} hreflang={alternateLang}>{copy.alternateLabel}</a>
+      {copy.languageLinks.map(([label, href]) => <a href={href} hreflang={label.toLowerCase()}>{label}</a>)}
     </details>
     <a class="header-cta" href={hrefFor("#helpdesk")}>{copy.headerCta} <span aria-hidden="true">↗</span></a>
   </div>
@@ -31,7 +30,7 @@ const alternateLang = copy.alternateHref.includes("/fr") ? "fr" : "en";
     <summary aria-label="Abrir menu"><span></span><span></span><span></span></summary>
     <nav aria-label="Navegacion movil">
       {copy.nav.map(([label, href]) => <a href={hrefFor(href)}>{label}</a>)}
-      <a href={copy.alternateHref}>{copy.alternateLabel}</a>
+      {copy.languageLinks.map(([label, href]) => <a href={href}>{label}</a>)}
       <a class="mobile-menu-cta" href={hrefFor("#helpdesk")}>{copy.headerCta} <span aria-hidden="true">↗</span></a>
     </nav>
   </details>

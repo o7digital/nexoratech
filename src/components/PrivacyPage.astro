@@ -8,7 +8,7 @@ interface Props {
 }
 
 const { copy } = Astro.props;
-const homeHref = copy.langTag === "fr" ? "/fr/" : "/en/";
+const homeHref = copy.langTag === "fr" ? "/fr/" : copy.langTag === "en" ? "/en/" : "/";
 ---
 
 <Header copy={copy} homeHref={homeHref} />

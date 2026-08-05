@@ -61,7 +61,9 @@ button, input, select, textarea { font: inherit; }
 .language-switch summary { min-width: 58px; height: 44px; display: inline-flex; align-items: center; gap: 8px; list-style: none; cursor: pointer; }
 .language-switch summary::-webkit-details-marker { display: none; }
 .language-switch summary span { color: #668000; font-size: 16px; transform: translateY(-1px); }
-.language-switch a { position: absolute; top: 38px; left: 0; min-width: 58px; padding: 10px 0; color: var(--muted); }
+.language-switch[open] { z-index: 30; }
+.language-switch a { display: block; min-width: 58px; padding: 10px 0; color: var(--muted); }
+.language-switch summary + a { margin-top: -6px; }
 .language-switch a:hover { color: var(--ink); }
 .mobile-menu { display: none; justify-self: end; }
 .mobile-menu summary { width: 44px; height: 44px; display: grid; place-content: center; gap: 5px; border: 1px solid var(--ink); list-style: none; cursor: pointer; }

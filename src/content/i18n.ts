@@ -1,8 +1,54 @@
-export const languages = ["en", "fr"] as const;
+export const languages = ["es", "en", "fr"] as const;
 
 export type Language = (typeof languages)[number];
 
 export const siteCopy = {
+  es: {
+    locale: "es_MX",
+    langTag: "es-MX",
+    languageLabel: "ES",
+    title: "Nexora Tech | Soporte técnico IT y ciberseguridad México",
+    description: "Soporte técnico IT México, Help Desk, auditoría de ciberseguridad México, administración de servidores, reparación, equipos y refacciones.",
+    businessDescription: "Soporte técnico IT, auditoría de ciberseguridad, administración de servidores, reparación, equipos y refacciones para empresas en México.",
+    offers: ["Help Desk remoto y en sitio", "Auditoría de ciberseguridad", "Administración de servidores", "Reparación y mantenimiento de equipos", "Compra y venta de equipos", "Venta e instalación de refacciones"],
+    serviceType: "Soporte técnico IT y ciberseguridad",
+    alternateLabel: "EN",
+    alternateHref: "/en/",
+    languageLinks: [["EN", "/en/"], ["FR", "/fr/"]],
+    privacyHref: "/aviso-privacidad/",
+    nav: [["Servicios", "#servicios"], ["Help Desk", "#helpdesk"], ["Cyber Audit", "#cyber"], ["Infraestructura", "#infraestructura"], ["Contacto", "#contacto"]],
+    status: ["Soporte activo", "CDMX", "Estado de México", "Remoto nacional"],
+    headerCta: "Obtener soporte",
+    hero: {
+      eyebrow: "Tecnología sin interrupciones",
+      title: ["TU OPERACIÓN", "NO PUEDE", "ESPERAR."],
+      text: "Help Desk, ciberseguridad, servidores, reparación, equipos y refacciones para empresas que necesitan continuidad real en México.",
+      primary: "Abrir ticket ahora",
+      secondary: "Solicitar diagnóstico",
+      indicators: [["02:15", "respuesta promedio"], ["99.9%", "continuidad objetivo"], ["30/60/90", "plan de mejora"]],
+      dashboard: { header: "CONTROL CENTER", status: "SISTEMAS ONLINE", availability: "Disponibilidad", tickets: "Tickets activos", devices: "Dispositivos protegidos", incident: "Incidente resuelto: VPN usuario finanzas", remoteTitle: "Soporte remoto conectado", remoteText: "Sesión autorizada - agente MX-04" },
+    },
+    services: {
+      capabilities: ["Help Desk", "Cyber Audit", "Servidores", "Reparación", "Equipos", "Refacciones"],
+      kicker: "Servicios Nexora Tech",
+      title: "Operación, seguridad y equipos bajo una misma disciplina.",
+      items: [
+        ["01", "Help Desk remoto y en sitio", "Mesa de ayuda, seguimiento SLA, soporte a usuarios, conectividad, impresoras, correo, VPN y estaciones de trabajo.", ["Levantamiento por prioridad", "Sesión remota o visita en sitio", "Evidencia y notas de cierre"]],
+        ["02", "Auditoría de ciberseguridad", "Revisión NIST CSF, matriz de riesgos, controles prioritarios, reporte ejecutivo y plan 30/60/90.", ["Revisión de identidad y accesos", "Controles de correo, endpoints y respaldos", "Roadmap práctico de remediación"]],
+        ["03", "Administración de servidores", "Windows, Linux, cloud, on-premise, monitoreo, respaldos, hardening, parches y alertas.", ["Rutinas de parches", "Verificación de respaldos", "Alertas y seguimiento de incidentes"]],
+        ["04", "Reparación y mantenimiento", "Diagnóstico, mantenimiento preventivo, correctivo, limpieza, optimización y recuperación operativa.", ["Diagnóstico de hardware y sistema", "Limpieza preventiva", "Soporte de recuperación operativa"]],
+        ["05", "Equipos nuevos y seminuevos", "Compra y venta de laptops, desktops, servidores y periféricos nuevos, seminuevos y reacondicionados.", ["Selección según carga de trabajo", "Configuración y migración", "Checklist de entrega de activo"]],
+        ["06", "Refacciones instaladas", "Venta e instalación de memoria, discos, pantallas, baterías, fuentes, teclados y componentes.", ["Validación de compatibilidad", "Instalación y pruebas", "Documentación del reemplazo"]],
+      ],
+    },
+    support: { kicker: "Help Desk", title: ["RESPUESTA RÁPIDA.", "CONTROL DOCUMENTADO."], modes: { remote: "Conexión asistida para correo, VPN, sistema operativo, aplicaciones, impresoras y accesos.", onsite: "Visita técnica para red local, equipos, servidores, refacciones, instalaciones y fallas físicas." }, remoteButton: "Soporte remoto", onsiteButton: "Visita en sitio", fallback: "Solicitar enlace de soporte", aria: "Tipo de soporte", steps: ["Ticket", "Asignación", "Resolución", "Documentación"], close: "cierre", satisfaction: "satisfacción de atención" },
+    cyber: { kicker: "Cyber Audit", title: "RIESGO CLARO. PLAN EJECUTABLE.", text: "Diagnóstico basado en NIST CSF para priorizar identidad, correo, endpoints, red, cloud, respaldos, proveedores y respuesta a incidentes.", tabsAria: "Contenido de auditoría", scope: "Alcance técnico", deliverables: "Entregables", nist: ["NIST CSF", "Identidad y acceso", "MFA", "Correo", "Endpoints", "Red", "Cloud", "Respaldos", "Políticas", "Proveedores", "Respuesta a incidentes"], academy: ["Academia Cyber", "Antiphishing", "Contraseñas", "MFA", "Datos sensibles", "Reporte de incidentes"], deliverableItems: [["Matriz de riesgos", "Probabilidad, impacto, criticidad y responsables."], ["Reporte ejecutivo", "Lectura accionable para dirección."], ["Plan 30/60/90", "Roadmap por prioridad, esfuerzo y urgencia."]], maturity: "Madurez", alerts: [["Crítica", "MFA ausente en 9 cuentas"], ["Alta", "Respaldos sin prueba reciente"], ["Media", "SPF/DKIM incompleto"]] },
+    infrastructure: { servers: ["Windows", "Linux", "Cloud", "On-premise", "Monitoreo", "Respaldos", "Alertas", "Parches"], kicker: "Infraestructura y equipos", title: "DE LA NUBE AL TORNILLO.", text: "Administración de servidores, monitoreo, respaldos y soporte físico para mantener la operación completa bajo control.", serverTitle: "ADMINISTRACIÓN DE SERVIDORES", online: "ONLINE", equipmentKicker: "Equipos y refacciones", equipmentTitle: "REPARAR, COMPRAR, VENDER E INSTALAR.", equipment: [["Reparación", "Diagnóstico, mantenimiento preventivo, correctivo, limpieza, optimización y recuperación operativa."], ["Compra / venta", "Equipos nuevos, seminuevos y reacondicionados para usuarios, dirección, servidores y puntos críticos."], ["Refacciones", "Memoria, discos, pantallas, baterías, fuentes, teclados y componentes instalados con pruebas."]] },
+    method: { kicker: "Método", title: ["MENOS RUIDO.", "MÁS CONTROL."], steps: [["01", "Entender", "Usuarios, activos, urgencias, riesgos y restricciones."], ["02", "Resolver", "Primero lo que detiene operación o expone datos."], ["03", "Documentar", "Bitácoras, evidencia, responsables y próximas acciones."], ["04", "Mejorar", "Controles, monitoreo y mantenimiento recurrente."]] },
+    contact: { kicker: "Contacto", title: "HABLEMOS DE TU OPERACIÓN.", text: "Describe la falla, riesgo, servidor, equipo o refacción que necesitas. Respondemos con el siguiente paso técnico.", meta: ["Respuesta en menos de 1 día hábil", "CDMX - Estado de México - Remoto nacional"], fields: { name: "Nombre", company: "Empresa", email: "Email", phone: "WhatsApp / Teléfono", service: "Servicio", select: "Selecciona", message: "Mensaje" }, options: ["Help Desk", "Cyber Audit", "Servidores", "Reparación", "Equipos", "Refacciones"], loading: "Enviando...", submit: "Enviar solicitud", success: "Solicitud registrada. Nexora Tech preparará el siguiente paso.", error: "La solicitud no pudo enviarse. Inténtalo de nuevo." },
+    footer: "Soporte técnico IT México - Ciberseguridad México - Servidores - Equipos - Refacciones",
+    privacy: { title: "Aviso de privacidad", updated: "Última actualización: agosto 2026", intro: "Este aviso explica cómo Nexora Tech trata los datos personales recabados mediante formularios de contacto, solicitudes de soporte, comunicaciones comerciales e interacciones de servicio técnico.", sections: [["Responsable del tratamiento", ["Responsable: Nexora Tech.", "Zona de servicio: CDMX, Estado de México y soporte remoto nacional.", "Contacto de privacidad: privacy@nexoratech.mx."]], ["Finalidades del tratamiento", ["Contactarlo sobre solicitudes de soporte IT, ciberseguridad, infraestructura, reparación, equipos o refacciones.", "Crear, priorizar y documentar tickets de servicio.", "Proporcionar cotizaciones, diagnóstico técnico, seguimiento y atención al cliente.", "Cumplir obligaciones legales, fiscales, contractuales o de seguridad aplicables.", "Enviar información comercial únicamente cuando sea permitido o solicitado."]], ["Datos personales recabados", ["Datos de identificación y contacto como nombre, empresa, email, teléfono y canal preferido.", "Información de servicio como descripción de incidentes, detalles de equipos, capturas o contexto técnico proporcionado.", "Datos operativos necesarios para soporte remoto, diagnósticos, administración de servidores o revisiones de ciberseguridad."]], ["Transferencias y proveedores", ["Nexora Tech no vende datos personales.", "Los datos pueden compartirse con proveedores tecnológicos, plataformas de hosting, herramientas de comunicación o autoridades competentes cuando sea necesario para prestar el servicio o cumplir la ley.", "Los proveedores deben observar obligaciones de confidencialidad y seguridad acordes con la legislación aplicable."]], ["Derechos", ["Puede solicitar acceso, rectificación, cancelación u oposición al tratamiento de sus datos personales cuando aplique.", "Usuarios cubiertos por RGPD o marcos tipo CCPA también pueden solicitar portabilidad, eliminación, limitación o información sobre el uso de datos, según corresponda.", "Las solicitudes deben incluir nombre, medio de contacto, prueba de identidad y descripción clara del derecho que desea ejercer."]], ["Seguridad y conservación", ["Nexora Tech aplica medidas administrativas, técnicas y físicas para reducir accesos no autorizados, pérdida, uso indebido o alteración.", "Los controles pueden incluir autenticación segura, conexiones cifradas, accesos restringidos y documentación de servicios.", "Los datos se conservan solo durante el tiempo necesario para las finalidades indicadas y obligaciones legales, contractuales u operativas aplicables."]], ["Cambios y contacto", ["Este aviso puede actualizarse cuando cambien los servicios, requisitos legales o procesos internos.", "Los cambios relevantes se publicarán en esta página.", "Para dudas o solicitudes de privacidad, contacte privacy@nexoratech.mx."]]] },
+  },
   en: {
     locale: "en_US",
     langTag: "en",
@@ -23,6 +69,7 @@ export const siteCopy = {
     serviceType: "IT support and cybersecurity",
     alternateLabel: "FR",
     alternateHref: "/fr/",
+    languageLinks: [["ES", "/"], ["FR", "/fr/"]],
     privacyHref: "/en/privacy/",
     nav: [
       ["Services", "#servicios"],
@@ -185,6 +232,7 @@ export const siteCopy = {
     serviceType: "Support informatique et cybersécurité",
     alternateLabel: "EN",
     alternateHref: "/en/",
+    languageLinks: [["ES", "/"], ["EN", "/en/"]],
     privacyHref: "/fr/confidentialite/",
     nav: [
       ["Services", "#servicios"],
