@@ -147,6 +147,7 @@ export const siteCopy = {
       loading: "Sending...",
       submit: "Send request",
       success: "Request registered. Nexora Tech will prepare the next step.",
+      error: "The request could not be sent. Please try again.",
     },
     footer: "IT support Mexico - Cybersecurity Mexico - Servers - Equipment - Spare parts",
     privacy: {
@@ -308,6 +309,7 @@ export const siteCopy = {
       loading: "Envoi...",
       submit: "Envoyer la demande",
       success: "Demande enregistrée. Nexora Tech préparera la prochaine étape.",
+      error: "La demande n'a pas pu être envoyée. Veuillez réessayer.",
     },
     footer: "Support informatique Mexique - Cybersécurité Mexique - Serveurs - Équipements - Pièces détachées",
     privacy: {

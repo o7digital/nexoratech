@@ -213,6 +213,7 @@ h3 { margin: 0; font-size: clamp(26px, 2.3vw, 38px); line-height: .95; letter-sp
 .contact-form .wide, .contact-form button, .success { grid-column: 1 / -1; }
 .contact-form .button-dark { width: 100%; }
 .success { margin: 0; padding: 12px; background: var(--soft-lime); border: 1px solid var(--ink); font-weight: 900; }
+.success.error { background: #ffe1dc; }
 .footer { min-height: 128px; display: flex; align-items: center; justify-content: space-between; gap: 26px; padding: 32px clamp(18px, 5vw, 72px); border-top: 1px solid var(--line); }
 .footer p, .footer span { color: var(--muted); font-size: 12px; }
 .footer p { margin: 0 0 10px; }

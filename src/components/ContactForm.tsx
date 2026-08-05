@@ -1,18 +1,38 @@
 import { useState } from "react";
 import type { SiteCopy } from "../content/i18n";
 
+const formspreeEndpoint = "https://formspree.io/f/xyegynvq";
+
 export default function ContactForm({ copy }: { copy: SiteCopy["contact"] }) {
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
-  function submit(event: { preventDefault: () => void; currentTarget: HTMLFormElement }) {
+  async function submit(event: { preventDefault: () => void; currentTarget: HTMLFormElement }) {
     event.preventDefault();
+    const form = event.currentTarget;
     setLoading(true);
-    window.setTimeout(() => {
-      setLoading(false);
+    setSent(false);
+    setError(false);
+
+    try {
+      const response = await fetch(formspreeEndpoint, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      });
+
+      if (!response.ok) {
+        throw new Error("Formspree request failed");
+      }
+
       setSent(true);
-      event.currentTarget.reset();
-    }, 650);
+      form.reset();
+    } catch {
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -40,6 +60,7 @@ export default function ContactForm({ copy }: { copy: SiteCopy["contact"] }) {
         <label className="wide">{copy.fields.message}<textarea name="message" required minLength={12} rows={4}></textarea></label>
         <button className="button button-dark" type="submit" disabled={loading}>{loading ? copy.loading : copy.submit} <span aria-hidden="true">↗</span></button>
         {sent && <p className="success" role="status">{copy.success}</p>}
+        {error && <p className="success error" role="alert">{copy.error}</p>}
       </form>
     </section>
   );
