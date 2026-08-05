@@ -8,6 +8,7 @@ interface Props {
 
 const { copy, homeHref = "" } = Astro.props;
 const hrefFor = (href: string) => `${homeHref}${href}`;
+const alternateLang = copy.alternateHref.includes("/fr") ? "fr" : "en";
 ---
 
 <div class="status-bar" aria-label="Estado de cobertura">
@@ -20,7 +21,10 @@ const hrefFor = (href: string) => `${homeHref}${href}`;
     {copy.nav.map(([label, href]) => <a href={hrefFor(href)}>{label}</a>)}
   </nav>
   <div class="header-actions">
-    <a class="language-link" href={copy.alternateHref} hreflang={copy.alternateHref.includes("/fr") ? "fr" : "en"}>{copy.alternateLabel}</a>
+    <details class="language-switch">
+      <summary aria-label="Change language">{copy.languageLabel}<span aria-hidden="true">⌄</span></summary>
+      <a href={copy.alternateHref} hreflang={alternateLang}>{copy.alternateLabel}</a>
+    </details>
     <a class="header-cta" href={hrefFor("#helpdesk")}>{copy.headerCta} <span aria-hidden="true">↗</span></a>
   </div>
   <details class="mobile-menu">

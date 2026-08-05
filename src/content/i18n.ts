@@ -6,6 +6,7 @@ export const siteCopy = {
   en: {
     locale: "en_US",
     langTag: "en",
+    languageLabel: "EN",
     title: "Nexora Tech | IT support and cybersecurity in Mexico",
     description:
       "IT support in Mexico, Help Desk, cybersecurity audits, server administration, repairs, equipment and spare parts.",
@@ -20,7 +21,7 @@ export const siteCopy = {
       "Spare parts sales and installation",
     ],
     serviceType: "IT support and cybersecurity",
-    alternateLabel: "Français",
+    alternateLabel: "FR",
     alternateHref: "/fr/",
     privacyHref: "/en/privacy/",
     nav: [
@@ -166,6 +167,7 @@ export const siteCopy = {
   fr: {
     locale: "fr_FR",
     langTag: "fr",
+    languageLabel: "FR",
     title: "Nexora Tech | Support informatique et cybersécurité au Mexique",
     description:
       "Support informatique au Mexique, Help Desk, audit de cybersécurité, administration de serveurs, réparation, équipements et pièces détachées.",
@@ -180,7 +182,7 @@ export const siteCopy = {
       "Vente et installation de pièces détachées",
     ],
     serviceType: "Support informatique et cybersécurité",
-    alternateLabel: "English",
+    alternateLabel: "EN",
     alternateHref: "/en/",
     privacyHref: "/fr/confidentialite/",
     nav: [
