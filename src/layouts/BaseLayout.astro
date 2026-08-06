@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import OliviaAI from "../components/OliviaAI.astro";
 import type { SiteCopy } from "../content/i18n";
 
 interface Props {
@@ -52,5 +53,6 @@ const services = {
   </head>
   <body>
     <slot />
+    <OliviaAI />
   </body>
 </html>
