@@ -16,24 +16,19 @@ const slides = [
 ---
 
 <section class="hero" id="inicio">
-  <div class="hero-copy">
-    <p class="eyebrow">{copy.eyebrow}</p>
-    <h1><span>{copy.title[0]}</span><span>{copy.title[1]}</span><span class="outline">{copy.title[2]}</span></h1>
-    <p class="hero-text">{copy.text}</p>
-    <div class="hero-actions">
-      <a class="button button-dark" href="#helpdesk">{copy.primary} <span aria-hidden="true">↗</span></a>
-      <a class="text-action" href="#cyber">{copy.secondary}</a>
-    </div>
-    <div class="hero-indicators">
-      {copy.indicators.map(([value, label]) => <article><strong>{value}</strong><span>{label}</span></article>)}
-    </div>
-  </div>
   <div class="hero-slider" aria-label="Nexora Tech operations">
     {slides.map((src, index) => <img src={src} alt="" loading={index === 0 ? "eager" : "lazy"} decoding="async" />)}
-    <div class="availability-card">
-      <span>{copy.dashboard.availability}</span>
-      <strong>99.94%</strong>
-      <small>{copy.dashboard.status}</small>
+    <div class="hero-copy">
+      <p class="eyebrow">{copy.eyebrow}</p>
+      <h1><span>{copy.title[0]}</span><span>{copy.title[1]}</span><span class="outline">{copy.title[2]}</span></h1>
+      <p class="hero-text">{copy.text}</p>
+      <div class="hero-actions">
+        <a class="button button-dark" href="#helpdesk">{copy.primary} <span aria-hidden="true">↗</span></a>
+        <a class="text-action" href="#cyber">{copy.secondary}</a>
+      </div>
+      <div class="hero-indicators">
+        {copy.indicators.map(([value, label]) => <article><strong>{value}</strong><span>{label}</span></article>)}
+      </div>
     </div>
   </div>
 </section>
