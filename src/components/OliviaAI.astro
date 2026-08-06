@@ -347,6 +347,25 @@ const formspreeEndpoint = "https://formspree.io/f/xyegynvq";
         sent: "Pronto, ficou registrado.",
         error: "Nao consegui enviar a mensagem. Tente novamente.",
       },
+      it: {
+        status: "Assistente INFRASEGURA NEXORA TECH",
+        online: "Online",
+        teaser: "Serve supporto?",
+        open: "Apri Olivia AI",
+        close: "Chiudi Olivia AI",
+        welcome: "Ciao, sono Olivia AI. Posso aiutare con supporto IT, cybersicurezza, server, apparecchiature o ricambi.",
+        leadIntro: "Lascia i tuoi dati e il team INFRASEGURA NEXORA TECH ti contattera con il prossimo passo.",
+        name: "Nome",
+        email: "Email",
+        phone: "Telefono",
+        need: "Necessita",
+        submitLead: "Invia dati",
+        leadThanks: "Grazie. I tuoi dati sono stati registrati per il follow-up.",
+        placeholder: "Scrivi la tua domanda...",
+        send: "Invia",
+        sent: "Fatto, e stato registrato.",
+        error: "Non sono riuscita a inviare il messaggio. Riprova.",
+      },
     };
 
     const getLanguage = () => {
@@ -356,6 +375,7 @@ const formspreeEndpoint = "https://formspree.io/f/xyegynvq";
       if (lang.startsWith("en") || path.startsWith("/en")) return "en";
       if (lang.startsWith("de") || path.startsWith("/de")) return "de";
       if (lang.startsWith("pt") || path.startsWith("/pt")) return "pt";
+      if (lang.startsWith("it") || path.startsWith("/it")) return "it";
       return "es";
     };
 
@@ -389,6 +409,7 @@ const formspreeEndpoint = "https://formspree.io/f/xyegynvq";
         fr: "Vous pouvez demander du support ici en laissant vos coordonnees. Je peux aussi orienter la demande vers Help Desk, Cyber Audit, serveurs, reparation, equipements ou pieces.",
         de: "Sie konnen hier Support anfragen, indem Sie Ihre Daten hinterlassen. Ich kann die Anfrage auch zu Help Desk, Cyber Audit, Servern, Reparatur, Geraten oder Ersatzteilen leiten.",
         pt: "Voce pode solicitar suporte aqui deixando seus dados. Tambem posso direcionar a solicitacao para Help Desk, Cyber Audit, servidores, reparo, equipamentos ou pecas.",
+        it: "Puoi richiedere supporto qui lasciando i tuoi dati. Posso anche indirizzare la richiesta verso Help Desk, Cyber Audit, server, riparazioni, apparecchiature o ricambi.",
       };
       const cyber = {
         es: "Para Cyber Audit revisamos NIST CSF, identidad, MFA, correo, endpoints, red, respaldos, proveedores y respuesta a incidentes. Tambien hay cotizador en la seccion Cyber.",
@@ -396,6 +417,7 @@ const formspreeEndpoint = "https://formspree.io/f/xyegynvq";
         fr: "Pour Cyber Audit, nous revoyons NIST CSF, identite, MFA, email, endpoints, reseau, sauvegardes, fournisseurs et reponse incidents. La section Cyber inclut aussi un cotisateur.",
         de: "Fur Cyber Audit prufen wir NIST CSF, Identitat, MFA, E-Mail, Endpoints, Netzwerk, Backups, Lieferanten und Incident Response. Die Cyber-Sektion enthalt auch einen Kalkulator.",
         pt: "Para Cyber Audit revisamos NIST CSF, identidade, MFA, e-mail, endpoints, rede, backups, fornecedores e resposta a incidentes. A secao Cyber tambem inclui um cotizador.",
+        it: "Per Cyber Audit rivediamo NIST CSF, identita, MFA, email, endpoint, rete, backup, fornitori e risposta agli incidenti. La sezione Cyber include anche un calcolatore.",
       };
       const support = {
         es: "Para soporte IT podemos atender remoto o en sitio: correo, VPN, sistema operativo, aplicaciones, impresoras, accesos y estaciones de trabajo.",
@@ -403,6 +425,7 @@ const formspreeEndpoint = "https://formspree.io/f/xyegynvq";
         fr: "Pour le support IT, intervention a distance ou sur site : email, VPN, systeme, applications, imprimantes, acces et postes de travail.",
         de: "Beim IT-Support helfen wir remote oder vor Ort: E-Mail, VPN, Betriebssystem, Anwendungen, Drucker, Zugange und Arbeitsplatze.",
         pt: "Para suporte de TI atendemos remoto ou presencial: e-mail, VPN, sistema operacional, aplicacoes, impressoras, acessos e estacoes de trabalho.",
+        it: "Per il supporto IT possiamo intervenire da remoto o in sede: email, VPN, sistema operativo, applicazioni, stampanti, accessi e workstation.",
       };
       const infra = {
         es: "En infraestructura cubrimos servidores Windows/Linux, cloud, on-premise, monitoreo, respaldos, hardening, parches y alertas.",
@@ -410,6 +433,7 @@ const formspreeEndpoint = "https://formspree.io/f/xyegynvq";
         fr: "Pour l'infrastructure : serveurs Windows/Linux, cloud, on-premise, supervision, sauvegardes, hardening, correctifs et alertes.",
         de: "In der Infrastruktur decken wir Windows/Linux-Server, Cloud, On-Premise, Monitoring, Backups, Hardening, Patches und Alerts ab.",
         pt: "Em infraestrutura cobrimos servidores Windows/Linux, cloud, on-premise, monitoramento, backups, hardening, patches e alertas.",
+        it: "Per l'infrastruttura copriamo server Windows/Linux, cloud, on-premise, monitoraggio, backup, hardening, patch e alert.",
       };
       const equipment = {
         es: "En equipos y refacciones podemos ayudar con diagnostico, reparacion, compra/venta de equipos y componentes instalados con pruebas.",
@@ -417,11 +441,12 @@ const formspreeEndpoint = "https://formspree.io/f/xyegynvq";
         fr: "Pour equipements et pieces : diagnostic, reparation, achat/vente et installation de composants testes.",
         de: "Bei Geraten und Ersatzteilen helfen wir mit Diagnose, Reparatur, Kauf/Verkauf von Geraten und getesteter Komponenteninstallation.",
         pt: "Em equipamentos e pecas ajudamos com diagnostico, reparo, compra/venda de equipamentos e instalacao de componentes testados.",
+        it: "Per apparecchiature e ricambi aiutiamo con diagnosi, riparazione, acquisto/vendita e installazione di componenti testati.",
       };
-      if (/\b(cyber|ciber|nist|audit|auditoria|auditor|seguridad|securite|security|sicherheit|seguranca|phishing|ransomware|mfa)\b/.test(value)) return cyber[lang];
-      if (/\b(help|desk|support|soporte|suporte|remote|remoto|vpn|correo|email|e-mail|impresora|printer|drucker|impressora|ticket)\b/.test(value)) return support[lang];
-      if (/\b(server|serveur|servidor|infra|linux|windows|cloud|backup|respaldo|sauvegarde|parche|patch|monitoring|monitoramento)\b/.test(value)) return infra[lang];
-      if (/\b(equipo|equipement|equipment|gerat|geraet|equipamento|repair|reparacion|reparation|reparo|refaccion|piece|peca|spare|ersatzteil|laptop|desktop|bateria|battery|batterie)\b/.test(value)) return equipment[lang];
+      if (/\b(cyber|ciber|nist|audit|auditoria|auditor|seguridad|securite|security|sicherheit|seguranca|sicurezza|phishing|ransomware|mfa)\b/.test(value)) return cyber[lang];
+      if (/\b(help|desk|support|soporte|suporte|supporto|remote|remoto|vpn|correo|email|e-mail|impresora|printer|drucker|impressora|stampante|ticket)\b/.test(value)) return support[lang];
+      if (/\b(server|serveur|servidor|infra|linux|windows|cloud|backup|respaldo|sauvegarde|parche|patch|monitoring|monitoramento|monitoraggio)\b/.test(value)) return infra[lang];
+      if (/\b(equipo|equipement|equipment|gerat|geraet|equipamento|apparecchiatura|repair|reparacion|reparation|reparo|riparazione|refaccion|piece|peca|ricambio|spare|ersatzteil|laptop|desktop|bateria|battery|batterie)\b/.test(value)) return equipment[lang];
       return contact[lang];
     };
 
