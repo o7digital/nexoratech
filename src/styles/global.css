@@ -302,6 +302,8 @@ h3 { margin: 0; font-size: clamp(26px, 2.3vw, 38px); line-height: .95; letter-sp
 .footer p, .footer span { color: var(--muted); font-size: 12px; }
 .footer p { margin: 0 0 10px; }
 .privacy-link { font: 900 12px/1 ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; border-bottom: 2px solid var(--lime); }
+.footer-credit { margin: 12px 0 0; }
+.footer-credit a { color: var(--ink); font-weight: 900; border-bottom: 2px solid var(--coral); }
 
 .privacy-page { background: var(--paper); }
 .privacy-head { max-width: 980px; }
