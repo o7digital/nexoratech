@@ -6,6 +6,13 @@ interface Props {
 }
 
 const { copy } = Astro.props;
+const slides = [
+  "/slider/alex-kotliarskyi-QBpZGqEMsKg-unsplash.jpg",
+  "/slider/cdc-_XLJy3h77cw-unsplash.jpg",
+  "/slider/christina-wocintechchat-com-m-glRqyWJgUeY-unsplash.jpg",
+  "/slider/kevin-ache-2JJ3wBHu4_0-unsplash.jpg",
+  "/slider/paul-hanaoka-s0XabTAKvak-unsplash.jpg",
+];
 ---
 
 <section class="hero" id="inicio">
@@ -21,15 +28,12 @@ const { copy } = Astro.props;
       {copy.indicators.map(([value, label]) => <article><strong>{value}</strong><span>{label}</span></article>)}
     </div>
   </div>
-  <div class="hero-dashboard" aria-label="Dashboard Control Center">
-    <div class="dash-header"><span>{copy.dashboard.header}</span><b>{copy.dashboard.status}</b></div>
-    <div class="availability"><span>{copy.dashboard.availability}</span><strong>99.94%</strong></div>
-    <div class="lime-chart"><i></i><i></i><i></i><i></i><i></i><i></i></div>
-    <div class="dash-grid">
-      <article><span>{copy.dashboard.tickets}</span><strong>18</strong></article>
-      <article><span>{copy.dashboard.devices}</span><strong>142</strong></article>
+  <div class="hero-slider" aria-label="Nexora Tech operations">
+    {slides.map((src, index) => <img src={src} alt="" loading={index === 0 ? "eager" : "lazy"} decoding="async" />)}
+    <div class="availability-card">
+      <span>{copy.dashboard.availability}</span>
+      <strong>99.94%</strong>
+      <small>{copy.dashboard.status}</small>
     </div>
-    <div class="incident"><span></span><p>{copy.dashboard.incident}</p><b>08:42</b></div>
-    <div class="remote-card"><b>{copy.dashboard.remoteTitle}</b><span>{copy.dashboard.remoteText}</span></div>
   </div>
 </section>

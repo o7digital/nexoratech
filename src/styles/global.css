@@ -77,7 +77,7 @@ button, input, select, textarea { font: inherit; }
   min-height: calc(100vh - 124px);
   display: grid;
   grid-template-columns: 52fr 48fr;
-  background: linear-gradient(90deg, #F3EFC8 0 52%, var(--ink) 52% 100%);
+  background: #F3EFC8;
 }
 .hero-copy { min-width: 0; padding: clamp(54px, 7vw, 100px) clamp(22px, 5vw, 72px); align-self: center; }
 .eyebrow, .section-kicker {
@@ -105,6 +105,22 @@ h1 span, h2 span { display: block; }
 .hero-indicators strong { display: block; font-size: clamp(28px, 3vw, 42px); letter-spacing: -.06em; }
 .hero-indicators span { color: var(--muted); font: 800 11px/1.35 ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; }
 
+.hero-slider { position: relative; min-height: calc(100vh - 124px); overflow: hidden; background: var(--ink); }
+.hero-slider::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,11,10,.08), rgba(10,11,10,.28)); pointer-events: none; }
+.hero-slider img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; animation: heroFade 25s infinite; }
+.hero-slider img:nth-child(1) { opacity: 1; animation-delay: 0s; }
+.hero-slider img:nth-child(2) { animation-delay: 5s; }
+.hero-slider img:nth-child(3) { animation-delay: 10s; }
+.hero-slider img:nth-child(4) { animation-delay: 15s; }
+.hero-slider img:nth-child(5) { animation-delay: 20s; }
+@keyframes heroFade {
+  0%, 18% { opacity: 1; transform: scale(1); }
+  24%, 94% { opacity: 0; transform: scale(1.035); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.availability-card { position: absolute; right: clamp(20px, 5vw, 70px); bottom: clamp(28px, 7vw, 92px); z-index: 2; width: min(360px, calc(100% - 40px)); padding: 24px; border: 1px solid var(--ink); background: var(--paper); color: var(--ink); box-shadow: 12px 12px 0 var(--lime); }
+.availability-card span, .availability-card small { color: var(--muted); font: 900 11px/1.25 ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; letter-spacing: .1em; }
+.availability-card strong { display: block; margin: 10px 0 14px; color: var(--ink); font-size: clamp(62px, 7vw, 106px); line-height: .82; letter-spacing: -.08em; }
 .hero-dashboard { position: relative; align-self: center; margin: clamp(28px, 5vw, 70px); padding: 22px; border: 1px solid rgba(241,240,232,.26); color: var(--paper); background: var(--ink); }
 .dash-header, .server-head { display: flex; justify-content: space-between; gap: 16px; padding-bottom: 16px; border-bottom: 1px solid rgba(241,240,232,.18); font: 900 11px/1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .12em; }
 .dash-header b, .server-head b { color: var(--lime); }
@@ -284,6 +300,7 @@ h3 { margin: 0; font-size: clamp(26px, 2.3vw, 38px); line-height: .95; letter-sp
   .desktop-nav { display: none; }
   .mobile-menu { display: block; }
   .hero { grid-template-columns: 1fr; background: #F3EFC8; }
+  .hero-slider { min-height: 58vh; }
   .hero-dashboard { margin-top: 0; background: var(--ink); }
   .capability-rail, .service-grid, .privacy-grid { grid-template-columns: repeat(2, 1fr); }
   .section-head, .support, .cyber, .infrastructure, .contact, .nist-offer, .cyber-program-head, .cyber-quote { grid-template-columns: 1fr; }
@@ -305,6 +322,8 @@ h3 { margin: 0; font-size: clamp(26px, 2.3vw, 38px); line-height: .95; letter-sp
   .hero-actions, .button { width: 100%; }
   .text-action { width: fit-content; }
   .hero-indicators, .dash-grid, .capability-rail, .service-grid, .sla-panel, .nist-grid, .nist-offer-lists, .cyber-program-cards, .cyber-process, .cyber-academy, .cyber-plans, .cyber-quote-form, .cyber-quote-contact, .cyber-quote-metrics, .steps, .equipment-grid, .contact-form, .privacy-grid { grid-template-columns: 1fr; }
+  .hero-slider { min-height: 64vh; margin-bottom: 0; }
+  .availability-card { right: 16px; bottom: 28px; padding: 18px; box-shadow: 8px 8px 0 var(--lime); }
   .hero-dashboard { margin: 0 16px 56px; }
   .remote-card { position: static; width: 100%; margin-top: 16px; }
   .section-pad { padding: 72px 16px; }
