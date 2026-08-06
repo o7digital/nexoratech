@@ -22,7 +22,7 @@ const { copy } = Astro.props;
   <Hero copy={copy.hero} />
   <Services copy={copy.services} />
   <SupportDesk copy={copy.support} client:load />
-  <CyberAudit copy={copy.cyber} client:load />
+  <CyberAudit copy={copy.cyber} lang={copy.langTag} client:load />
   <Infrastructure copy={copy.infrastructure} />
   <Method copy={copy.method} />
   <ContactForm copy={copy.contact} client:load />
