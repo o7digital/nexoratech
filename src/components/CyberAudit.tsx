@@ -159,7 +159,7 @@ function CyberQuote({ data }: { data: (typeof cyberLanding)[keyof typeof cyberLa
           <label>{q.phone}<input name="phone" type="tel" autoComplete="tel" /></label>
           <label className="wide">{q.notes}<textarea name="message" placeholder={q.placeholder}></textarea></label>
         </div>
-        <input type="hidden" name="_subject" value="Cotización Diagnóstico Express Nexora Tech" />
+        <input type="hidden" name="_subject" value="Cotización Diagnóstico Express INFRASEGURA NEXORA TECH" />
         <input type="hidden" name="estimated_price" value={`${price} MXN`} />
         <input type="hidden" name="delivery" value={delivery} />
         <input type="hidden" name="scope" value={scope} />

@@ -15,7 +15,7 @@ const hrefFor = (href: string) => `${homeHref}${href}`;
   {copy.status.slice(1).map((item) => <span>{item}</span>)}
 </div>
 <header class="site-header">
-  <a class="brand" href={hrefFor("#inicio")} aria-label="Nexora Tech inicio">NEXORA <span>TECH</span></a>
+  <a class="brand" href={hrefFor("#inicio")} aria-label="INFRASEGURA inicio">INFRASEGURA</a>
   <nav class="desktop-nav" aria-label="Navegacion principal">
     {copy.nav.map(([label, href]) => <a href={hrefFor(href)}>{label}</a>)}
   </nav>

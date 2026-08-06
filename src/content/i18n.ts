@@ -7,7 +7,7 @@ export const siteCopy = {
     locale: "es_MX",
     langTag: "es-MX",
     languageLabel: "ES",
-    title: "Nexora Tech | Soporte técnico IT y ciberseguridad México",
+    title: "INFRASEGURA | Soporte técnico IT y ciberseguridad México",
     description: "Soporte técnico IT México, Help Desk, auditoría de ciberseguridad México, administración de servidores, reparación, equipos y refacciones.",
     businessDescription: "Soporte técnico IT, auditoría de ciberseguridad, administración de servidores, reparación, equipos y refacciones para empresas en México.",
     offers: ["Help Desk remoto y en sitio", "Auditoría de ciberseguridad", "Administración de servidores", "Reparación y mantenimiento de equipos", "Compra y venta de equipos", "Venta e instalación de refacciones"],
@@ -30,7 +30,7 @@ export const siteCopy = {
     },
     services: {
       capabilities: ["Help Desk", "Cyber Audit", "Servidores", "Reparación", "Equipos", "Refacciones"],
-      kicker: "Servicios Nexora Tech",
+      kicker: "Servicios INFRASEGURA NEXORA TECH",
       title: "Operación, seguridad y equipos bajo una misma disciplina.",
       items: [
         ["01", "Help Desk remoto y en sitio", "Mesa de ayuda, seguimiento SLA, soporte a usuarios, conectividad, impresoras, correo, VPN y estaciones de trabajo.", ["Levantamiento por prioridad", "Sesión remota o visita en sitio", "Evidencia y notas de cierre"]],
@@ -45,15 +45,15 @@ export const siteCopy = {
     cyber: { kicker: "Cyber Audit", title: "RIESGO CLARO. PLAN EJECUTABLE.", text: "Diagnóstico basado en NIST CSF para priorizar identidad, correo, endpoints, red, cloud, respaldos, proveedores y respuesta a incidentes.", tabsAria: "Contenido de auditoría", scope: "Alcance técnico", deliverables: "Entregables", nist: ["NIST CSF", "Identidad y acceso", "MFA", "Correo", "Endpoints", "Red", "Cloud", "Respaldos", "Políticas", "Proveedores", "Respuesta a incidentes"], academy: ["Academia Cyber", "Antiphishing", "Contraseñas", "MFA", "Datos sensibles", "Reporte de incidentes"], deliverableItems: [["Matriz de riesgos", "Probabilidad, impacto, criticidad y responsables."], ["Reporte ejecutivo", "Lectura accionable para dirección."], ["Plan 30/60/90", "Roadmap por prioridad, esfuerzo y urgencia."]], maturity: "Madurez", alerts: [["Crítica", "MFA ausente en 9 cuentas"], ["Alta", "Respaldos sin prueba reciente"], ["Media", "SPF/DKIM incompleto"]], nistOffer: { eyebrow: "Acreditación NIST para nearshoring", title: "Diagnóstico NIST CSF en 48 horas.", text: "Para PYMES mexicanas que venden o quieren vender a clientes de Estados Unidos y Canadá, evaluamos la madurez real de ciberseguridad sin detener la operación.", outcomes: ["Reporte ejecutivo de madurez actual", "Análisis de brechas críticas técnicas, legales y comerciales", "Roadmap priorizado de 90 días", "Acreditación digital N1A verificable en blockchain"], uses: ["Evidencia para propuestas comerciales y RFP", "Sello de confianza para sitio corporativo", "Soporte para evaluaciones de proveedores"] } },
     infrastructure: { servers: ["Windows", "Linux", "Cloud", "On-premise", "Monitoreo", "Respaldos", "Alertas", "Parches"], kicker: "Infraestructura y equipos", title: "DE LA NUBE AL TORNILLO.", text: "Administración de servidores, monitoreo, respaldos y soporte físico para mantener la operación completa bajo control.", serverTitle: "ADMINISTRACIÓN DE SERVIDORES", online: "ONLINE", equipmentKicker: "Equipos y refacciones", equipmentTitle: "REPARAR, COMPRAR, VENDER E INSTALAR.", equipment: [["Reparación", "Diagnóstico, mantenimiento preventivo, correctivo, limpieza, optimización y recuperación operativa."], ["Compra / venta", "Equipos nuevos, seminuevos y reacondicionados para usuarios, dirección, servidores y puntos críticos."], ["Refacciones", "Memoria, discos, pantallas, baterías, fuentes, teclados y componentes instalados con pruebas."]] },
     method: { kicker: "Método", title: ["MENOS RUIDO.", "MÁS CONTROL."], steps: [["01", "Entender", "Usuarios, activos, urgencias, riesgos y restricciones."], ["02", "Resolver", "Primero lo que detiene operación o expone datos."], ["03", "Documentar", "Bitácoras, evidencia, responsables y próximas acciones."], ["04", "Mejorar", "Controles, monitoreo y mantenimiento recurrente."]] },
-    contact: { kicker: "Contacto", title: "HABLEMOS DE TU OPERACIÓN.", text: "Describe la falla, riesgo, servidor, equipo o refacción que necesitas. Respondemos con el siguiente paso técnico.", meta: ["Respuesta en menos de 1 día hábil", "CDMX - Estado de México - Remoto nacional"], fields: { name: "Nombre", company: "Empresa", email: "Email", phone: "WhatsApp / Teléfono", service: "Servicio", select: "Selecciona", message: "Mensaje" }, options: ["Help Desk", "Cyber Audit", "Servidores", "Reparación", "Equipos", "Refacciones"], loading: "Enviando...", submit: "Enviar solicitud", success: "Solicitud registrada. Nexora Tech preparará el siguiente paso.", error: "La solicitud no pudo enviarse. Inténtalo de nuevo." },
+    contact: { kicker: "Contacto", title: "HABLEMOS DE TU OPERACIÓN.", text: "Describe la falla, riesgo, servidor, equipo o refacción que necesitas. Respondemos con el siguiente paso técnico.", meta: ["Respuesta en menos de 1 día hábil", "CDMX - Estado de México - Remoto nacional"], fields: { name: "Nombre", company: "Empresa", email: "Email", phone: "WhatsApp / Teléfono", service: "Servicio", select: "Selecciona", message: "Mensaje" }, options: ["Help Desk", "Cyber Audit", "Servidores", "Reparación", "Equipos", "Refacciones"], loading: "Enviando...", submit: "Enviar solicitud", success: "Solicitud registrada. INFRASEGURA NEXORA TECH preparará el siguiente paso.", error: "La solicitud no pudo enviarse. Inténtalo de nuevo." },
     footer: "Soporte técnico IT México - Ciberseguridad México - Servidores - Equipos - Refacciones",
-    privacy: { title: "Aviso de privacidad", updated: "Última actualización: agosto 2026", intro: "Este aviso explica cómo Nexora Tech trata los datos personales recabados mediante formularios de contacto, solicitudes de soporte, comunicaciones comerciales e interacciones de servicio técnico.", sections: [["Responsable del tratamiento", ["Responsable: Nexora Tech.", "Zona de servicio: CDMX, Estado de México y soporte remoto nacional.", "Contacto de privacidad: privacy@nexoratech.mx."]], ["Finalidades del tratamiento", ["Contactarlo sobre solicitudes de soporte IT, ciberseguridad, infraestructura, reparación, equipos o refacciones.", "Crear, priorizar y documentar tickets de servicio.", "Proporcionar cotizaciones, diagnóstico técnico, seguimiento y atención al cliente.", "Cumplir obligaciones legales, fiscales, contractuales o de seguridad aplicables.", "Enviar información comercial únicamente cuando sea permitido o solicitado."]], ["Datos personales recabados", ["Datos de identificación y contacto como nombre, empresa, email, teléfono y canal preferido.", "Información de servicio como descripción de incidentes, detalles de equipos, capturas o contexto técnico proporcionado.", "Datos operativos necesarios para soporte remoto, diagnósticos, administración de servidores o revisiones de ciberseguridad."]], ["Transferencias y proveedores", ["Nexora Tech no vende datos personales.", "Los datos pueden compartirse con proveedores tecnológicos, plataformas de hosting, herramientas de comunicación o autoridades competentes cuando sea necesario para prestar el servicio o cumplir la ley.", "Los proveedores deben observar obligaciones de confidencialidad y seguridad acordes con la legislación aplicable."]], ["Derechos", ["Puede solicitar acceso, rectificación, cancelación u oposición al tratamiento de sus datos personales cuando aplique.", "Usuarios cubiertos por RGPD o marcos tipo CCPA también pueden solicitar portabilidad, eliminación, limitación o información sobre el uso de datos, según corresponda.", "Las solicitudes deben incluir nombre, medio de contacto, prueba de identidad y descripción clara del derecho que desea ejercer."]], ["Seguridad y conservación", ["Nexora Tech aplica medidas administrativas, técnicas y físicas para reducir accesos no autorizados, pérdida, uso indebido o alteración.", "Los controles pueden incluir autenticación segura, conexiones cifradas, accesos restringidos y documentación de servicios.", "Los datos se conservan solo durante el tiempo necesario para las finalidades indicadas y obligaciones legales, contractuales u operativas aplicables."]], ["Cambios y contacto", ["Este aviso puede actualizarse cuando cambien los servicios, requisitos legales o procesos internos.", "Los cambios relevantes se publicarán en esta página.", "Para dudas o solicitudes de privacidad, contacte privacy@nexoratech.mx."]]] },
+    privacy: { title: "Aviso de privacidad", updated: "Última actualización: agosto 2026", intro: "Este aviso explica cómo INFRASEGURA NEXORA TECH trata los datos personales recabados mediante formularios de contacto, solicitudes de soporte, comunicaciones comerciales e interacciones de servicio técnico.", sections: [["Responsable del tratamiento", ["Responsable: INFRASEGURA NEXORA TECH.", "Zona de servicio: CDMX, Estado de México y soporte remoto nacional.", "Contacto de privacidad: privacy@nexoratech.mx."]], ["Finalidades del tratamiento", ["Contactarlo sobre solicitudes de soporte IT, ciberseguridad, infraestructura, reparación, equipos o refacciones.", "Crear, priorizar y documentar tickets de servicio.", "Proporcionar cotizaciones, diagnóstico técnico, seguimiento y atención al cliente.", "Cumplir obligaciones legales, fiscales, contractuales o de seguridad aplicables.", "Enviar información comercial únicamente cuando sea permitido o solicitado."]], ["Datos personales recabados", ["Datos de identificación y contacto como nombre, empresa, email, teléfono y canal preferido.", "Información de servicio como descripción de incidentes, detalles de equipos, capturas o contexto técnico proporcionado.", "Datos operativos necesarios para soporte remoto, diagnósticos, administración de servidores o revisiones de ciberseguridad."]], ["Transferencias y proveedores", ["INFRASEGURA NEXORA TECH no vende datos personales.", "Los datos pueden compartirse con proveedores tecnológicos, plataformas de hosting, herramientas de comunicación o autoridades competentes cuando sea necesario para prestar el servicio o cumplir la ley.", "Los proveedores deben observar obligaciones de confidencialidad y seguridad acordes con la legislación aplicable."]], ["Derechos", ["Puede solicitar acceso, rectificación, cancelación u oposición al tratamiento de sus datos personales cuando aplique.", "Usuarios cubiertos por RGPD o marcos tipo CCPA también pueden solicitar portabilidad, eliminación, limitación o información sobre el uso de datos, según corresponda.", "Las solicitudes deben incluir nombre, medio de contacto, prueba de identidad y descripción clara del derecho que desea ejercer."]], ["Seguridad y conservación", ["INFRASEGURA NEXORA TECH aplica medidas administrativas, técnicas y físicas para reducir accesos no autorizados, pérdida, uso indebido o alteración.", "Los controles pueden incluir autenticación segura, conexiones cifradas, accesos restringidos y documentación de servicios.", "Los datos se conservan solo durante el tiempo necesario para las finalidades indicadas y obligaciones legales, contractuales u operativas aplicables."]], ["Cambios y contacto", ["Este aviso puede actualizarse cuando cambien los servicios, requisitos legales o procesos internos.", "Los cambios relevantes se publicarán en esta página.", "Para dudas o solicitudes de privacidad, contacte privacy@nexoratech.mx."]]] },
   },
   en: {
     locale: "en_US",
     langTag: "en",
     languageLabel: "EN",
-    title: "Nexora Tech | IT support and cybersecurity in Mexico",
+    title: "INFRASEGURA | IT support and cybersecurity in Mexico",
     description:
       "IT support in Mexico, Help Desk, cybersecurity audits, server administration, repairs, equipment and spare parts.",
     businessDescription:
@@ -104,7 +104,7 @@ export const siteCopy = {
     },
     services: {
       capabilities: ["Help Desk", "Cyber Audit", "Servers", "Repair", "Equipment", "Spare parts"],
-      kicker: "Nexora Tech services",
+      kicker: "INFRASEGURA NEXORA TECH services",
       title: "Operations, security and equipment under one discipline.",
       items: [
         ["01", "Remote and on-site Help Desk", "Help desk, SLA tracking, user support, connectivity, printers, email, VPN and workstations.", ["Ticket intake by priority", "Remote session or on-site dispatch", "Evidence and closure notes"]],
@@ -209,21 +209,21 @@ export const siteCopy = {
       options: ["Help Desk", "Cyber Audit", "Servers", "Repair", "Equipment", "Spare parts"],
       loading: "Sending...",
       submit: "Send request",
-      success: "Request registered. Nexora Tech will prepare the next step.",
+      success: "Request registered. INFRASEGURA NEXORA TECH will prepare the next step.",
       error: "The request could not be sent. Please try again.",
     },
     footer: "IT support Mexico - Cybersecurity Mexico - Servers - Equipment - Spare parts",
     privacy: {
       title: "Privacy Notice",
       updated: "Last updated: August 2026",
-      intro: "This notice explains how Nexora Tech processes personal data collected through its contact forms, support requests, commercial communications and technical service interactions.",
+      intro: "This notice explains how INFRASEGURA NEXORA TECH processes personal data collected through its contact forms, support requests, commercial communications and technical service interactions.",
       sections: [
-        ["Data controller", ["Controller: Nexora Tech.", "Service area: Mexico City, State of Mexico and remote support across Mexico.", "Privacy contact: privacy@nexoratech.mx."]],
+        ["Data controller", ["Controller: INFRASEGURA NEXORA TECH.", "Service area: Mexico City, State of Mexico and remote support across Mexico.", "Privacy contact: privacy@nexoratech.mx."]],
         ["Purposes of processing", ["Contact you about IT support, cybersecurity, infrastructure, repair, equipment or spare-part requests.", "Create, prioritize and document service tickets.", "Provide quotes, technical diagnosis, follow-up and customer service.", "Comply with applicable legal, tax, contractual or security obligations.", "Send commercial information only when permitted or requested."]],
         ["Personal data collected", ["Identification and contact data such as name, company, email, phone and preferred channel.", "Service information such as incident descriptions, equipment details, screenshots or technical context provided by you.", "Operational data needed to deliver remote support, diagnostics, server administration or cybersecurity reviews."]],
-        ["Transfers and service providers", ["Nexora Tech does not sell personal data.", "Data may be shared with technology providers, hosting platforms, communication tools or competent authorities when required to deliver the service or comply with law.", "Providers are expected to follow confidentiality and security obligations consistent with applicable privacy law."]],
+        ["Transfers and service providers", ["INFRASEGURA NEXORA TECH does not sell personal data.", "Data may be shared with technology providers, hosting platforms, communication tools or competent authorities when required to deliver the service or comply with law.", "Providers are expected to follow confidentiality and security obligations consistent with applicable privacy law."]],
         ["Rights", ["You may request access, rectification, cancellation or opposition to the processing of your personal data where applicable.", "Users covered by GDPR or CCPA-style frameworks may also request portability, deletion, restriction or information about data use, as applicable.", "Requests should include your name, contact method, proof of identity and a clear description of the right you want to exercise."]],
-        ["Security and retention", ["Nexora Tech applies administrative, technical and physical safeguards to reduce unauthorized access, loss, misuse or alteration.", "Controls may include secure authentication, encrypted connections, restricted access and service documentation practices.", "Data is retained only as long as needed for the stated purposes and applicable legal, contractual or operational requirements."]],
+        ["Security and retention", ["INFRASEGURA NEXORA TECH applies administrative, technical and physical safeguards to reduce unauthorized access, loss, misuse or alteration.", "Controls may include secure authentication, encrypted connections, restricted access and service documentation practices.", "Data is retained only as long as needed for the stated purposes and applicable legal, contractual or operational requirements."]],
         ["Changes and contact", ["This notice may be updated when services, legal requirements or internal processes change.", "Material changes will be published on this page.", "For privacy questions or rights requests, contact privacy@nexoratech.mx."]],
       ],
     },
@@ -232,7 +232,7 @@ export const siteCopy = {
     locale: "fr_FR",
     langTag: "fr",
     languageLabel: "FR",
-    title: "Nexora Tech | Support informatique et cybersécurité au Mexique",
+    title: "INFRASEGURA | Support informatique et cybersécurité au Mexique",
     description:
       "Support informatique au Mexique, Help Desk, audit de cybersécurité, administration de serveurs, réparation, équipements et pièces détachées.",
     businessDescription:
@@ -283,7 +283,7 @@ export const siteCopy = {
     },
     services: {
       capabilities: ["Help Desk", "Cyber Audit", "Serveurs", "Réparation", "Équipements", "Pièces"],
-      kicker: "Services Nexora Tech",
+      kicker: "Services INFRASEGURA NEXORA TECH",
       title: "Opérations, sécurité et équipements sous une même discipline.",
       items: [
         ["01", "Help Desk à distance et sur site", "Centre d'assistance, suivi SLA, support utilisateurs, connectivité, imprimantes, e-mail, VPN et postes de travail.", ["Qualification par priorité", "Session distante ou déplacement", "Preuves et notes de clôture"]],
@@ -388,21 +388,21 @@ export const siteCopy = {
       options: ["Help Desk", "Cyber Audit", "Serveurs", "Réparation", "Équipements", "Pièces"],
       loading: "Envoi...",
       submit: "Envoyer la demande",
-      success: "Demande enregistrée. Nexora Tech préparera la prochaine étape.",
+      success: "Demande enregistrée. INFRASEGURA NEXORA TECH préparera la prochaine étape.",
       error: "La demande n'a pas pu être envoyée. Veuillez réessayer.",
     },
     footer: "Support informatique Mexique - Cybersécurité Mexique - Serveurs - Équipements - Pièces détachées",
     privacy: {
       title: "Avis de confidentialité",
       updated: "Dernière mise à jour : août 2026",
-      intro: "Cet avis explique comment Nexora Tech traite les données personnelles collectées via ses formulaires de contact, demandes de support, communications commerciales et interactions de service technique.",
+      intro: "Cet avis explique comment INFRASEGURA NEXORA TECH traite les données personnelles collectées via ses formulaires de contact, demandes de support, communications commerciales et interactions de service technique.",
       sections: [
-        ["Responsable du traitement", ["Responsable : Nexora Tech.", "Zone de service : Mexico, État de Mexico et support à distance au Mexique.", "Contact confidentialité : privacy@nexoratech.mx."]],
+        ["Responsable du traitement", ["Responsable : INFRASEGURA NEXORA TECH.", "Zone de service : Mexico, État de Mexico et support à distance au Mexique.", "Contact confidentialité : privacy@nexoratech.mx."]],
         ["Finalités du traitement", ["Vous contacter au sujet des demandes de support informatique, cybersécurité, infrastructure, réparation, équipements ou pièces détachées.", "Créer, prioriser et documenter les tickets de service.", "Fournir devis, diagnostic technique, suivi et service client.", "Respecter les obligations légales, fiscales, contractuelles ou de sécurité applicables.", "Envoyer des informations commerciales uniquement lorsque cela est autorisé ou demandé."]],
         ["Données personnelles collectées", ["Données d'identification et de contact comme nom, entreprise, email, téléphone et canal préféré.", "Informations de service comme descriptions d'incident, détails d'équipement, captures d'écran ou contexte technique fourni.", "Données opérationnelles nécessaires au support à distance, diagnostics, administration de serveurs ou revues de cybersécurité."]],
-        ["Transferts et prestataires", ["Nexora Tech ne vend pas les données personnelles.", "Les données peuvent être partagées avec des prestataires technologiques, plateformes d'hébergement, outils de communication ou autorités compétentes lorsque c'est nécessaire au service ou à la loi.", "Les prestataires doivent respecter des obligations de confidentialité et de sécurité cohérentes avec la législation applicable."]],
+        ["Transferts et prestataires", ["INFRASEGURA NEXORA TECH ne vend pas les données personnelles.", "Les données peuvent être partagées avec des prestataires technologiques, plateformes d'hébergement, outils de communication ou autorités compétentes lorsque c'est nécessaire au service ou à la loi.", "Les prestataires doivent respecter des obligations de confidentialité et de sécurité cohérentes avec la législation applicable."]],
         ["Droits", ["Vous pouvez demander l'accès, la rectification, l'annulation ou l'opposition au traitement de vos données personnelles lorsque cela s'applique.", "Les utilisateurs couverts par le RGPD ou des cadres de type CCPA peuvent aussi demander portabilité, suppression, limitation ou information sur l'utilisation des données, selon le cas.", "Les demandes doivent inclure votre nom, moyen de contact, preuve d'identité et une description claire du droit exercé."]],
-        ["Sécurité et conservation", ["Nexora Tech applique des mesures administratives, techniques et physiques pour réduire les accès non autorisés, pertes, usages abusifs ou altérations.", "Les contrôles peuvent inclure authentification sécurisée, connexions chiffrées, accès restreints et documentation des services.", "Les données sont conservées uniquement le temps nécessaire aux finalités indiquées et aux obligations légales, contractuelles ou opérationnelles applicables."]],
+        ["Sécurité et conservation", ["INFRASEGURA NEXORA TECH applique des mesures administratives, techniques et physiques pour réduire les accès non autorisés, pertes, usages abusifs ou altérations.", "Les contrôles peuvent inclure authentification sécurisée, connexions chiffrées, accès restreints et documentation des services.", "Les données sont conservées uniquement le temps nécessaire aux finalités indiquées et aux obligations légales, contractuelles ou opérationnelles applicables."]],
         ["Modifications et contact", ["Cet avis peut être mis à jour lorsque les services, exigences légales ou processus internes évoluent.", "Les changements importants seront publiés sur cette page.", "Pour toute question ou demande relative aux droits, contactez privacy@nexoratech.mx."]],
       ],
     },

@@ -14,7 +14,7 @@ const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).toString(
 const localBusiness = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "Nexora Tech",
+  name: "INFRASEGURA NEXORA TECH",
   url: canonical,
   areaServed: ["Ciudad de Mexico", "Estado de Mexico", "Mexico"],
   address: { "@type": "PostalAddress", addressCountry: "MX", addressRegion: "CDMX" },
@@ -26,7 +26,7 @@ const services = {
   "@context": "https://schema.org",
   "@type": "Service",
   serviceType: copy.serviceType,
-  provider: { "@type": "LocalBusiness", name: "Nexora Tech" },
+  provider: { "@type": "LocalBusiness", name: "INFRASEGURA NEXORA TECH" },
   areaServed: { "@type": "Country", name: "Mexico" },
 };
 ---
@@ -46,7 +46,7 @@ const services = {
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:site_name" content="Nexora Tech" />
+    <meta property="og:site_name" content="INFRASEGURA" />
     <meta name="twitter:card" content="summary_large_image" />
     <script is:inline type="application/ld+json" set:html={JSON.stringify(localBusiness)} />
     <script is:inline type="application/ld+json" set:html={JSON.stringify(services)} />
