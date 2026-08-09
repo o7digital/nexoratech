@@ -8,9 +8,9 @@ export const siteCopy = {
     langTag: "es-MX",
     languageLabel: "ES",
     title: "INFRASEGURA | Soporte técnico IT y ciberseguridad México",
-    description: "Soporte técnico IT México, Help Desk, auditoría de ciberseguridad México, administración de servidores, reparación, equipos y refacciones.",
-    businessDescription: "Soporte técnico IT, auditoría de ciberseguridad, administración de servidores, reparación, equipos y refacciones para empresas en México.",
-    offers: ["Help Desk remoto y en sitio", "Auditoría de ciberseguridad", "Administración de servidores", "Reparación y mantenimiento de equipos", "Compra y venta de equipos", "Venta e instalación de refacciones"],
+    description: "Soporte técnico IT México, Help Desk, auditoría de ciberseguridad México, administración de servidores, reparación, equipos y componentes.",
+    businessDescription: "Soporte técnico IT, auditoría de ciberseguridad, administración de servidores, reparación, equipos y componentes para empresas en México.",
+    offers: ["Help Desk remoto y en sitio", "Auditoría de ciberseguridad", "Administración de servidores", "Reparación y mantenimiento de equipos", "Compra y venta de equipos", "Venta e instalación de componentes"],
     serviceType: "Soporte técnico IT y ciberseguridad",
     alternateLabel: "EN",
     alternateHref: "/en/",
@@ -22,14 +22,14 @@ export const siteCopy = {
     hero: {
       eyebrow: "Tecnología sin interrupciones",
       title: ["TU OPERACIÓN", "NO PUEDE", "ESPERAR."],
-      text: "Help Desk, ciberseguridad, servidores, reparación, equipos y refacciones para empresas que necesitan continuidad real en México.",
+      text: "Help Desk, ciberseguridad, servidores, reparación, equipos y componentes para empresas que necesitan continuidad real en México.",
       primary: "Abrir ticket ahora",
       secondary: "Solicitar diagnóstico",
       indicators: [["02:15", "respuesta promedio"], ["99.9%", "continuidad objetivo"], ["30/60/90", "plan de mejora"]],
       dashboard: { header: "CONTROL CENTER", status: "SISTEMAS ONLINE", availability: "Disponibilidad", tickets: "Tickets activos", devices: "Dispositivos protegidos", incident: "Incidente resuelto: VPN usuario finanzas", remoteTitle: "Soporte remoto conectado", remoteText: "Sesión autorizada - agente MX-04" },
     },
     services: {
-      capabilities: ["Help Desk", "Cyber Audit", "Servidores", "Reparación", "Equipos", "Refacciones"],
+      capabilities: ["Help Desk", "Cyber Audit", "Servidores", "Reparación", "Equipos", "Componentes"],
       kicker: "Servicios INFRASEGURA NEXORA TECH",
       title: "Operación, seguridad y equipos bajo una misma disciplina.",
       items: [
@@ -38,16 +38,16 @@ export const siteCopy = {
         ["03", "Administración de servidores", "Windows, Linux, cloud, on-premise, monitoreo, respaldos, hardening, parches y alertas.", ["Rutinas de parches", "Verificación de respaldos", "Alertas y seguimiento de incidentes"]],
         ["04", "Reparación y mantenimiento", "Diagnóstico, mantenimiento preventivo, correctivo, limpieza, optimización y recuperación operativa.", ["Diagnóstico de hardware y sistema", "Limpieza preventiva", "Soporte de recuperación operativa"]],
         ["05", "Equipos nuevos y seminuevos", "Compra y venta de laptops, desktops, servidores y periféricos nuevos, seminuevos y reacondicionados.", ["Selección según carga de trabajo", "Configuración y migración", "Checklist de entrega de activo"]],
-        ["06", "Refacciones instaladas", "Venta e instalación de memoria, discos, pantallas, baterías, fuentes, teclados y componentes.", ["Validación de compatibilidad", "Instalación y pruebas", "Documentación del reemplazo"]],
+        ["06", "Componentes instalados", "Venta e instalación de memoria, discos, pantallas, baterías, fuentes, teclados y componentes.", ["Validación de compatibilidad", "Instalación y pruebas", "Documentación del reemplazo"]],
       ],
     },
-    support: { kicker: "Help Desk", title: ["RESPUESTA RÁPIDA.", "CONTROL DOCUMENTADO."], modes: { remote: "Conexión asistida para correo, VPN, sistema operativo, aplicaciones, impresoras y accesos.", onsite: "Visita técnica para red local, equipos, servidores, refacciones, instalaciones y fallas físicas." }, remoteButton: "Soporte remoto", onsiteButton: "Visita en sitio", fallback: "Solicitar enlace de soporte", aria: "Tipo de soporte", steps: ["Ticket", "Asignación", "Resolución", "Documentación"], close: "cierre", satisfaction: "satisfacción de atención" },
+    support: { kicker: "Help Desk", title: ["RESPUESTA RÁPIDA.", "CONTROL DOCUMENTADO."], modes: { remote: "Conexión asistida para correo, VPN, sistema operativo, aplicaciones, impresoras y accesos.", onsite: "Visita técnica para red local, equipos, servidores, componentes, instalaciones y fallas físicas." }, remoteButton: "Soporte remoto", onsiteButton: "Visita en sitio", fallback: "Solicitar enlace de soporte", aria: "Tipo de soporte", steps: ["Ticket", "Asignación", "Resolución", "Documentación"], close: "cierre", satisfaction: "satisfacción de atención" },
     cyber: { kicker: "Cyber Audit", title: "RIESGO CLARO. PLAN EJECUTABLE.", text: "Diagnóstico basado en NIST CSF para priorizar identidad, correo, endpoints, red, cloud, respaldos, proveedores y respuesta a incidentes.", tabsAria: "Contenido de auditoría", scope: "Alcance técnico", deliverables: "Entregables", nist: ["NIST CSF", "Identidad y acceso", "MFA", "Correo", "Endpoints", "Red", "Cloud", "Respaldos", "Políticas", "Proveedores", "Respuesta a incidentes"], academy: ["Academia Cyber", "Antiphishing", "Contraseñas", "MFA", "Datos sensibles", "Reporte de incidentes"], deliverableItems: [["Matriz de riesgos", "Probabilidad, impacto, criticidad y responsables."], ["Reporte ejecutivo", "Lectura accionable para dirección."], ["Plan 30/60/90", "Roadmap por prioridad, esfuerzo y urgencia."]], maturity: "Madurez", alerts: [["Crítica", "MFA ausente en 9 cuentas"], ["Alta", "Respaldos sin prueba reciente"], ["Media", "SPF/DKIM incompleto"]], nistOffer: { eyebrow: "Acreditación NIST para nearshoring", title: "Diagnóstico NIST CSF en 48 horas.", text: "Para PYMES mexicanas que venden o quieren vender a clientes de Estados Unidos y Canadá, evaluamos la madurez real de ciberseguridad sin detener la operación.", outcomes: ["Reporte ejecutivo de madurez actual", "Análisis de brechas críticas técnicas, legales y comerciales", "Roadmap priorizado de 90 días", "Acreditación digital N1A verificable en blockchain"], uses: ["Evidencia para propuestas comerciales y RFP", "Sello de confianza para sitio corporativo", "Soporte para evaluaciones de proveedores"] } },
-    infrastructure: { servers: ["Windows", "Linux", "Cloud", "On-premise", "Monitoreo", "Respaldos", "Alertas", "Parches"], kicker: "Infraestructura y equipos", title: "DE LA NUBE AL TORNILLO.", text: "Administración de servidores, monitoreo, respaldos y soporte físico para mantener la operación completa bajo control.", serverTitle: "ADMINISTRACIÓN DE SERVIDORES", online: "ONLINE", equipmentKicker: "Equipos y refacciones", equipmentTitle: "REPARAR, COMPRAR, VENDER E INSTALAR.", equipment: [["Reparación", "Diagnóstico, mantenimiento preventivo, correctivo, limpieza, optimización y recuperación operativa."], ["Compra / venta", "Equipos nuevos, seminuevos y reacondicionados para usuarios, dirección, servidores y puntos críticos."], ["Refacciones", "Memoria, discos, pantallas, baterías, fuentes, teclados y componentes instalados con pruebas."]] },
+    infrastructure: { servers: ["Windows", "Linux", "Cloud", "On-premise", "Monitoreo", "Respaldos", "Alertas", "Parches"], kicker: "Infraestructura y equipos", title: "DE LA NUBE AL TORNILLO.", text: "Administración de servidores, monitoreo, respaldos y soporte físico para mantener la operación completa bajo control.", serverTitle: "ADMINISTRACIÓN DE SERVIDORES", online: "ONLINE", equipmentKicker: "Equipos y componentes", equipmentTitle: "REPARAR, COMPRAR, VENDER E INSTALAR.", equipment: [["Reparación", "Diagnóstico, mantenimiento preventivo, correctivo, limpieza, optimización y recuperación operativa."], ["Compra / venta", "Equipos nuevos, seminuevos y reacondicionados para usuarios, dirección, servidores y puntos críticos."], ["Componentes", "Memoria, discos, pantallas, baterías, fuentes, teclados y componentes instalados con pruebas."]] },
     method: { kicker: "Método", title: ["MENOS RUIDO.", "MÁS CONTROL."], steps: [["01", "Entender", "Usuarios, activos, urgencias, riesgos y restricciones."], ["02", "Resolver", "Primero lo que detiene operación o expone datos."], ["03", "Documentar", "Bitácoras, evidencia, responsables y próximas acciones."], ["04", "Mejorar", "Controles, monitoreo y mantenimiento recurrente."]] },
-    contact: { kicker: "Contacto", title: "HABLEMOS DE TU OPERACIÓN.", text: "Describe la falla, riesgo, servidor, equipo o refacción que necesitas. Respondemos con el siguiente paso técnico.", meta: ["Respuesta en menos de 1 día hábil", "CDMX - Estado de México - Remoto nacional"], fields: { name: "Nombre", company: "Empresa", email: "Email", phone: "WhatsApp / Teléfono", service: "Servicio", select: "Selecciona", message: "Mensaje" }, options: ["Help Desk", "Cyber Audit", "Servidores", "Reparación", "Equipos", "Refacciones"], loading: "Enviando...", submit: "Enviar solicitud", success: "Solicitud registrada. INFRASEGURA NEXORA TECH preparará el siguiente paso.", error: "La solicitud no pudo enviarse. Inténtalo de nuevo." },
-    footer: "Soporte técnico IT México - Ciberseguridad México - Servidores - Equipos - Refacciones",
-    privacy: { title: "Aviso de privacidad", updated: "Última actualización: agosto 2026", intro: "Este aviso explica cómo INFRASEGURA NEXORA TECH trata los datos personales recabados mediante formularios de contacto, solicitudes de soporte, comunicaciones comerciales e interacciones de servicio técnico.", sections: [["Responsable del tratamiento", ["Responsable: INFRASEGURA NEXORA TECH.", "Zona de servicio: CDMX, Estado de México y soporte remoto nacional.", "Contacto de privacidad: privacy@nexoratech.mx."]], ["Finalidades del tratamiento", ["Contactarlo sobre solicitudes de soporte IT, ciberseguridad, infraestructura, reparación, equipos o refacciones.", "Crear, priorizar y documentar tickets de servicio.", "Proporcionar cotizaciones, diagnóstico técnico, seguimiento y atención al cliente.", "Cumplir obligaciones legales, fiscales, contractuales o de seguridad aplicables.", "Enviar información comercial únicamente cuando sea permitido o solicitado."]], ["Datos personales recabados", ["Datos de identificación y contacto como nombre, empresa, email, teléfono y canal preferido.", "Información de servicio como descripción de incidentes, detalles de equipos, capturas o contexto técnico proporcionado.", "Datos operativos necesarios para soporte remoto, diagnósticos, administración de servidores o revisiones de ciberseguridad."]], ["Transferencias y proveedores", ["INFRASEGURA NEXORA TECH no vende datos personales.", "Los datos pueden compartirse con proveedores tecnológicos, plataformas de hosting, herramientas de comunicación o autoridades competentes cuando sea necesario para prestar el servicio o cumplir la ley.", "Los proveedores deben observar obligaciones de confidencialidad y seguridad acordes con la legislación aplicable."]], ["Derechos", ["Puede solicitar acceso, rectificación, cancelación u oposición al tratamiento de sus datos personales cuando aplique.", "Usuarios cubiertos por RGPD o marcos tipo CCPA también pueden solicitar portabilidad, eliminación, limitación o información sobre el uso de datos, según corresponda.", "Las solicitudes deben incluir nombre, medio de contacto, prueba de identidad y descripción clara del derecho que desea ejercer."]], ["Seguridad y conservación", ["INFRASEGURA NEXORA TECH aplica medidas administrativas, técnicas y físicas para reducir accesos no autorizados, pérdida, uso indebido o alteración.", "Los controles pueden incluir autenticación segura, conexiones cifradas, accesos restringidos y documentación de servicios.", "Los datos se conservan solo durante el tiempo necesario para las finalidades indicadas y obligaciones legales, contractuales u operativas aplicables."]], ["Cambios y contacto", ["Este aviso puede actualizarse cuando cambien los servicios, requisitos legales o procesos internos.", "Los cambios relevantes se publicarán en esta página.", "Para dudas o solicitudes de privacidad, contacte privacy@nexoratech.mx."]]] },
+    contact: { kicker: "Contacto", title: "HABLEMOS DE TU OPERACIÓN.", text: "Describe la falla, riesgo, servidor, equipo o componente que necesitas. Respondemos con el siguiente paso técnico.", meta: ["Respuesta en menos de 1 día hábil", "CDMX - Estado de México - Remoto nacional"], fields: { name: "Nombre", company: "Empresa", email: "Email", phone: "WhatsApp / Teléfono", service: "Servicio", select: "Selecciona", message: "Mensaje" }, options: ["Help Desk", "Cyber Audit", "Servidores", "Reparación", "Equipos", "Componentes"], loading: "Enviando...", submit: "Enviar solicitud", success: "Solicitud registrada. INFRASEGURA NEXORA TECH preparará el siguiente paso.", error: "La solicitud no pudo enviarse. Inténtalo de nuevo." },
+    footer: "Soporte técnico IT México - Ciberseguridad México - Servidores - Equipos - Componentes",
+    privacy: { title: "Aviso de privacidad", updated: "Última actualización: agosto 2026", intro: "Este aviso explica cómo INFRASEGURA NEXORA TECH trata los datos personales recabados mediante formularios de contacto, solicitudes de soporte, comunicaciones comerciales e interacciones de servicio técnico.", sections: [["Responsable del tratamiento", ["Responsable: INFRASEGURA NEXORA TECH.", "Zona de servicio: CDMX, Estado de México y soporte remoto nacional.", "Contacto de privacidad: privacy@nexoratech.mx."]], ["Finalidades del tratamiento", ["Contactarlo sobre solicitudes de soporte IT, ciberseguridad, infraestructura, reparación, equipos o componentes.", "Crear, priorizar y documentar tickets de servicio.", "Proporcionar cotizaciones, diagnóstico técnico, seguimiento y atención al cliente.", "Cumplir obligaciones legales, fiscales, contractuales o de seguridad aplicables.", "Enviar información comercial únicamente cuando sea permitido o solicitado."]], ["Datos personales recabados", ["Datos de identificación y contacto como nombre, empresa, email, teléfono y canal preferido.", "Información de servicio como descripción de incidentes, detalles de equipos, capturas o contexto técnico proporcionado.", "Datos operativos necesarios para soporte remoto, diagnósticos, administración de servidores o revisiones de ciberseguridad."]], ["Transferencias y proveedores", ["INFRASEGURA NEXORA TECH no vende datos personales.", "Los datos pueden compartirse con proveedores tecnológicos, plataformas de hosting, herramientas de comunicación o autoridades competentes cuando sea necesario para prestar el servicio o cumplir la ley.", "Los proveedores deben observar obligaciones de confidencialidad y seguridad acordes con la legislación aplicable."]], ["Derechos", ["Puede solicitar acceso, rectificación, cancelación u oposición al tratamiento de sus datos personales cuando aplique.", "Usuarios cubiertos por RGPD o marcos tipo CCPA también pueden solicitar portabilidad, eliminación, limitación o información sobre el uso de datos, según corresponda.", "Las solicitudes deben incluir nombre, medio de contacto, prueba de identidad y descripción clara del derecho que desea ejercer."]], ["Seguridad y conservación", ["INFRASEGURA NEXORA TECH aplica medidas administrativas, técnicas y físicas para reducir accesos no autorizados, pérdida, uso indebido o alteración.", "Los controles pueden incluir autenticación segura, conexiones cifradas, accesos restringidos y documentación de servicios.", "Los datos se conservan solo durante el tiempo necesario para las finalidades indicadas y obligaciones legales, contractuales u operativas aplicables."]], ["Cambios y contacto", ["Este aviso puede actualizarse cuando cambien los servicios, requisitos legales o procesos internos.", "Los cambios relevantes se publicarán en esta página.", "Para dudas o solicitudes de privacidad, contacte privacy@nexoratech.mx."]]] },
   },
   en: {
     locale: "en_US",
@@ -55,16 +55,16 @@ export const siteCopy = {
     languageLabel: "EN",
     title: "INFRASEGURA | IT support and cybersecurity in Mexico",
     description:
-      "IT support in Mexico, Help Desk, cybersecurity audits, server administration, repairs, equipment and spare parts.",
+      "IT support in Mexico, Help Desk, cybersecurity audits, server administration, repairs, equipment and components.",
     businessDescription:
-      "IT support, cybersecurity audits, server administration, repairs, equipment and spare parts for businesses in Mexico.",
+      "IT support, cybersecurity audits, server administration, repairs, equipment and components for businesses in Mexico.",
     offers: [
       "Remote and on-site Help Desk",
       "Cybersecurity audit",
       "Server administration",
       "Equipment repair and maintenance",
       "Equipment purchase and resale",
-      "Spare parts sales and installation",
+      "Components sales and installation",
     ],
     serviceType: "IT support and cybersecurity",
     alternateLabel: "FR",
@@ -83,7 +83,7 @@ export const siteCopy = {
     hero: {
       eyebrow: "Technology without interruptions",
       title: ["YOUR OPERATION", "CANNOT", "WAIT."],
-      text: "Help Desk, cybersecurity, servers, repairs, equipment and spare parts for companies that need real continuity in Mexico.",
+      text: "Help Desk, cybersecurity, servers, repairs, equipment and components for companies that need real continuity in Mexico.",
       primary: "Open a ticket now",
       secondary: "Request a diagnosis",
       indicators: [
@@ -103,7 +103,7 @@ export const siteCopy = {
       },
     },
     services: {
-      capabilities: ["Help Desk", "Cyber Audit", "Servers", "Repair", "Equipment", "Spare parts"],
+      capabilities: ["Help Desk", "Cyber Audit", "Servers", "Repair", "Equipment", "Components"],
       kicker: "INFRASEGURA NEXORA TECH services",
       title: "Operations, security and equipment under one discipline.",
       items: [
@@ -112,7 +112,7 @@ export const siteCopy = {
         ["03", "Server administration", "Windows, Linux, cloud, on-premise, monitoring, backups, hardening, patches and alerts.", ["Patch and update routines", "Backup verification", "Alerting and incident follow-up"]],
         ["04", "Repair and maintenance", "Diagnosis, preventive and corrective maintenance, cleaning, optimization and operational recovery.", ["Hardware and OS diagnosis", "Preventive cleaning", "Operational recovery support"]],
         ["05", "New and pre-owned equipment", "Purchase and resale of new, pre-owned and refurbished laptops, desktops, servers and peripherals.", ["Sourcing by workload", "Setup and migration", "Asset handover checklist"]],
-        ["06", "Installed spare parts", "Sales and installation of memory, disks, screens, batteries, power supplies, keyboards and components.", ["Part compatibility check", "Installation and testing", "Replacement documentation"]],
+        ["06", "Installed components", "Sales and installation of memory, disks, screens, batteries, power supplies, keyboards and components.", ["Part compatibility check", "Installation and testing", "Replacement documentation"]],
       ],
     },
     support: {
@@ -120,7 +120,7 @@ export const siteCopy = {
       title: ["FAST RESPONSE.", "DOCUMENTED CONTROL."],
       modes: {
         remote: "Assisted connection for email, VPN, operating systems, applications, printers and access.",
-        onsite: "Technical visit for local networks, equipment, servers, spare parts, installations and physical failures.",
+        onsite: "Technical visit for local networks, equipment, servers, components, installations and physical failures.",
       },
       remoteButton: "Remote support",
       onsiteButton: "On-site visit",
@@ -174,12 +174,12 @@ export const siteCopy = {
       text: "Server administration, monitoring, backups and physical support to keep the full operation under control.",
       serverTitle: "SERVER ADMINISTRATION",
       online: "ONLINE",
-      equipmentKicker: "Equipment and spare parts",
+      equipmentKicker: "Equipment and components",
       equipmentTitle: "REPAIR, BUY, SELL AND INSTALL.",
       equipment: [
         ["Repair", "Diagnosis, preventive and corrective maintenance, cleaning, optimization and operational recovery."],
         ["Purchase / resale", "New, pre-owned and refurbished equipment for users, leadership, servers and critical points."],
-        ["Spare parts", "Memory, disks, screens, batteries, power supplies, keyboards and components installed with testing."],
+        ["Components", "Memory, disks, screens, batteries, power supplies, keyboards and components installed with testing."],
       ],
     },
     method: {
@@ -195,7 +195,7 @@ export const siteCopy = {
     contact: {
       kicker: "Contact",
       title: "LET'S TALK ABOUT YOUR OPERATION.",
-      text: "Describe the failure, risk, server, equipment or spare part you need. We respond with the next technical step.",
+      text: "Describe the failure, risk, server, equipment or component you need. We respond with the next technical step.",
       meta: ["Response in less than 1 business day", "Mexico City - State of Mexico - Remote nationwide"],
       fields: {
         name: "Name",
@@ -206,20 +206,20 @@ export const siteCopy = {
         select: "Select",
         message: "Message",
       },
-      options: ["Help Desk", "Cyber Audit", "Servers", "Repair", "Equipment", "Spare parts"],
+      options: ["Help Desk", "Cyber Audit", "Servers", "Repair", "Equipment", "Components"],
       loading: "Sending...",
       submit: "Send request",
       success: "Request registered. INFRASEGURA NEXORA TECH will prepare the next step.",
       error: "The request could not be sent. Please try again.",
     },
-    footer: "IT support Mexico - Cybersecurity Mexico - Servers - Equipment - Spare parts",
+    footer: "IT support Mexico - Cybersecurity Mexico - Servers - Equipment - Components",
     privacy: {
       title: "Privacy Notice",
       updated: "Last updated: August 2026",
       intro: "This notice explains how INFRASEGURA NEXORA TECH processes personal data collected through its contact forms, support requests, commercial communications and technical service interactions.",
       sections: [
         ["Data controller", ["Controller: INFRASEGURA NEXORA TECH.", "Service area: Mexico City, State of Mexico and remote support across Mexico.", "Privacy contact: privacy@nexoratech.mx."]],
-        ["Purposes of processing", ["Contact you about IT support, cybersecurity, infrastructure, repair, equipment or spare-part requests.", "Create, prioritize and document service tickets.", "Provide quotes, technical diagnosis, follow-up and customer service.", "Comply with applicable legal, tax, contractual or security obligations.", "Send commercial information only when permitted or requested."]],
+        ["Purposes of processing", ["Contact you about IT support, cybersecurity, infrastructure, repair, equipment or component requests.", "Create, prioritize and document service tickets.", "Provide quotes, technical diagnosis, follow-up and customer service.", "Comply with applicable legal, tax, contractual or security obligations.", "Send commercial information only when permitted or requested."]],
         ["Personal data collected", ["Identification and contact data such as name, company, email, phone and preferred channel.", "Service information such as incident descriptions, equipment details, screenshots or technical context provided by you.", "Operational data needed to deliver remote support, diagnostics, server administration or cybersecurity reviews."]],
         ["Transfers and service providers", ["INFRASEGURA NEXORA TECH does not sell personal data.", "Data may be shared with technology providers, hosting platforms, communication tools or competent authorities when required to deliver the service or comply with law.", "Providers are expected to follow confidentiality and security obligations consistent with applicable privacy law."]],
         ["Rights", ["You may request access, rectification, cancellation or opposition to the processing of your personal data where applicable.", "Users covered by GDPR or CCPA-style frameworks may also request portability, deletion, restriction or information about data use, as applicable.", "Requests should include your name, contact method, proof of identity and a clear description of the right you want to exercise."]],
@@ -234,16 +234,16 @@ export const siteCopy = {
     languageLabel: "FR",
     title: "INFRASEGURA | Support informatique et cybersécurité au Mexique",
     description:
-      "Support informatique au Mexique, Help Desk, audit de cybersécurité, administration de serveurs, réparation, équipements et pièces détachées.",
+      "Support informatique au Mexique, Help Desk, audit de cybersécurité, administration de serveurs, réparation, équipements et composants.",
     businessDescription:
-      "Support informatique, audit de cybersécurité, administration de serveurs, réparation, équipements et pièces détachées pour les entreprises au Mexique.",
+      "Support informatique, audit de cybersécurité, administration de serveurs, réparation, équipements et composants pour les entreprises au Mexique.",
     offers: [
       "Help Desk à distance et sur site",
       "Audit de cybersécurité",
       "Administration de serveurs",
       "Réparation et maintenance d'équipements",
       "Achat et vente d'équipements",
-      "Vente et installation de pièces détachées",
+      "Vente et installation de composants",
     ],
     serviceType: "Support informatique et cybersécurité",
     alternateLabel: "EN",
@@ -262,7 +262,7 @@ export const siteCopy = {
     hero: {
       eyebrow: "Technologie sans interruption",
       title: ["VOTRE OPÉRATION", "NE PEUT PAS", "ATTENDRE."],
-      text: "Help Desk, cybersécurité, serveurs, réparation, équipements et pièces détachées pour les entreprises qui ont besoin d'une vraie continuité au Mexique.",
+      text: "Help Desk, cybersécurité, serveurs, réparation, équipements et composants pour les entreprises qui ont besoin d'une vraie continuité au Mexique.",
       primary: "Ouvrir un ticket",
       secondary: "Demander un diagnostic",
       indicators: [
@@ -282,7 +282,7 @@ export const siteCopy = {
       },
     },
     services: {
-      capabilities: ["Help Desk", "Cyber Audit", "Serveurs", "Réparation", "Équipements", "Pièces"],
+      capabilities: ["Help Desk", "Cyber Audit", "Serveurs", "Réparation", "Équipements", "Composants"],
       kicker: "Services INFRASEGURA NEXORA TECH",
       title: "Opérations, sécurité et équipements sous une même discipline.",
       items: [
@@ -291,7 +291,7 @@ export const siteCopy = {
         ["03", "Administration de serveurs", "Windows, Linux, cloud, on-premise, supervision, sauvegardes, hardening, correctifs et alertes.", ["Routines de patching", "Vérification des sauvegardes", "Alertes et suivi d'incident"]],
         ["04", "Réparation et maintenance", "Diagnostic, maintenance préventive et corrective, nettoyage, optimisation et reprise opérationnelle.", ["Diagnostic matériel et OS", "Nettoyage préventif", "Support de reprise opérationnelle"]],
         ["05", "Équipements neufs et d'occasion", "Achat et vente d'ordinateurs portables, postes fixes, serveurs et périphériques neufs, d'occasion et reconditionnés.", ["Sélection selon l'usage", "Configuration et migration", "Checklist de remise d'actif"]],
-        ["06", "Pièces installées", "Vente et installation de mémoire, disques, écrans, batteries, alimentations, claviers et composants.", ["Validation de compatibilité", "Installation et tests", "Documentation du remplacement"]],
+        ["06", "Composants installées", "Vente et installation de mémoire, disques, écrans, batteries, alimentations, claviers et composants.", ["Validation de compatibilité", "Installation et tests", "Documentation du remplacement"]],
       ],
     },
     support: {
@@ -299,7 +299,7 @@ export const siteCopy = {
       title: ["RÉPONSE RAPIDE.", "CONTRÔLE DOCUMENTÉ."],
       modes: {
         remote: "Connexion assistée pour e-mail, VPN, système d'exploitation, applications, imprimantes et accès.",
-        onsite: "Visite technique pour réseau local, équipements, serveurs, pièces, installations et pannes physiques.",
+        onsite: "Visite technique pour réseau local, équipements, serveurs, composants, installations et pannes physiques.",
       },
       remoteButton: "Support à distance",
       onsiteButton: "Visite sur site",
@@ -353,12 +353,12 @@ export const siteCopy = {
       text: "Administration de serveurs, supervision, sauvegardes et support physique pour garder toute l'opération sous contrôle.",
       serverTitle: "ADMINISTRATION DE SERVEURS",
       online: "EN LIGNE",
-      equipmentKicker: "Équipements et pièces détachées",
+      equipmentKicker: "Équipements et composants",
       equipmentTitle: "RÉPARER, ACHETER, VENDRE ET INSTALLER.",
       equipment: [
         ["Réparation", "Diagnostic, maintenance préventive et corrective, nettoyage, optimisation et reprise opérationnelle."],
         ["Achat / vente", "Équipements neufs, d'occasion et reconditionnés pour utilisateurs, direction, serveurs et points critiques."],
-        ["Pièces", "Mémoire, disques, écrans, batteries, alimentations, claviers et composants installés avec tests."],
+        ["Composants", "Mémoire, disques, écrans, batteries, alimentations, claviers et composants installés avec tests."],
       ],
     },
     method: {
@@ -374,7 +374,7 @@ export const siteCopy = {
     contact: {
       kicker: "Contact",
       title: "PARLONS DE VOTRE OPÉRATION.",
-      text: "Décrivez la panne, le risque, le serveur, l'équipement ou la pièce dont vous avez besoin. Nous répondons avec la prochaine étape technique.",
+      text: "Décrivez la panne, le risque, le serveur, l'équipement ou la composant dont vous avez besoin. Nous répondons avec la prochaine étape technique.",
       meta: ["Réponse en moins d'un jour ouvré", "Mexico - État de Mexico - À distance national"],
       fields: {
         name: "Nom",
@@ -385,20 +385,20 @@ export const siteCopy = {
         select: "Sélectionner",
         message: "Message",
       },
-      options: ["Help Desk", "Cyber Audit", "Serveurs", "Réparation", "Équipements", "Pièces"],
+      options: ["Help Desk", "Cyber Audit", "Serveurs", "Réparation", "Équipements", "Composants"],
       loading: "Envoi...",
       submit: "Envoyer la demande",
       success: "Demande enregistrée. INFRASEGURA NEXORA TECH préparera la prochaine étape.",
       error: "La demande n'a pas pu être envoyée. Veuillez réessayer.",
     },
-    footer: "Support informatique Mexique - Cybersécurité Mexique - Serveurs - Équipements - Pièces détachées",
+    footer: "Support informatique Mexique - Cybersécurité Mexique - Serveurs - Équipements - Composants",
     privacy: {
       title: "Avis de confidentialité",
       updated: "Dernière mise à jour : août 2026",
       intro: "Cet avis explique comment INFRASEGURA NEXORA TECH traite les données personnelles collectées via ses formulaires de contact, demandes de support, communications commerciales et interactions de service technique.",
       sections: [
         ["Responsable du traitement", ["Responsable : INFRASEGURA NEXORA TECH.", "Zone de service : Mexico, État de Mexico et support à distance au Mexique.", "Contact confidentialité : privacy@nexoratech.mx."]],
-        ["Finalités du traitement", ["Vous contacter au sujet des demandes de support informatique, cybersécurité, infrastructure, réparation, équipements ou pièces détachées.", "Créer, prioriser et documenter les tickets de service.", "Fournir devis, diagnostic technique, suivi et service client.", "Respecter les obligations légales, fiscales, contractuelles ou de sécurité applicables.", "Envoyer des informations commerciales uniquement lorsque cela est autorisé ou demandé."]],
+        ["Finalités du traitement", ["Vous contacter au sujet des demandes de support informatique, cybersécurité, infrastructure, réparation, équipements ou composants.", "Créer, prioriser et documenter les tickets de service.", "Fournir devis, diagnostic technique, suivi et service client.", "Respecter les obligations légales, fiscales, contractuelles ou de sécurité applicables.", "Envoyer des informations commerciales uniquement lorsque cela est autorisé ou demandé."]],
         ["Données personnelles collectées", ["Données d'identification et de contact comme nom, entreprise, email, téléphone et canal préféré.", "Informations de service comme descriptions d'incident, détails d'équipement, captures d'écran ou contexte technique fourni.", "Données opérationnelles nécessaires au support à distance, diagnostics, administration de serveurs ou revues de cybersécurité."]],
         ["Transferts et prestataires", ["INFRASEGURA NEXORA TECH ne vend pas les données personnelles.", "Les données peuvent être partagées avec des prestataires technologiques, plateformes d'hébergement, outils de communication ou autorités compétentes lorsque c'est nécessaire au service ou à la loi.", "Les prestataires doivent respecter des obligations de confidentialité et de sécurité cohérentes avec la législation applicable."]],
         ["Droits", ["Vous pouvez demander l'accès, la rectification, l'annulation ou l'opposition au traitement de vos données personnelles lorsque cela s'applique.", "Les utilisateurs couverts par le RGPD ou des cadres de type CCPA peuvent aussi demander portabilité, suppression, limitation ou information sur l'utilisation des données, selon le cas.", "Les demandes doivent inclure votre nom, moyen de contact, preuve d'identité et une description claire du droit exercé."]],
@@ -413,16 +413,16 @@ export const siteCopy = {
     languageLabel: "DE",
     title: "INFRASEGURA | IT-Support und Cybersicherheit in Mexiko",
     description:
-      "IT-Support in Mexiko, Help Desk, Cybersecurity-Audit, Serveradministration, Reparatur, Geräte und Ersatzteile.",
+      "IT-Support in Mexiko, Help Desk, Cybersecurity-Audit, Serveradministration, Reparatur, Geräte und Komponenten.",
     businessDescription:
-      "IT-Support, Cybersecurity-Audits, Serveradministration, Reparatur, Geräte und Ersatzteile für Unternehmen in Mexiko.",
+      "IT-Support, Cybersecurity-Audits, Serveradministration, Reparatur, Geräte und Komponenten für Unternehmen in Mexiko.",
     offers: [
       "Remote- und Vor-Ort-Help-Desk",
       "Cybersecurity-Audit",
       "Serveradministration",
       "Reparatur und Wartung von Geräten",
       "Kauf und Verkauf von Geräten",
-      "Verkauf und Installation von Ersatzteilen",
+      "Verkauf und Installation von Komponenten",
     ],
     serviceType: "IT-Support und Cybersicherheit",
     alternateLabel: "EN",
@@ -441,7 +441,7 @@ export const siteCopy = {
     hero: {
       eyebrow: "Technologie ohne Unterbrechungen",
       title: ["IHRE OPERATION", "DARF NICHT", "WARTEN."],
-      text: "Help Desk, Cybersicherheit, Server, Reparatur, Geräte und Ersatzteile für Unternehmen, die echte Kontinuität in Mexiko brauchen.",
+      text: "Help Desk, Cybersicherheit, Server, Reparatur, Geräte und Komponenten für Unternehmen, die echte Kontinuität in Mexiko brauchen.",
       primary: "Ticket jetzt öffnen",
       secondary: "Diagnose anfragen",
       indicators: [
@@ -461,7 +461,7 @@ export const siteCopy = {
       },
     },
     services: {
-      capabilities: ["Help Desk", "Cyber Audit", "Server", "Reparatur", "Geräte", "Ersatzteile"],
+      capabilities: ["Help Desk", "Cyber Audit", "Server", "Reparatur", "Geräte", "Komponenten"],
       kicker: "Services INFRASEGURA NEXORA TECH",
       title: "Betrieb, Sicherheit und Geräte unter einer Disziplin.",
       items: [
@@ -470,7 +470,7 @@ export const siteCopy = {
         ["03", "Serveradministration", "Windows, Linux, Cloud, On-Premise, Monitoring, Backups, Hardening, Patches und Alerts.", ["Patch-Routinen", "Backup-Verifizierung", "Alarmierung und Incident-Follow-up"]],
         ["04", "Reparatur und Wartung", "Diagnose, vorbeugende und korrigierende Wartung, Reinigung, Optimierung und Wiederherstellung des Betriebs.", ["Hardware- und Systemdiagnose", "Vorbeugende Reinigung", "Support für operative Wiederherstellung"]],
         ["05", "Neue und gebrauchte Geräte", "Kauf und Verkauf von neuen, gebrauchten und generalüberholten Laptops, Desktops, Servern und Peripherie.", ["Auswahl nach Arbeitslast", "Konfiguration und Migration", "Checkliste für Asset-Übergabe"]],
-        ["06", "Installierte Ersatzteile", "Verkauf und Installation von Speicher, Festplatten, Displays, Batterien, Netzteilen, Tastaturen und Komponenten.", ["Kompatibilitätsprüfung", "Installation und Tests", "Dokumentation des Austauschs"]],
+        ["06", "Installierte Komponenten", "Verkauf und Installation von Speicher, Festplatten, Displays, Batterien, Netzteilen, Tastaturen und Komponenten.", ["Kompatibilitätsprüfung", "Installation und Tests", "Dokumentation des Austauschs"]],
       ],
     },
     support: {
@@ -478,7 +478,7 @@ export const siteCopy = {
       title: ["SCHNELLE ANTWORT.", "DOKUMENTIERTE KONTROLLE."],
       modes: {
         remote: "Assistierte Verbindung für E-Mail, VPN, Betriebssysteme, Anwendungen, Drucker und Zugänge.",
-        onsite: "Technischer Besuch für lokale Netzwerke, Geräte, Server, Ersatzteile, Installationen und physische Ausfälle.",
+        onsite: "Technischer Besuch für lokale Netzwerke, Geräte, Server, Komponenten, Installationen und physische Ausfälle.",
       },
       remoteButton: "Remote-Support",
       onsiteButton: "Vor-Ort-Besuch",
@@ -532,12 +532,12 @@ export const siteCopy = {
       text: "Serveradministration, Monitoring, Backups und physischer Support, damit der gesamte Betrieb unter Kontrolle bleibt.",
       serverTitle: "SERVERADMINISTRATION",
       online: "ONLINE",
-      equipmentKicker: "Geräte und Ersatzteile",
+      equipmentKicker: "Geräte und Komponenten",
       equipmentTitle: "REPARIEREN, KAUFEN, VERKAUFEN UND INSTALLIEREN.",
       equipment: [
         ["Reparatur", "Diagnose, vorbeugende und korrigierende Wartung, Reinigung, Optimierung und operative Wiederherstellung."],
         ["Kauf / Verkauf", "Neue, gebrauchte und generalüberholte Geräte für Nutzer, Leitung, Server und kritische Punkte."],
-        ["Ersatzteile", "Speicher, Festplatten, Displays, Batterien, Netzteile, Tastaturen und Komponenten mit Tests installiert."],
+        ["Komponenten", "Speicher, Festplatten, Displays, Batterien, Netzteile, Tastaturen und Komponenten mit Tests installiert."],
       ],
     },
     method: {
@@ -553,7 +553,7 @@ export const siteCopy = {
     contact: {
       kicker: "Kontakt",
       title: "SPRECHEN WIR ÜBER IHREN BETRIEB.",
-      text: "Beschreiben Sie den Ausfall, das Risiko, den Server, das Gerät oder das Ersatzteil, das Sie benötigen. Wir antworten mit dem nächsten technischen Schritt.",
+      text: "Beschreiben Sie den Ausfall, das Risiko, den Server, das Gerät oder die Komponente, die Sie benötigen. Wir antworten mit dem nächsten technischen Schritt.",
       meta: ["Antwort in weniger als 1 Arbeitstag", "Mexiko-Stadt - Bundesstaat Mexiko - Remote landesweit"],
       fields: {
         name: "Name",
@@ -564,20 +564,20 @@ export const siteCopy = {
         select: "Auswählen",
         message: "Nachricht",
       },
-      options: ["Help Desk", "Cyber Audit", "Server", "Reparatur", "Geräte", "Ersatzteile"],
+      options: ["Help Desk", "Cyber Audit", "Server", "Reparatur", "Geräte", "Komponenten"],
       loading: "Senden...",
       submit: "Anfrage senden",
       success: "Anfrage registriert. INFRASEGURA NEXORA TECH bereitet den nächsten Schritt vor.",
       error: "Die Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
     },
-    footer: "IT-Support Mexiko - Cybersicherheit Mexiko - Server - Geräte - Ersatzteile",
+    footer: "IT-Support Mexiko - Cybersicherheit Mexiko - Server - Geräte - Komponenten",
     privacy: {
       title: "Datenschutzhinweis",
       updated: "Letzte Aktualisierung: August 2026",
       intro: "Dieser Hinweis erklärt, wie INFRASEGURA NEXORA TECH personenbezogene Daten verarbeitet, die über Kontaktformulare, Supportanfragen, geschäftliche Kommunikation und technische Serviceinteraktionen erhoben werden.",
       sections: [
         ["Verantwortlicher", ["Verantwortlicher: INFRASEGURA NEXORA TECH.", "Servicegebiet: Mexiko-Stadt, Bundesstaat Mexiko und Remote-Support in ganz Mexiko.", "Datenschutzkontakt: privacy@nexoratech.mx."]],
-        ["Zwecke der Verarbeitung", ["Kontaktaufnahme zu Anfragen für IT-Support, Cybersicherheit, Infrastruktur, Reparatur, Geräte oder Ersatzteile.", "Erstellen, Priorisieren und Dokumentieren von Servicetickets.", "Bereitstellung von Angeboten, technischer Diagnose, Nachverfolgung und Kundenservice.", "Erfüllung geltender gesetzlicher, steuerlicher, vertraglicher oder sicherheitsbezogener Pflichten.", "Versand kommerzieller Informationen nur, wenn erlaubt oder angefragt."]],
+        ["Zwecke der Verarbeitung", ["Kontaktaufnahme zu Anfragen für IT-Support, Cybersicherheit, Infrastruktur, Reparatur, Geräte oder Komponenten.", "Erstellen, Priorisieren und Dokumentieren von Servicetickets.", "Bereitstellung von Angeboten, technischer Diagnose, Nachverfolgung und Kundenservice.", "Erfüllung geltender gesetzlicher, steuerlicher, vertraglicher oder sicherheitsbezogener Pflichten.", "Versand kommerzieller Informationen nur, wenn erlaubt oder angefragt."]],
         ["Erhobene personenbezogene Daten", ["Identifikations- und Kontaktdaten wie Name, Unternehmen, E-Mail, Telefon und bevorzugter Kanal.", "Serviceinformationen wie Vorfallsbeschreibungen, Gerätedetails, Screenshots oder bereitgestellter technischer Kontext.", "Operative Daten, die für Remote-Support, Diagnosen, Serveradministration oder Cybersecurity-Prüfungen erforderlich sind."]],
         ["Übermittlungen und Dienstleister", ["INFRASEGURA NEXORA TECH verkauft keine personenbezogenen Daten.", "Daten können mit Technologieanbietern, Hosting-Plattformen, Kommunikationstools oder zuständigen Behörden geteilt werden, wenn dies zur Leistungserbringung oder rechtlichen Erfüllung erforderlich ist.", "Dienstleister müssen Vertraulichkeits- und Sicherheitsverpflichtungen entsprechend dem geltenden Datenschutzrecht beachten."]],
         ["Rechte", ["Sie können, soweit anwendbar, Auskunft, Berichtigung, Löschung oder Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten verlangen.", "Nutzer unter DSGVO oder CCPA-ähnlichen Regelwerken können auch Portabilität, Löschung, Einschränkung oder Informationen zur Datennutzung verlangen.", "Anfragen sollten Name, Kontaktmöglichkeit, Identitätsnachweis und eine klare Beschreibung des auszuübenden Rechts enthalten."]],
@@ -592,16 +592,16 @@ export const siteCopy = {
     languageLabel: "PT",
     title: "INFRASEGURA | Suporte de TI e cibersegurança no México",
     description:
-      "Suporte de TI no México, Help Desk, auditoria de cibersegurança, administração de servidores, reparo, equipamentos e peças.",
+      "Suporte de TI no México, Help Desk, auditoria de cibersegurança, administração de servidores, reparo, equipamentos e componentes.",
     businessDescription:
-      "Suporte de TI, auditorias de cibersegurança, administração de servidores, reparo, equipamentos e peças para empresas no México.",
+      "Suporte de TI, auditorias de cibersegurança, administração de servidores, reparo, equipamentos e componentes para empresas no México.",
     offers: [
       "Help Desk remoto e presencial",
       "Auditoria de cibersegurança",
       "Administração de servidores",
       "Reparo e manutenção de equipamentos",
       "Compra e venda de equipamentos",
-      "Venda e instalação de peças",
+      "Venda e instalação de componentes",
     ],
     serviceType: "Suporte de TI e cibersegurança",
     alternateLabel: "EN",
@@ -620,7 +620,7 @@ export const siteCopy = {
     hero: {
       eyebrow: "Tecnologia sem interrupções",
       title: ["SUA OPERAÇÃO", "NÃO PODE", "ESPERAR."],
-      text: "Help Desk, cibersegurança, servidores, reparo, equipamentos e peças para empresas que precisam de continuidade real no México.",
+      text: "Help Desk, cibersegurança, servidores, reparo, equipamentos e componentes para empresas que precisam de continuidade real no México.",
       primary: "Abrir ticket agora",
       secondary: "Solicitar diagnóstico",
       indicators: [
@@ -640,7 +640,7 @@ export const siteCopy = {
       },
     },
     services: {
-      capabilities: ["Help Desk", "Cyber Audit", "Servidores", "Reparo", "Equipamentos", "Peças"],
+      capabilities: ["Help Desk", "Cyber Audit", "Servidores", "Reparo", "Equipamentos", "Componentes"],
       kicker: "Serviços INFRASEGURA NEXORA TECH",
       title: "Operação, segurança e equipamentos sob uma mesma disciplina.",
       items: [
@@ -649,7 +649,7 @@ export const siteCopy = {
         ["03", "Administração de servidores", "Windows, Linux, cloud, on-premise, monitoramento, backups, hardening, patches e alertas.", ["Rotinas de patches", "Verificação de backups", "Alertas e acompanhamento de incidentes"]],
         ["04", "Reparo e manutenção", "Diagnóstico, manutenção preventiva e corretiva, limpeza, otimização e recuperação operacional.", ["Diagnóstico de hardware e sistema", "Limpeza preventiva", "Suporte de recuperação operacional"]],
         ["05", "Equipamentos novos e seminovos", "Compra e venda de laptops, desktops, servidores e periféricos novos, seminovos e recondicionados.", ["Seleção por carga de trabalho", "Configuração e migração", "Checklist de entrega do ativo"]],
-        ["06", "Peças instaladas", "Venda e instalação de memória, discos, telas, baterias, fontes, teclados e componentes.", ["Validação de compatibilidade", "Instalação e testes", "Documentação da substituição"]],
+        ["06", "Componentes instalados", "Venda e instalação de memória, discos, telas, baterias, fontes, teclados e componentes.", ["Validação de compatibilidade", "Instalação e testes", "Documentação da substituição"]],
       ],
     },
     support: {
@@ -657,7 +657,7 @@ export const siteCopy = {
       title: ["RESPOSTA RÁPIDA.", "CONTROLE DOCUMENTADO."],
       modes: {
         remote: "Conexão assistida para e-mail, VPN, sistema operacional, aplicações, impressoras e acessos.",
-        onsite: "Visita técnica para rede local, equipamentos, servidores, peças, instalações e falhas físicas.",
+        onsite: "Visita técnica para rede local, equipamentos, servidores, componentes, instalações e falhas físicas.",
       },
       remoteButton: "Suporte remoto",
       onsiteButton: "Visita presencial",
@@ -711,12 +711,12 @@ export const siteCopy = {
       text: "Administração de servidores, monitoramento, backups e suporte físico para manter toda a operação sob controle.",
       serverTitle: "ADMINISTRAÇÃO DE SERVIDORES",
       online: "ONLINE",
-      equipmentKicker: "Equipamentos e peças",
+      equipmentKicker: "Equipamentos e componentes",
       equipmentTitle: "REPARAR, COMPRAR, VENDER E INSTALAR.",
       equipment: [
         ["Reparo", "Diagnóstico, manutenção preventiva e corretiva, limpeza, otimização e recuperação operacional."],
         ["Compra / venda", "Equipamentos novos, seminovos e recondicionados para usuários, direção, servidores e pontos críticos."],
-        ["Peças", "Memória, discos, telas, baterias, fontes, teclados e componentes instalados com testes."],
+        ["Componentes", "Memória, discos, telas, baterias, fontes, teclados e componentes instalados com testes."],
       ],
     },
     method: {
@@ -732,7 +732,7 @@ export const siteCopy = {
     contact: {
       kicker: "Contato",
       title: "VAMOS FALAR DA SUA OPERAÇÃO.",
-      text: "Descreva a falha, risco, servidor, equipamento ou peça que você precisa. Respondemos com o próximo passo técnico.",
+      text: "Descreva a falha, risco, servidor, equipamento ou componente que você precisa. Respondemos com o próximo passo técnico.",
       meta: ["Resposta em menos de 1 dia útil", "Cidade do México - Estado do México - Remoto nacional"],
       fields: {
         name: "Nome",
@@ -743,20 +743,20 @@ export const siteCopy = {
         select: "Selecionar",
         message: "Mensagem",
       },
-      options: ["Help Desk", "Cyber Audit", "Servidores", "Reparo", "Equipamentos", "Peças"],
+      options: ["Help Desk", "Cyber Audit", "Servidores", "Reparo", "Equipamentos", "Componentes"],
       loading: "Enviando...",
       submit: "Enviar solicitação",
       success: "Solicitação registrada. INFRASEGURA NEXORA TECH preparará o próximo passo.",
       error: "A solicitação não pôde ser enviada. Tente novamente.",
     },
-    footer: "Suporte de TI México - Cibersegurança México - Servidores - Equipamentos - Peças",
+    footer: "Suporte de TI México - Cibersegurança México - Servidores - Equipamentos - Componentes",
     privacy: {
       title: "Aviso de privacidade",
       updated: "Última atualização: agosto de 2026",
       intro: "Este aviso explica como INFRASEGURA NEXORA TECH trata os dados pessoais coletados por formulários de contato, solicitações de suporte, comunicações comerciais e interações de serviço técnico.",
       sections: [
         ["Controlador dos dados", ["Controlador: INFRASEGURA NEXORA TECH.", "Área de serviço: Cidade do México, Estado do México e suporte remoto em todo o México.", "Contato de privacidade: privacy@nexoratech.mx."]],
-        ["Finalidades do tratamento", ["Entrar em contato sobre solicitações de suporte de TI, cibersegurança, infraestrutura, reparo, equipamentos ou peças.", "Criar, priorizar e documentar tickets de serviço.", "Fornecer cotações, diagnóstico técnico, acompanhamento e atendimento ao cliente.", "Cumprir obrigações legais, fiscais, contratuais ou de segurança aplicáveis.", "Enviar informações comerciais somente quando permitido ou solicitado."]],
+        ["Finalidades do tratamento", ["Entrar em contato sobre solicitações de suporte de TI, cibersegurança, infraestrutura, reparo, equipamentos ou componentes.", "Criar, priorizar e documentar tickets de serviço.", "Fornecer cotações, diagnóstico técnico, acompanhamento e atendimento ao cliente.", "Cumprir obrigações legais, fiscais, contratuais ou de segurança aplicáveis.", "Enviar informações comerciais somente quando permitido ou solicitado."]],
         ["Dados pessoais coletados", ["Dados de identificação e contato como nome, empresa, email, telefone e canal preferido.", "Informações de serviço como descrição de incidentes, detalhes de equipamentos, capturas ou contexto técnico fornecido.", "Dados operacionais necessários para suporte remoto, diagnósticos, administração de servidores ou revisões de cibersegurança."]],
         ["Transferências e fornecedores", ["INFRASEGURA NEXORA TECH não vende dados pessoais.", "Os dados podem ser compartilhados com fornecedores tecnológicos, plataformas de hospedagem, ferramentas de comunicação ou autoridades competentes quando necessário para prestar o serviço ou cumprir a lei.", "Os fornecedores devem observar obrigações de confidencialidade e segurança compatíveis com a legislação aplicável."]],
         ["Direitos", ["Você pode solicitar acesso, retificação, cancelamento ou oposição ao tratamento de seus dados pessoais quando aplicável.", "Usuários cobertos por GDPR ou marcos semelhantes ao CCPA também podem solicitar portabilidade, exclusão, limitação ou informações sobre o uso dos dados, conforme aplicável.", "As solicitações devem incluir nome, meio de contato, prova de identidade e descrição clara do direito que deseja exercer."]],
@@ -771,16 +771,16 @@ export const siteCopy = {
     languageLabel: "IT",
     title: "INFRASEGURA | Supporto IT e cybersicurezza in Messico",
     description:
-      "Supporto IT in Messico, Help Desk, audit di cybersicurezza, amministrazione server, riparazioni, apparecchiature e ricambi.",
+      "Supporto IT in Messico, Help Desk, audit di cybersicurezza, amministrazione server, riparazioni, apparecchiature e componenti.",
     businessDescription:
-      "Supporto IT, audit di cybersicurezza, amministrazione server, riparazioni, apparecchiature e ricambi per aziende in Messico.",
+      "Supporto IT, audit di cybersicurezza, amministrazione server, riparazioni, apparecchiature e componenti per aziende in Messico.",
     offers: [
       "Help Desk remoto e in sede",
       "Audit di cybersicurezza",
       "Amministrazione server",
       "Riparazione e manutenzione apparecchiature",
       "Acquisto e vendita di apparecchiature",
-      "Vendita e installazione di ricambi",
+      "Vendita e installazione di componenti",
     ],
     serviceType: "Supporto IT e cybersicurezza",
     alternateLabel: "EN",
@@ -799,7 +799,7 @@ export const siteCopy = {
     hero: {
       eyebrow: "Tecnologia senza interruzioni",
       title: ["LA TUA OPERAZIONE", "NON PUÒ", "ASPETTARE."],
-      text: "Help Desk, cybersicurezza, server, riparazioni, apparecchiature e ricambi per aziende che hanno bisogno di continuità reale in Messico.",
+      text: "Help Desk, cybersicurezza, server, riparazioni, apparecchiature e componenti per aziende che hanno bisogno di continuità reale in Messico.",
       primary: "Apri un ticket ora",
       secondary: "Richiedi diagnosi",
       indicators: [
@@ -819,7 +819,7 @@ export const siteCopy = {
       },
     },
     services: {
-      capabilities: ["Help Desk", "Cyber Audit", "Server", "Riparazione", "Apparecchiature", "Ricambi"],
+      capabilities: ["Help Desk", "Cyber Audit", "Server", "Riparazione", "Apparecchiature", "Componenti"],
       kicker: "Servizi INFRASEGURA NEXORA TECH",
       title: "Operazioni, sicurezza e apparecchiature sotto un'unica disciplina.",
       items: [
@@ -828,7 +828,7 @@ export const siteCopy = {
         ["03", "Amministrazione server", "Windows, Linux, cloud, on-premise, monitoraggio, backup, hardening, patch e alert.", ["Routine di patching", "Verifica dei backup", "Alert e follow-up incidenti"]],
         ["04", "Riparazione e manutenzione", "Diagnosi, manutenzione preventiva e correttiva, pulizia, ottimizzazione e recupero operativo.", ["Diagnosi hardware e sistema", "Pulizia preventiva", "Supporto al recupero operativo"]],
         ["05", "Apparecchiature nuove e usate", "Acquisto e vendita di laptop, desktop, server e periferiche nuove, usate e ricondizionate.", ["Selezione in base al carico di lavoro", "Configurazione e migrazione", "Checklist di consegna asset"]],
-        ["06", "Ricambi installati", "Vendita e installazione di memoria, dischi, schermi, batterie, alimentatori, tastiere e componenti.", ["Validazione compatibilità", "Installazione e test", "Documentazione della sostituzione"]],
+        ["06", "Componenti installati", "Vendita e installazione di memoria, dischi, schermi, batterie, alimentatori, tastiere e componenti.", ["Validazione compatibilità", "Installazione e test", "Documentazione della sostituzione"]],
       ],
     },
     support: {
@@ -836,7 +836,7 @@ export const siteCopy = {
       title: ["RISPOSTA RAPIDA.", "CONTROLLO DOCUMENTATO."],
       modes: {
         remote: "Connessione assistita per email, VPN, sistema operativo, applicazioni, stampanti e accessi.",
-        onsite: "Visita tecnica per rete locale, apparecchiature, server, ricambi, installazioni e guasti fisici.",
+        onsite: "Visita tecnica per rete locale, apparecchiature, server, componenti, installazioni e guasti fisici.",
       },
       remoteButton: "Supporto remoto",
       onsiteButton: "Visita in sede",
@@ -890,12 +890,12 @@ export const siteCopy = {
       text: "Amministrazione server, monitoraggio, backup e supporto fisico per mantenere l'intera operazione sotto controllo.",
       serverTitle: "AMMINISTRAZIONE SERVER",
       online: "ONLINE",
-      equipmentKicker: "Apparecchiature e ricambi",
+      equipmentKicker: "Apparecchiature e componenti",
       equipmentTitle: "RIPARARE, COMPRARE, VENDERE E INSTALLARE.",
       equipment: [
         ["Riparazione", "Diagnosi, manutenzione preventiva e correttiva, pulizia, ottimizzazione e recupero operativo."],
         ["Acquisto / vendita", "Apparecchiature nuove, usate e ricondizionate per utenti, direzione, server e punti critici."],
-        ["Ricambi", "Memoria, dischi, schermi, batterie, alimentatori, tastiere e componenti installati con test."],
+        ["Componenti", "Memoria, dischi, schermi, batterie, alimentatori, tastiere e componenti installati con test."],
       ],
     },
     method: {
@@ -911,7 +911,7 @@ export const siteCopy = {
     contact: {
       kicker: "Contatto",
       title: "PARLIAMO DELLA TUA OPERAZIONE.",
-      text: "Descrivi il guasto, il rischio, il server, l'apparecchiatura o il ricambio di cui hai bisogno. Rispondiamo con il prossimo passo tecnico.",
+      text: "Descrivi il guasto, il rischio, il server, l'apparecchiatura o il componente di cui hai bisogno. Rispondiamo con il prossimo passo tecnico.",
       meta: ["Risposta in meno di 1 giorno lavorativo", "Città del Messico - Stato del Messico - Remoto nazionale"],
       fields: {
         name: "Nome",
@@ -922,20 +922,20 @@ export const siteCopy = {
         select: "Seleziona",
         message: "Messaggio",
       },
-      options: ["Help Desk", "Cyber Audit", "Server", "Riparazione", "Apparecchiature", "Ricambi"],
+      options: ["Help Desk", "Cyber Audit", "Server", "Riparazione", "Apparecchiature", "Componenti"],
       loading: "Invio...",
       submit: "Invia richiesta",
       success: "Richiesta registrata. INFRASEGURA NEXORA TECH preparerà il prossimo passo.",
       error: "La richiesta non è stata inviata. Riprova.",
     },
-    footer: "Supporto IT Messico - Cybersicurezza Messico - Server - Apparecchiature - Ricambi",
+    footer: "Supporto IT Messico - Cybersicurezza Messico - Server - Apparecchiature - Componenti",
     privacy: {
       title: "Informativa privacy",
       updated: "Ultimo aggiornamento: agosto 2026",
       intro: "Questa informativa spiega come INFRASEGURA NEXORA TECH tratta i dati personali raccolti tramite moduli di contatto, richieste di supporto, comunicazioni commerciali e interazioni di servizio tecnico.",
       sections: [
         ["Titolare del trattamento", ["Titolare: INFRASEGURA NEXORA TECH.", "Area di servizio: Città del Messico, Stato del Messico e supporto remoto in tutto il Messico.", "Contatto privacy: privacy@nexoratech.mx."]],
-        ["Finalità del trattamento", ["Contattarvi per richieste di supporto IT, cybersicurezza, infrastruttura, riparazioni, apparecchiature o ricambi.", "Creare, prioritizzare e documentare ticket di servizio.", "Fornire preventivi, diagnosi tecnica, follow-up e servizio clienti.", "Rispettare obblighi legali, fiscali, contrattuali o di sicurezza applicabili.", "Inviare informazioni commerciali solo quando consentito o richiesto."]],
+        ["Finalità del trattamento", ["Contattarvi per richieste di supporto IT, cybersicurezza, infrastruttura, riparazioni, apparecchiature o componenti.", "Creare, prioritizzare e documentare ticket di servizio.", "Fornire preventivi, diagnosi tecnica, follow-up e servizio clienti.", "Rispettare obblighi legali, fiscali, contrattuali o di sicurezza applicabili.", "Inviare informazioni commerciali solo quando consentito o richiesto."]],
         ["Dati personali raccolti", ["Dati identificativi e di contatto come nome, azienda, email, telefono e canale preferito.", "Informazioni di servizio come descrizione incidenti, dettagli apparecchiature, screenshot o contesto tecnico fornito.", "Dati operativi necessari per supporto remoto, diagnosi, amministrazione server o revisioni di cybersicurezza."]],
         ["Trasferimenti e fornitori", ["INFRASEGURA NEXORA TECH non vende dati personali.", "I dati possono essere condivisi con fornitori tecnologici, piattaforme di hosting, strumenti di comunicazione o autorità competenti quando necessario per prestare il servizio o rispettare la legge.", "I fornitori devono rispettare obblighi di riservatezza e sicurezza coerenti con la normativa applicabile."]],
         ["Diritti", ["Potete richiedere accesso, rettifica, cancellazione o opposizione al trattamento dei vostri dati personali quando applicabile.", "Gli utenti coperti da GDPR o quadri simili al CCPA possono anche richiedere portabilità, eliminazione, limitazione o informazioni sull'uso dei dati, secondo il caso.", "Le richieste devono includere nome, mezzo di contatto, prova d'identità e descrizione chiara del diritto da esercitare."]],
