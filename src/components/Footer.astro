@@ -1,6 +1,7 @@
 ---
 const year = new Date().getFullYear();
 import type { SiteCopy } from "../content/i18n";
+import { site } from "../config/site";
 
 interface Props {
   copy: SiteCopy;
@@ -10,11 +11,11 @@ const { copy } = Astro.props;
 ---
 
 <footer class="footer">
-  <a class="brand" href="#inicio">INFRASEGURA</a>
+  <a class="brand brand-lockup" href="/" aria-label={`${site.name}, inicio`}><img src="/brand/iatera-mark.svg" alt="" width="36" height="42" /><span>{site.name}</span></a>
   <div>
     <p>{copy.footer}</p>
     <a class="privacy-link" href={copy.privacyHref}>{copy.privacy.title}</a>
     <p class="footer-credit">Site réalisé par <a href="https://www.o7digital.com/" target="_blank" rel="noopener noreferrer">o7digital</a></p>
   </div>
-  <span>© {year} INFRASEGURA NEXORA TECH</span>
+  <span>© {year} {site.name}</span>
 </footer>

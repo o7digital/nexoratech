@@ -253,13 +253,13 @@ const formspreeEndpoint = "https://formspree.io/f/xyegynvq";
 
     const copy = {
       es: {
-        status: "Asistente INFRASEGURA NEXORA TECH",
+        status: "Asistente IATERA",
         online: "En linea",
         teaser: "Necesitas soporte?",
         open: "Abrir Olivia AI",
         close: "Cerrar Olivia AI",
         welcome: "Hola, soy Olivia AI. Puedo ayudarte con soporte IT, ciberseguridad, servidores, equipos o componentes.",
-        leadIntro: "Deja tus datos y el equipo de INFRASEGURA NEXORA TECH te contactara con el siguiente paso.",
+        leadIntro: "Deja tus datos y el equipo de IATERA te contactara con el siguiente paso.",
         name: "Nombre",
         email: "Email",
         phone: "Telefono",
@@ -272,13 +272,13 @@ const formspreeEndpoint = "https://formspree.io/f/xyegynvq";
         error: "No pude enviar el mensaje. Intenta de nuevo.",
       },
       en: {
-        status: "INFRASEGURA NEXORA TECH Assistant",
+        status: "IATERA Assistant",
         online: "Online",
         teaser: "Need support?",
         open: "Open Olivia AI",
         close: "Close Olivia AI",
         welcome: "Hello, I am Olivia AI. I can help with IT support, cybersecurity, servers, equipment or components.",
-        leadIntro: "Leave your details and the INFRASEGURA NEXORA TECH team will contact you with the next step.",
+        leadIntro: "Leave your details and the IATERA team will contact you with the next step.",
         name: "Name",
         email: "Email",
         phone: "Phone",
@@ -291,13 +291,13 @@ const formspreeEndpoint = "https://formspree.io/f/xyegynvq";
         error: "I could not send the message. Please try again.",
       },
       fr: {
-        status: "Assistante INFRASEGURA NEXORA TECH",
+        status: "Assistante IATERA",
         online: "En ligne",
         teaser: "Besoin de support ?",
         open: "Ouvrir Olivia AI",
         close: "Fermer Olivia AI",
         welcome: "Bonjour, je suis Olivia AI. Je peux aider pour support IT, cybersecurite, serveurs, equipements ou composants.",
-        leadIntro: "Laissez vos coordonnees et l'equipe INFRASEGURA NEXORA TECH vous contactera avec la prochaine etape.",
+        leadIntro: "Laissez vos coordonnees et l'equipe IATERA vous contactera avec la prochaine etape.",
         name: "Nom",
         email: "Email",
         phone: "Telephone",
@@ -310,13 +310,13 @@ const formspreeEndpoint = "https://formspree.io/f/xyegynvq";
         error: "Je n'ai pas pu envoyer le message. Veuillez reessayer.",
       },
       de: {
-        status: "INFRASEGURA NEXORA TECH Assistentin",
+        status: "IATERA Assistentin",
         online: "Online",
         teaser: "Support benotigt?",
         open: "Olivia AI offnen",
         close: "Olivia AI schliessen",
         welcome: "Hallo, ich bin Olivia AI. Ich kann bei IT-Support, Cybersicherheit, Servern, Geraten oder Komponenten helfen.",
-        leadIntro: "Hinterlassen Sie Ihre Daten und das Team von INFRASEGURA NEXORA TECH meldet sich mit dem nachsten Schritt.",
+        leadIntro: "Hinterlassen Sie Ihre Daten und das Team von IATERA meldet sich mit dem nachsten Schritt.",
         name: "Name",
         email: "E-Mail",
         phone: "Telefon",
@@ -329,13 +329,13 @@ const formspreeEndpoint = "https://formspree.io/f/xyegynvq";
         error: "Ich konnte die Nachricht nicht senden. Bitte versuchen Sie es erneut.",
       },
       pt: {
-        status: "Assistente INFRASEGURA NEXORA TECH",
+        status: "Assistente IATERA",
         online: "Online",
         teaser: "Precisa de suporte?",
         open: "Abrir Olivia AI",
         close: "Fechar Olivia AI",
         welcome: "Ola, sou Olivia AI. Posso ajudar com suporte de TI, ciberseguranca, servidores, equipamentos ou componentes.",
-        leadIntro: "Deixe seus dados e a equipe INFRASEGURA NEXORA TECH entrara em contato com o proximo passo.",
+        leadIntro: "Deixe seus dados e a equipe IATERA entrara em contato com o proximo passo.",
         name: "Nome",
         email: "Email",
         phone: "Telefone",
@@ -348,13 +348,13 @@ const formspreeEndpoint = "https://formspree.io/f/xyegynvq";
         error: "Nao consegui enviar a mensagem. Tente novamente.",
       },
       it: {
-        status: "Assistente INFRASEGURA NEXORA TECH",
+        status: "Assistente IATERA",
         online: "Online",
         teaser: "Serve supporto?",
         open: "Apri Olivia AI",
         close: "Chiudi Olivia AI",
         welcome: "Ciao, sono Olivia AI. Posso aiutare con supporto IT, cybersicurezza, server, apparecchiature o componenti.",
-        leadIntro: "Lascia i tuoi dati e il team INFRASEGURA NEXORA TECH ti contattera con il prossimo passo.",
+        leadIntro: "Lascia i tuoi dati e il team IATERA ti contattera con il prossimo passo.",
         name: "Nome",
         email: "Email",
         phone: "Telefono",
@@ -519,7 +519,7 @@ const formspreeEndpoint = "https://formspree.io/f/xyegynvq";
         payload.set("email", lead.email.trim());
         payload.set("phone", lead.phone.trim());
         payload.set("message", lead.need.trim());
-        payload.set("source", "Olivia AI INFRASEGURA NEXORA TECH");
+        payload.set("source", "Olivia AI IATERA");
         payload.set("language", lang);
         payload.set("transcript", transcript());
         const response = await fetch(formspreeEndpoint, { method: "POST", body: payload, headers: { Accept: "application/json" } });

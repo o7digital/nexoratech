@@ -1,0 +1,14 @@
+---
+import { getHomeCopy } from "../content/home";
+
+interface Props { langTag: string; }
+const home = getHomeCopy(Astro.props.langTag);
+---
+
+<section class="home-intro section-pad" aria-labelledby="home-intro-title">
+  <p class="section-kicker">{home.intro[0]}</p>
+  <div>
+    <h2 id="home-intro-title">{home.intro[1]}</h2>
+    <p>{home.intro[2]}</p>
+  </div>
+</section>

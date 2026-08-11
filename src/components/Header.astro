@@ -1,5 +1,6 @@
 ---
 import type { SiteCopy } from "../content/i18n";
+import { site } from "../config/site";
 
 interface Props {
   copy: SiteCopy;
@@ -7,7 +8,7 @@ interface Props {
 }
 
 const { copy, homeHref = "" } = Astro.props;
-const hrefFor = (href: string) => `${homeHref}${href}`;
+const hrefFor = (href: string) => href.startsWith("/") ? href : `${homeHref}${href}`;
 ---
 
 <div class="status-bar" aria-label="Estado de cobertura">
@@ -15,7 +16,10 @@ const hrefFor = (href: string) => `${homeHref}${href}`;
   {copy.status.slice(1).map((item) => <span>{item}</span>)}
 </div>
 <header class="site-header">
-  <a class="brand" href={hrefFor("#inicio")} aria-label="INFRASEGURA inicio">INFRASEGURA</a>
+  <a class="brand brand-lockup" href={homeHref || "/"} aria-label={`${site.name}, inicio`}>
+    <img src="/brand/iatera-mark.svg" alt="" width="40" height="46" />
+    <span>{site.name}</span>
+  </a>
   <nav class="desktop-nav" aria-label="Navegacion principal">
     {copy.nav.map(([label, href]) => <a href={hrefFor(href)}>{label}</a>)}
   </nav>
@@ -24,14 +28,14 @@ const hrefFor = (href: string) => `${homeHref}${href}`;
       <summary aria-label="Change language">{copy.languageLabel}<span aria-hidden="true">⌄</span></summary>
       {copy.languageLinks.map(([label, href]) => <a href={href} hreflang={label.toLowerCase()}>{label}</a>)}
     </details>
-    <a class="header-cta" href={hrefFor("#helpdesk")}>{copy.headerCta} <span aria-hidden="true">↗</span></a>
+    <a class="header-cta" href={hrefFor("#contacto")}>{copy.headerCta} <span aria-hidden="true">↗</span></a>
   </div>
   <details class="mobile-menu">
     <summary aria-label="Abrir menu"><span></span><span></span><span></span></summary>
     <nav aria-label="Navegacion movil">
       {copy.nav.map(([label, href]) => <a href={hrefFor(href)}>{label}</a>)}
       {copy.languageLinks.map(([label, href]) => <a href={href}>{label}</a>)}
-      <a class="mobile-menu-cta" href={hrefFor("#helpdesk")}>{copy.headerCta} <span aria-hidden="true">↗</span></a>
+      <a class="mobile-menu-cta" href={hrefFor("#contacto")}>{copy.headerCta} <span aria-hidden="true">↗</span></a>
     </nav>
   </details>
 </header>

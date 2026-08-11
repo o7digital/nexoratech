@@ -2,33 +2,34 @@
 import "../styles/global.css";
 import OliviaAI from "../components/OliviaAI.astro";
 import type { SiteCopy } from "../content/i18n";
+import { languageRoutes, privacyLanguageRoutes, site } from "../config/site";
 
 interface Props {
   copy: SiteCopy;
+  title?: string;
+  description?: string;
+  structuredData?: Record<string, unknown>[];
+  homeAlternates?: boolean;
 }
 
-const { copy } = Astro.props;
-const { title, description } = copy;
-const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).toString() : Astro.url.toString();
+const { copy, title = copy.title, description = copy.description, structuredData = [], homeAlternates = true } = Astro.props;
+const canonical = new URL(Astro.url.pathname, site.url).toString();
+const isPrivacyPage = /\/(aviso-privacidad|privacy|confidentialite|datenschutz|privacidade)\//.test(Astro.url.pathname);
+const alternateRoutes = isPrivacyPage ? privacyLanguageRoutes : languageRoutes;
 
 const localBusiness = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "INFRASEGURA NEXORA TECH",
-  url: canonical,
-  areaServed: ["Ciudad de Mexico", "Estado de Mexico", "Mexico"],
-  address: { "@type": "PostalAddress", addressCountry: "MX", addressRegion: "CDMX" },
-  description: copy.businessDescription,
+  "@id": `${site.url}/#organization`,
+  name: site.name,
+  url: site.url,
+  logo: new URL("/brand/iatera-logo-horizontal.svg", site.url).toString(),
+  areaServed: site.areaServed,
+  address: { "@type": "PostalAddress", addressCountry: site.address.country, addressRegion: site.address.region },
+  description: site.description,
   makesOffer: copy.offers,
 };
-
-const services = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  serviceType: copy.serviceType,
-  provider: { "@type": "LocalBusiness", name: "INFRASEGURA NEXORA TECH" },
-  areaServed: { "@type": "Country", name: "Mexico" },
-};
+const ogImage = new URL("/brand/iatera-og.png", site.url).toString();
 ---
 
 <!doctype html>
@@ -40,16 +41,27 @@ const services = {
     <meta name="description" content={description} />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href={canonical} />
+    {homeAlternates && Object.entries(alternateRoutes).map(([lang, path]) => (
+      <link rel="alternate" hreflang={lang} href={new URL(path, site.url).toString()} />
+    ))}
+    {homeAlternates && <link rel="alternate" hreflang="x-default" href={new URL(isPrivacyPage ? privacyLanguageRoutes["es-MX"] : "/", site.url).toString()} />}
+    {!homeAlternates && <link rel="alternate" hreflang="es-MX" href={canonical} />}
+    {!homeAlternates && <link rel="alternate" hreflang="x-default" href={canonical} />}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content={copy.locale} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:site_name" content="INFRASEGURA" />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:alt" content={`${site.name} — ${site.baseline}`} />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
     <script is:inline type="application/ld+json" set:html={JSON.stringify(localBusiness)} />
-    <script is:inline type="application/ld+json" set:html={JSON.stringify(services)} />
+    {structuredData.map((data) => <script is:inline type="application/ld+json" set:html={JSON.stringify(data)} />)}
   </head>
   <body>
     <slot />

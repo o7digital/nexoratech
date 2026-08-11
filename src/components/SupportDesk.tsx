@@ -31,7 +31,7 @@ export default function SupportDesk({ copy }: { copy: SiteCopy["support"] }) {
             <small>{index === 0 ? "0-15 min" : index === 1 ? "15-30 min" : index === 2 ? "30-120 min" : copy.close}</small>
           </article>
         ))}
-        <div className="satisfaction"><strong>97%</strong><span>{copy.satisfaction}</span></div>
+        <div className="satisfaction"><strong>✓</strong><span>{copy.close}</span></div>
       </div>
     </section>
   );

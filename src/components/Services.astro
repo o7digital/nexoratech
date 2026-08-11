@@ -1,30 +1,28 @@
 ---
-import type { SiteCopy } from "../content/i18n";
+import { getHomeCopy } from "../content/home";
 
 interface Props {
-  copy: SiteCopy["services"];
+  langTag: string;
 }
 
-const { copy } = Astro.props;
+const home = getHomeCopy(Astro.props.langTag);
 ---
 
-<section class="capability-rail" aria-label="Capacidades">
-  {copy.capabilities.map((item) => <a href="#servicios"><span>{item}</span><b aria-hidden="true">+</b></a>)}
-</section>
 <section class="services-detail section-pad" id="servicios">
   <div class="section-head">
-    <p class="section-kicker">{copy.kicker}</p>
-    <h2>{copy.title}</h2>
+    <p class="section-kicker">{home.servicesKicker}</p>
+    <h2>{home.servicesTitle}</h2>
   </div>
   <div class="service-grid">
-    {copy.items.map(([id, title, text, details]) => (
+    {home.pillars.map(([title, text, benefits, href], index) => (
       <article class="service-card">
-        <span>{id}</span>
+        <span>0{index + 1}</span>
         <h3>{title}</h3>
         <p>{text}</p>
         <ul>
-          {details.map((detail) => <li>{detail}</li>)}
+          {benefits.map((benefit) => <li>{benefit}</li>)}
         </ul>
+        <a class="service-link" href={href}>{index === 1 ? home.cyberCta : home.learnMore} <span aria-hidden="true">↗</span></a>
       </article>
     ))}
   </div>

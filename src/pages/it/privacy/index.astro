@@ -2,10 +2,11 @@
 import BaseLayout from "../../../layouts/BaseLayout.astro";
 import PrivacyPage from "../../../components/PrivacyPage.astro";
 import { siteCopy } from "../../../content/i18n";
+import { site } from "../../../config/site";
 
 const copy = siteCopy.it;
 ---
 
-<BaseLayout copy={copy}>
+<BaseLayout copy={copy} title={`${copy.privacy.title} | ${site.name}`} description={copy.privacy.intro}>
   <PrivacyPage copy={copy} />
 </BaseLayout>

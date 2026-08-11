@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { SiteCopy } from "../content/i18n";
+import { site } from "../config/site";
 
 const formspreeEndpoint = "https://formspree.io/f/xyegynvq";
 
@@ -46,6 +47,7 @@ export default function ContactForm({ copy }: { copy: SiteCopy["contact"] }) {
         </div>
       </div>
       <form className="contact-form" onSubmit={submit}>
+        <input type="hidden" name="_subject" value={`Nueva solicitud de contacto — ${site.name}`} />
         <label>{copy.fields.name}<input name="name" required minLength={2} autoComplete="name" /></label>
         <label>{copy.fields.company}<input name="company" required minLength={2} autoComplete="organization" /></label>
         <label>{copy.fields.email}<input name="email" required type="email" autoComplete="email" /></label>

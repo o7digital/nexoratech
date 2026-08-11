@@ -1,6 +1,6 @@
-# Instructions Codex — Nexora Tech México
+# Instructions Codex — IATERA México
 
-Tu travailles sur le mockup **Nexora Tech México**, un site premium en espagnol destiné au marché mexicain.
+Tu travailles sur le site **IATERA México**, un site premium en espagnol destiné au marché mexicain.
 
 ## Objectif
 
@@ -26,8 +26,8 @@ Le site doit inspirer immédiatement la confiance, la compétence technique et l
 
 Remplacer uniquement lorsque les informations réelles du client sont fournies :
 
-- `Nexora` par le nom commercial définitif ;
-- `hola@nexora.mx` par l’adresse réelle ;
+- `IATERA` est le nom commercial définitif ;
+- centraliser toute future adresse réelle dans la configuration du site ;
 - la ville et la zone de couverture ;
 - les liens de contact et WhatsApp ;
 - les chiffres démonstratifs de la section résultats ;
@@ -68,7 +68,7 @@ Ne jamais inventer de témoignages, certifications, clients ou résultats. Si un
 
 ## Prompt court à copier-coller
 
-> Reprends le projet Nexora Tech México présent dans ce dossier. Lis d’abord `CODEX_INSTRUCTIONS.md`, puis `app/page.tsx`, `app/globals.css` et `app/layout.tsx`. Conserve exactement la direction premium crème, noire et corail ainsi que la grille éditoriale. Personnalise le nom, les coordonnées, les prestations, les CTA et le SEO avec les informations que je vais te donner. N’invente aucun résultat, témoignage ou client. Vérifie ensuite le responsive, les liens, l’accessibilité et la production build avant de publier une nouvelle preview.
+> Reprends le projet Astro IATERA présent dans ce dossier. Lis d’abord `CODEX_INSTRUCTIONS.md`, puis les composants et styles dans `src/`. Conserve la direction premium sombre et technologique ainsi que la grille éditoriale. N’invente aucun résultat, témoignage ou client. Vérifie ensuite le responsive, les liens, l’accessibilité et la production build avant de publier une nouvelle preview.
 
 ## Lancement local
 

@@ -1,0 +1,20 @@
+---
+import { getHomeCopy } from "../content/home";
+interface Props { langTag: string; }
+const home = getHomeCopy(Astro.props.langTag);
+---
+
+<section class="trust section-pad" aria-labelledby="trust-title">
+  <div class="section-head">
+    <p class="section-kicker">{home.trustKicker}</p>
+    <h2 id="trust-title">{home.trustTitle}</h2>
+  </div>
+  <div class="trust-grid">
+    {home.trustItems.map(([title, text]) => <article><h3>{title}</h3><p>{text}</p></article>)}
+  </div>
+</section>
+
+<section class="coverage section-pad" aria-labelledby="coverage-title">
+  <p class="section-kicker">{home.coverageKicker}</p>
+  <div><h2 id="coverage-title">{home.coverageTitle}</h2><p>{home.coverageText}</p></div>
+</section>

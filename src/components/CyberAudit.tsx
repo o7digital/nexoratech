@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { SiteCopy } from "../content/i18n";
+import { site } from "../config/site";
 
 const formspreeEndpoint = "https://formspree.io/f/xyegynvq";
 
@@ -210,7 +211,7 @@ function CyberQuote({ data }: { data: (typeof cyberLanding)[keyof typeof cyberLa
           <label>{q.phone}<input name="phone" type="tel" autoComplete="tel" /></label>
           <label className="wide">{q.notes}<textarea name="message" placeholder={q.placeholder}></textarea></label>
         </div>
-        <input type="hidden" name="_subject" value="Cotización Diagnóstico Express INFRASEGURA NEXORA TECH" />
+        <input type="hidden" name="_subject" value={`Cotización Diagnóstico Express ${site.name}`} />
         <input type="hidden" name="estimated_price" value={`${price} MXN`} />
         <input type="hidden" name="delivery" value={delivery} />
         <input type="hidden" name="scope" value={scope} />
@@ -270,7 +271,7 @@ export default function CyberAudit({ copy, lang }: { copy: SiteCopy["cyber"]; la
             </ul>
           </article>
           <article>
-            <b>N1A</b>
+            <b>NIST</b>
             <ul>
               {copy.nistOffer.uses.map((item) => <li key={item}>{item}</li>)}
             </ul>

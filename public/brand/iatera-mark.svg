@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 56" role="img" aria-labelledby="title">
+  <title id="title">Símbolo IATERA</title>
+  <defs><linearGradient id="iatera-gradient" x1="8" y1="8" x2="40" y2="48" gradientUnits="userSpaceOnUse"><stop stop-color="#F4F52A"/><stop offset="1" stop-color="#78D640"/></linearGradient></defs>
+  <path d="M24 3 43 10v15c0 13-7.8 22.7-19 28C12.8 47.7 5 38 5 25V10L24 3Z" fill="none" stroke="url(#iatera-gradient)" stroke-width="4" stroke-linejoin="round"/>
+  <g fill="none" stroke="url(#iatera-gradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m14 20 10-6 10 7-3 13-12 3-5-17Zm10-6v12m-10-6 10 6 10-5M24 26l-5 11m5-11 7 8"/>
+  </g>
+  <g fill="#0A0B0A" stroke="url(#iatera-gradient)" stroke-width="3"><circle cx="24" cy="14" r="2.5"/><circle cx="14" cy="20" r="2.5"/><circle cx="34" cy="21" r="2.5"/><circle cx="24" cy="26" r="2.5"/><circle cx="19" cy="37" r="2.5"/><circle cx="31" cy="34" r="2.5"/></g>
+</svg>
