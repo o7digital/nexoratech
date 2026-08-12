@@ -2,13 +2,14 @@
 import Header from "./Header.astro";
 import Footer from "./Footer.astro";
 import type { SiteCopy } from "../content/i18n";
+import { languageRoutes } from "../config/site";
 
 interface Props {
   copy: SiteCopy;
 }
 
 const { copy } = Astro.props;
-const homeHref = copy.langTag === "fr" ? "/fr/" : copy.langTag === "en" ? "/en/" : "/";
+const homeHref = languageRoutes[copy.langTag as keyof typeof languageRoutes] ?? "/";
 ---
 
 <Header copy={copy} homeHref={homeHref} />
@@ -31,4 +32,4 @@ const homeHref = copy.langTag === "fr" ? "/fr/" : copy.langTag === "en" ? "/en/"
     </div>
   </section>
 </main>
-<Footer copy={copy} />
+<Footer copy={copy} homeHref={homeHref} />

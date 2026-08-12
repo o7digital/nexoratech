@@ -1,8 +1,8 @@
 ---
-const formspreeEndpoint = "https://formspree.io/f/xyegynvq";
+import { contactFormEndpoint } from "../config/forms";
 ---
 
-<div id="olivia-ai" data-formspree-endpoint={formspreeEndpoint}></div>
+<div id="olivia-ai" data-formspree-endpoint={contactFormEndpoint}></div>
 
 <style is:inline>
   #olivia-ai {
@@ -236,6 +236,10 @@ const formspreeEndpoint = "https://formspree.io/f/xyegynvq";
       grid-template-columns: 1fr;
     }
 
+    .olivia-teaser {
+      display: none;
+    }
+
     .olivia-toggle {
       min-width: 66px;
       height: 66px;
@@ -389,7 +393,7 @@ const formspreeEndpoint = "https://formspree.io/f/xyegynvq";
     let isOpen = false;
     let isLoading = false;
     let leadSent = false;
-    let messages = [{ role: "assistant", content: t.welcome }];
+    const messages = [{ role: "assistant", content: t.welcome }];
     let lead = { name: "", email: "", phone: "", need: "" };
 
     const escapeHtml = (value) => String(value)
@@ -526,7 +530,7 @@ const formspreeEndpoint = "https://formspree.io/f/xyegynvq";
         if (!response.ok) throw new Error("Lead delivery failed");
         leadSent = true;
         messages.push({ role: "assistant", content: t.leadThanks });
-      } catch (_error) {
+      } catch {
         messages.push({ role: "assistant", content: t.error });
       } finally {
         isLoading = false;

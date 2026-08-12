@@ -6,36 +6,29 @@
     "node": ">=22.13.0"
   },
   "scripts": {
-    "install:ci": "bash scripts/install-ci.sh",
     "dev": "astro dev",
     "build": "astro check && astro build",
     "start": "astro preview",
-    "test": "npm run build",
-    "validate:artifact": "bash scripts/validate-artifact.sh",
-    "lint": "bash scripts/sites-env.sh -- eslint . --ignore-pattern dist --ignore-pattern .next",
-    "db:generate": "bash scripts/sites-env.sh -- drizzle-kit generate"
+    "test": "npm run lint && npm run build",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@astrojs/react": "latest",
     "astro": "latest",
-    "drizzle-orm": "0.45.2",
     "react": "19.2.6",
     "react-dom": "19.2.6"
   },
   "devDependencies": {
     "@astrojs/check": "latest",
+    "@eslint/js": "latest",
     "@types/node": "22.19.19",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
-    "@vitejs/plugin-react": "6.0.2",
-    "@vitejs/plugin-rsc": "0.5.26",
-    "drizzle-kit": "0.31.10",
     "eslint": "9.39.4",
+    "eslint-plugin-astro": "1.3.1",
     "sharp": "latest",
     "typescript": "5.9.3",
-    "vinext": "0.0.50",
-    "vite": "8.0.13",
-    "wrangler": "4.92.0"
+    "typescript-eslint": "latest"
   },
   "type": "module",
   "displayName": "IATERA | Infraestructura tecnológica empresarial"

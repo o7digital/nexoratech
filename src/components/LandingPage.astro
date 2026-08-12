@@ -8,12 +8,14 @@ import HomeTrust from "./HomeTrust.astro";
 import ContactForm from "./ContactForm";
 import Footer from "./Footer.astro";
 import type { SiteCopy } from "../content/i18n";
+import { languageRoutes } from "../config/site";
 
 interface Props {
   copy: SiteCopy;
 }
 
 const { copy } = Astro.props;
+const homeHref = languageRoutes[copy.langTag as keyof typeof languageRoutes] ?? "/";
 ---
 
 <Header copy={copy} />
@@ -25,4 +27,4 @@ const { copy } = Astro.props;
   <HomeTrust langTag={copy.langTag} />
   <ContactForm copy={copy.contact} client:load />
 </main>
-<Footer copy={copy} />
+<Footer copy={copy} homeHref={homeHref} />

@@ -1,8 +1,9 @@
 ---
 import "../styles/global.css";
 import OliviaAI from "../components/OliviaAI.astro";
-import type { SiteCopy } from "../content/i18n";
+import { siteCopy, type SiteCopy } from "../content/i18n";
 import { languageRoutes, privacyLanguageRoutes, site } from "../config/site";
+import { SITE_IS_FINAL } from "../config/site";
 
 interface Props {
   copy: SiteCopy;
@@ -16,10 +17,11 @@ const { copy, title = copy.title, description = copy.description, structuredData
 const canonical = new URL(Astro.url.pathname, site.url).toString();
 const isPrivacyPage = /\/(aviso-privacidad|privacy|confidentialite|datenschutz|privacidade)\//.test(Astro.url.pathname);
 const alternateRoutes = isPrivacyPage ? privacyLanguageRoutes : languageRoutes;
+const alternateLocales = Object.values(siteCopy).filter((item) => item.locale !== copy.locale).map((item) => item.locale);
 
-const localBusiness = {
+const organization = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "Organization",
   "@id": `${site.url}/#organization`,
   name: site.name,
   url: site.url,
@@ -27,7 +29,7 @@ const localBusiness = {
   areaServed: site.areaServed,
   address: { "@type": "PostalAddress", addressCountry: site.address.country, addressRegion: site.address.region },
   description: site.description,
-  makesOffer: copy.offers,
+  makesOffer: copy.offers.map((name) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name } })),
 };
 const ogImage = new URL("/brand/iatera-og.png", site.url).toString();
 ---
@@ -39,7 +41,7 @@ const ogImage = new URL("/brand/iatera-og.png", site.url).toString();
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content={SITE_IS_FINAL ? "index, follow" : "noindex, nofollow"} />
     <link rel="canonical" href={canonical} />
     {homeAlternates && Object.entries(alternateRoutes).map(([lang, path]) => (
       <link rel="alternate" hreflang={lang} href={new URL(path, site.url).toString()} />
@@ -55,12 +57,16 @@ const ogImage = new URL("/brand/iatera-og.png", site.url).toString();
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content={site.name} />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content={`${site.name} — ${site.baseline}`} />
+    {homeAlternates && alternateLocales.map((locale) => <meta property="og:locale:alternate" content={locale} />)}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
-    <script is:inline type="application/ld+json" set:html={JSON.stringify(localBusiness)} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(organization)} />
     {structuredData.map((data) => <script is:inline type="application/ld+json" set:html={JSON.stringify(data)} />)}
   </head>
   <body>

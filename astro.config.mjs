@@ -6,4 +6,7 @@ export default defineConfig({
   site: SITE_URL,
   integrations: [react()],
   output: "static",
+  redirects: {
+    "/es": "/",
+  },
 });

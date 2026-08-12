@@ -38,10 +38,10 @@ Ne jamais inventer de témoignages, certifications, clients ou résultats. Si un
 
 ## Exigences techniques
 
-- Conserver la stack actuelle Vinext / React / TypeScript.
-- Le contenu principal se trouve dans `app/page.tsx`.
-- Le système visuel et responsive se trouve dans `app/globals.css`.
-- Conserver `app/layout.tsx` avec `lang="es-MX"` et les métadonnées SEO espagnoles.
+- Conserver la stack actuelle Astro / React / TypeScript.
+- Les pages et composants se trouvent dans `src/pages/` et `src/components/`.
+- Le système visuel et responsive se trouve dans `src/styles/global.css`.
+- Conserver `src/layouts/BaseLayout.astro` et les métadonnées multilingues.
 - Ne pas ajouter une dépendance si le résultat peut être obtenu proprement en CSS.
 - Conserver la navigation par ancres, les états hover, le focus clavier et le responsive.
 - Vérifier l’absence de débordement horizontal à 390 px, 768 px, 1024 px et 1440 px.
@@ -59,7 +59,7 @@ Ne jamais inventer de témoignages, certifications, clients ou résultats. Si un
 
 ## Travail demandé à Codex
 
-1. Lire `app/page.tsx`, `app/globals.css` et `app/layout.tsx` avant toute modification.
+1. Lire `src/layouts/BaseLayout.astro`, les composants concernés et `src/styles/global.css` avant toute modification.
 2. Préserver la direction créative actuelle et personnaliser uniquement ce qui est demandé.
 3. Vérifier le rendu desktop et mobile après chaque modification importante.
 4. Tester tous les liens internes et les appels à l’action.

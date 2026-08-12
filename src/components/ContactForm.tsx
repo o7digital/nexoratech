@@ -1,8 +1,7 @@
 import { useState } from "react";
 import type { SiteCopy } from "../content/i18n";
 import { site } from "../config/site";
-
-const formspreeEndpoint = "https://formspree.io/f/xyegynvq";
+import { contactFormEndpoint } from "../config/forms";
 
 export default function ContactForm({ copy }: { copy: SiteCopy["contact"] }) {
   const [sent, setSent] = useState(false);
@@ -17,7 +16,7 @@ export default function ContactForm({ copy }: { copy: SiteCopy["contact"] }) {
     setError(false);
 
     try {
-      const response = await fetch(formspreeEndpoint, {
+      const response = await fetch(contactFormEndpoint, {
         method: "POST",
         body: new FormData(form),
         headers: { Accept: "application/json" },

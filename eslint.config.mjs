@@ -1,20 +1,10 @@
 import js from "@eslint/js";
-import { defineConfig, globalIgnores } from "eslint/config";
+import astro from "eslint-plugin-astro";
+import tseslint from "typescript-eslint";
 
-export default defineConfig([
-  globalIgnores([
-    ".astro/**",
-    ".next/**",
-    "dist/**",
-    "node_modules/**",
-    "**/*.astro",
-    "**/*.ts",
-    "**/*.tsx",
-  ]),
+export default tseslint.config(
+  { ignores: [".astro/**", ".next/**", ".sites-runtime/**", ".vinext/**", ".wrangler/**", "dist/**", "node_modules/**"] },
   js.configs.recommended,
-  {
-    rules: {
-      "no-undef": "off",
-    },
-  },
-]);
+  ...tseslint.configs.recommended,
+  ...astro.configs.recommended,
+);

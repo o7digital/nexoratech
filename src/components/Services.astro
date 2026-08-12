@@ -22,7 +22,7 @@ const home = getHomeCopy(Astro.props.langTag);
         <ul>
           {benefits.map((benefit) => <li>{benefit}</li>)}
         </ul>
-        <a class="service-link" href={href}>{index === 1 ? home.cyberCta : home.learnMore} <span aria-hidden="true">↗</span></a>
+        <a class="service-link" href={href} hreflang={Astro.props.langTag === "es-MX" ? undefined : "es-MX"}>{index === 1 ? home.cyberCta : home.learnMore} <span aria-hidden="true">↗</span></a>
       </article>
     ))}
   </div>
