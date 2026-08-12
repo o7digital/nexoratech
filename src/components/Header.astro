@@ -18,8 +18,7 @@ const isSpanishService = (href: string) => href.startsWith("/") && !href.startsW
 </div>
 <header class="site-header">
   <a class="brand brand-lockup" href={homeHref || "/"} aria-label={`${site.name}, inicio`}>
-    <img src="/brand/iatera-mark.svg" alt="" width="40" height="46" />
-    <span>{site.name}</span>
+    <img src="/logo.jpeg" alt="" width="1254" height="1254" />
   </a>
   <nav class="desktop-nav" aria-label="Navegacion principal">
     {copy.nav.map(([label, href]) => <a href={hrefFor(href)} hreflang={isSpanishService(href) ? "es-MX" : undefined}>{label}</a>)}

@@ -57,7 +57,7 @@ button, input, select, textarea { font: inherit; }
 .brand { font-size: 28px; font-weight: 900; letter-spacing: .16em; white-space: nowrap; }
 .brand span { color: var(--cyan); text-shadow: 0 0 1px var(--ink); }
 .brand-lockup { display: inline-flex; align-items: center; gap: 11px; letter-spacing: .12em; }
-.brand-lockup img { width: 40px; height: 46px; flex: 0 0 auto; }
+.brand-lockup img { width: 72px; height: 72px; object-fit: contain; flex: 0 0 auto; }
 .brand-lockup span { color: inherit; text-shadow: none; }
 .desktop-nav { display: flex; gap: 28px; font: 800 16px/1 ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; }
 .desktop-nav a::after { content: ""; display: block; width: 0; height: 2px; margin-top: 8px; background: linear-gradient(90deg, var(--cyan), var(--lime)); transition: width .2s ease; }
@@ -352,6 +352,7 @@ h3 { margin: 0; font-size: clamp(26px, 2.3vw, 38px); line-height: .95; letter-sp
 .success.error { background: #ffe1dc; }
 .footer { min-height: 128px; display: flex; align-items: center; justify-content: space-between; gap: 26px; padding: 32px clamp(18px, 5vw, 72px); border-top: 1px solid var(--line); }
 .footer p, .footer span { color: var(--muted); font-size: 12px; }
+.footer .brand-lockup img { width: 96px; height: 96px; }
 .footer p { margin: 0 0 10px; }
 .privacy-link { font: 900 12px/1 ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; border-bottom: 2px solid var(--lime); }
 .footer-credit { margin: 12px 0 0; }
@@ -398,7 +399,8 @@ h3 { margin: 0; font-size: clamp(26px, 2.3vw, 38px); line-height: .95; letter-sp
   .site-header { height: 76px; grid-template-columns: 1fr auto; padding-inline: 16px; }
   .brand { font-size: 22px; letter-spacing: .12em; }
   .brand-lockup { gap: 8px; }
-  .brand-lockup img { width: 32px; height: 38px; }
+  .brand-lockup img { width: 60px; height: 60px; }
+  .footer .brand-lockup img { width: 88px; height: 88px; }
   .mobile-menu nav { top: 76px; }
   .hero-copy { width: calc(100% - 32px); margin-inline: 16px; padding: 44px 0; }
   .hero-copy::before, .hero-copy::after { display: none; }
