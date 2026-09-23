@@ -2,6 +2,7 @@
 import Header from "./Header.astro";
 import Hero from "./Hero.astro";
 import HomeOverview from "./HomeOverview.astro";
+import AboutFounder from "./AboutFounder.astro";
 import Services from "./Services.astro";
 import Method from "./Method.astro";
 import HomeTrust from "./HomeTrust.astro";
@@ -20,6 +21,7 @@ const { copy } = Astro.props;
 <main>
   <Hero copy={copy.hero} />
   <HomeOverview langTag={copy.langTag} />
+  {copy.langTag === "es-MX" && <AboutFounder />}
   <Services langTag={copy.langTag} />
   <Method copy={copy.method} />
   <HomeTrust langTag={copy.langTag} />

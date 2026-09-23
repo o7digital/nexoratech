@@ -16,7 +16,7 @@ export const siteCopy = {
     alternateHref: "/en/",
     languageLinks: [["EN", "/en/"], ["FR", "/fr/"], ["DE", "/de/"], ["PT", "/pt/"], ["IT", "/it/"]],
     privacyHref: "/aviso-privacidad/",
-    nav: [["Servicios", "#servicios"], ["Help Desk", "/soporte-tecnico-empresas/"], ["Ciberseguridad", "/auditoria-ciberseguridad-nist/"], ["Servidores", "/administracion-servidores/"], ["Contacto", "#contacto"]],
+    nav: [["Quiénes somos", "#quienes-somos"], ["Servicios", "#servicios"], ["Help Desk", "/soporte-tecnico-empresas/"], ["Ciberseguridad", "/auditoria-ciberseguridad-nist/"], ["Servidores", "/administracion-servidores/"], ["Contacto", "#contacto"]],
     status: ["Soporte activo", "CDMX", "Estado de México", "Remoto nacional"],
     headerCta: "Obtener soporte",
     hero: {
