@@ -27,11 +27,37 @@ const rows = [
   {rows.map((row) => <p>{row.map(({ label, slug }, index) => <>{index > 0 && <span aria-hidden="true"> · </span>}<a href={`/${slug}/`} hreflang="es-MX">{label}</a></>)}</p>)}
 </nav>
 
+<script>
+  const footer = document.querySelector<HTMLElement>(".local-seo-footer");
+  if (footer) {
+    const fitRows = () => {
+      footer.style.removeProperty("--footer-keyword-size");
+      if (window.innerWidth < 1024) return;
+      const rows = Array.from(footer.querySelectorAll("p"));
+      let size = 11;
+      for (let attempt = 0; attempt < 8; attempt++) {
+        const longest = Math.max(...rows.map((row) => {
+          const range = document.createRange();
+          range.selectNodeContents(row);
+          return range.getBoundingClientRect().width;
+        }));
+        if (longest <= footer.clientWidth) break;
+        size *= footer.clientWidth / longest * 0.99;
+        footer.style.setProperty("--footer-keyword-size", `${size}px`);
+      }
+    };
+    new ResizeObserver(fitRows).observe(footer);
+    document.fonts.ready.then(fitRows);
+  }
+</script>
+
 <style>
-  .local-seo-footer { flex: 0 0 100%; min-width: 0; padding-top: 22px; border-top: 1px solid var(--line); text-align: center; }
-  .local-seo-footer p { margin: 0; color: var(--muted); font-size: 12px; line-height: 2; }
-  .local-seo-footer p + p { margin-top: 8px; }
+  .local-seo-footer { flex: 0 0 100%; min-width: 0; text-align: center; }
+  .local-seo-footer p { margin: 0; color: var(--muted); font-size: var(--footer-keyword-size, 11px); line-height: 1.4; }
+  .local-seo-footer p + p { margin-top: 0; }
+  .local-seo-footer span { font-size: inherit; }
   .local-seo-footer a { color: inherit; text-decoration: none; }
   .local-seo-footer a:hover, .local-seo-footer a:focus-visible { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+  @media (min-width: 1024px) { .local-seo-footer p { white-space: nowrap; } }
   @media (max-width: 680px) { .local-seo-footer { flex-basis: auto; width: 100%; text-align: left; } }
 </style>
