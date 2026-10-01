@@ -1,0 +1,37 @@
+---
+const services = [
+  ["Soporte técnico para empresas", "soporte-tecnico-empresas"],
+  ["Auditoría de ciberseguridad NIST", "auditoria-ciberseguridad-nist"],
+  ["Administración de servidores", "administracion-servidores"],
+  ["Mantenimiento de computadoras", "mantenimiento-equipos"],
+  ["Equipos y componentes para empresas", "equipos-componentes"],
+  ["Desarrollo web empresarial", "desarrollo-web-empresarial"],
+  ["SEO local para empresas", "seo-mexico"],
+];
+const technicalServices = [
+  ["Help Desk remoto", "soporte-tecnico-empresas"],
+  ["Soporte TI en sitio", "soporte-tecnico-empresas"],
+  ["Servidores Windows y Linux", "administracion-servidores"],
+  ["Mantenimiento preventivo y correctivo", "mantenimiento-equipos"],
+  ["Instalación de componentes", "equipos-componentes"],
+  ["Diseño de páginas web", "desarrollo-web-empresarial"],
+];
+const rows = [
+  services.map(([label, slug]) => ({ label: `${label} en CDMX, México`, slug })),
+  services.map(([label, slug]) => ({ label: `${label} en Lindavista, CDMX, México`, slug })),
+  technicalServices.map(([label, slug]) => ({ label: `${label} en Lindavista, CDMX, México`, slug })),
+];
+---
+
+<nav class="local-seo-footer" aria-label="Servicios en CDMX y Lindavista">
+  {rows.map((row) => <p>{row.map(({ label, slug }, index) => <>{index > 0 && <span aria-hidden="true"> · </span>}<a href={`/${slug}/`} hreflang="es-MX">{label}</a></>)}</p>)}
+</nav>
+
+<style>
+  .local-seo-footer { flex: 0 0 100%; min-width: 0; padding-top: 22px; border-top: 1px solid var(--line); text-align: center; }
+  .local-seo-footer p { margin: 0; color: var(--muted); font-size: 12px; line-height: 2; }
+  .local-seo-footer p + p { margin-top: 8px; }
+  .local-seo-footer a { color: inherit; text-decoration: none; }
+  .local-seo-footer a:hover, .local-seo-footer a:focus-visible { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+  @media (max-width: 680px) { .local-seo-footer { flex-basis: auto; width: 100%; text-align: left; } }
+</style>

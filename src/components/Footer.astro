@@ -2,6 +2,7 @@
 const year = new Date().getFullYear();
 import type { SiteCopy } from "../content/i18n";
 import { site } from "../config/site";
+import LocalSeoFooter from "./LocalSeoFooter.astro";
 
 interface Props {
   copy: SiteCopy;
@@ -19,4 +20,9 @@ const { copy, homeHref = "/" } = Astro.props;
     <p class="footer-credit">Site réalisé par <a href="https://www.o7digital.com/" target="_blank" rel="noopener noreferrer">o7digital</a></p>
   </div>
   <span>© {year} {site.name}</span>
+  <LocalSeoFooter />
 </footer>
+
+<style>
+  .footer { flex-wrap: wrap; }
+</style>
