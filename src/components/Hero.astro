@@ -20,7 +20,7 @@ const slides = [
       const stem = src.replace(/\.webp$/, "");
       return <img
         src={src}
-        srcset={`${stem}-768.webp 768w, ${stem}-1200.webp 1200w, ${src} 1600w`}
+        srcset={`${stem}-480.webp 480w, ${stem}-768.webp 768w, ${stem}-1200.webp 1200w, ${src} 1600w`}
         sizes="100vw"
         alt=""
         width="1600"

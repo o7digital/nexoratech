@@ -1,12 +1,10 @@
-const developmentUrl = "https://infrasegura-one.vercel.app";
+const productionUrl = "https://www.iatera.com.mx";
 
 const normalizeUrl = (value: string) => value.trim().replace(/\/$/, "");
 const configuredUrl = typeof process !== "undefined" ? process.env.PUBLIC_SITE_URL : undefined;
 
-// PUBLIC_SITE_URL becomes the single switch when the final domain is known.
-// Until then, builds intentionally keep the stable development URL.
-export const SITE_URL = normalizeUrl(configuredUrl || developmentUrl);
-export const SITE_IS_FINAL = Boolean(configuredUrl);
+export const SITE_URL = normalizeUrl(configuredUrl || productionUrl);
+export const SITE_IS_FINAL = SITE_URL === productionUrl;
 
 export const site = {
   name: "IATERA",
