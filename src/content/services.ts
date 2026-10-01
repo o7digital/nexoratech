@@ -16,8 +16,8 @@ export const servicePages: readonly ServicePageData[] = [
   {
     slug: "soporte-tecnico-empresas",
     eyebrow: "Soporte TI para empresas",
-    title: "Soporte técnico para empresas en México",
-    description: "Soporte técnico para empresas con Help Desk remoto y atención en sitio en CDMX y Estado de México. Incidentes registrados, priorizados y documentados.",
+    title: "Soporte técnico para empresas en Lindavista, CDMX, México",
+    description: "Soporte técnico para empresas, Help Desk remoto y visitas coordinadas. Atención a usuarios, redes y equipos en Lindavista, CDMX, México.",
     intro: "IATERA atiende incidentes de usuarios, equipos y servicios tecnológicos sin convertir cada solicitud en una conversación aislada. Organizamos la atención por impacto, coordinamos soporte remoto o visita técnica y dejamos evidencia del trabajo para que la empresa recupere la operación y conserve el control.",
     benefits: [["Una entrada clara", "Las solicitudes se concentran, clasifican y asignan según su efecto en la operación."], ["La modalidad correcta", "Resolvemos a distancia cuando es posible y coordinamos atención en sitio cuando la falla requiere intervención física."], ["Historial útil", "Documentamos diagnóstico, acciones, resultado y recomendaciones para reducir incidentes repetidos."]],
     sections: [
@@ -31,8 +31,8 @@ export const servicePages: readonly ServicePageData[] = [
   {
     slug: "auditoria-ciberseguridad-nist",
     eyebrow: "Auditoría de ciberseguridad",
-    title: "Auditoría de ciberseguridad alineada a NIST CSF",
-    description: "Auditoría de ciberseguridad para empresas en México: revisión alineada a NIST CSF, matriz de riesgos, capacitación y plan de mejora 30/60/90.",
+    title: "Auditoría de ciberseguridad NIST en Lindavista, CDMX, México",
+    description: "Auditoría de ciberseguridad alineada a NIST CSF, matriz de riesgos y plan de mejora para empresas en Lindavista, CDMX, México.",
     intro: "Una auditoría útil no entrega alarmas genéricas. IATERA revisa cómo se protegen accesos, correo, dispositivos, redes, respaldos y procesos críticos; relaciona la evidencia con el impacto de negocio y convierte los hallazgos en prioridades comprensibles para dirección y equipos técnicos.",
     benefits: [["Riesgo priorizado", "La matriz relaciona probabilidad, impacto operativo, urgencia y responsable sugerido."], ["Dos niveles de lectura", "El reporte ejecutivo facilita decisiones y el detalle técnico orienta la corrección."], ["Ruta de mejora", "El plan 30/60/90 separa acciones inmediatas, mejoras estructurales y seguimiento."]],
     sections: [
@@ -49,8 +49,8 @@ export const servicePages: readonly ServicePageData[] = [
   {
     slug: "administracion-servidores",
     eyebrow: "Infraestructura y servidores",
-    title: "Administración de servidores para empresas",
-    description: "Administración de servidores Windows, Linux, cloud y on-premise en México con monitoreo, respaldos, actualizaciones y seguimiento operativo.",
+    title: "Administración de servidores en Lindavista, CDMX, México",
+    description: "Administración de servidores Windows, Linux y cloud con monitoreo, respaldos y actualizaciones para empresas en Lindavista, CDMX, México.",
     intro: "IATERA ayuda a mantener servidores y servicios esenciales con rutinas definidas, visibilidad de alertas y cambios documentados. El trabajo se adapta a entornos Windows, Linux, cloud u on-premise y comienza por entender qué procesos dependen de cada sistema.",
     benefits: [["Operación visible", "Inventario, responsables, alertas y tareas recurrentes se organizan en un mismo esquema."], ["Cambios controlados", "Actualizaciones y ajustes se planifican con validaciones y criterios de reversa."], ["Recuperación preparada", "Los respaldos se revisan por cobertura, frecuencia, retención y posibilidad de restauración."]],
     sections: [{ title: "Administración según la criticidad", text: "No todos los servidores requieren la misma frecuencia de revisión. Definimos prioridades según servicios alojados, usuarios afectados, exposición y ventanas disponibles.", items: ["Windows Server y Linux", "Servicios cloud y máquinas virtuales", "Infraestructura local y servicios híbridos"] }, { title: "Monitoreo y gestión de alertas", text: "El monitoreo debe terminar en una acción. Acordamos qué señales observar, quién recibe la alerta, cuándo escalar y qué información registrar para evitar paneles sin seguimiento." }, { title: "Respaldos, parches y mantenimiento", text: "Revisamos que las copias cubran la información necesaria y que exista una ruta de restauración. Las actualizaciones se ordenan por riesgo, dependencia y ventana de mantenimiento, con registro de resultados y pendientes." }, { title: "Documentación para continuidad", text: "La información operativa incluye inventario, accesos administrados, servicios, tareas recurrentes, dependencias y contactos. Se entrega conforme al alcance y sin exponer credenciales en documentos inseguros." }],
@@ -60,8 +60,8 @@ export const servicePages: readonly ServicePageData[] = [
   {
     slug: "mantenimiento-equipos",
     eyebrow: "Mantenimiento tecnológico",
-    title: "Mantenimiento de equipos de cómputo para empresas",
-    description: "Mantenimiento preventivo y correctivo de equipos empresariales en CDMX y Estado de México: diagnóstico, limpieza, optimización y recuperación operativa.",
+    title: "Mantenimiento de computadoras en Lindavista, CDMX, México",
+    description: "Mantenimiento preventivo y correctivo de computadoras, diagnóstico y reparación para empresas en Lindavista, CDMX, México.",
     intro: "El mantenimiento empresarial debe reducir fallas y tiempo perdido, no limitarse a limpiar equipos. IATERA revisa síntomas, uso, estado físico y sistema para recomendar una intervención proporcionada: mantenimiento preventivo, corrección, reemplazo de un componente o renovación del activo.",
     benefits: [["Diagnóstico primero", "La intervención parte de síntomas, pruebas y contexto de uso."], ["Trabajo trazable", "Se documentan hallazgos, acciones y componentes reemplazados."], ["Decisión proporcionada", "Comparamos reparación, mejora y sustitución según necesidad operativa."]],
     sections: [{ title: "Mantenimiento preventivo", text: "Programamos revisiones de limpieza, ventilación, almacenamiento, sistema y actualizaciones según el entorno y la intensidad de uso. La frecuencia se define por condiciones reales, no por una regla idéntica para todos." }, { title: "Diagnóstico y mantenimiento correctivo", text: "Ante lentitud, reinicios, temperatura, errores o fallas de arranque, aislamos la causa antes de reemplazar piezas. Si la reparación no es conveniente, explicamos las alternativas y sus implicaciones." }, { title: "Atención por lote o por incidente", text: "Podemos revisar un equipo que afecta a un usuario o coordinar una jornada para varios activos. En ambos casos se acuerdan recepción, respaldo de información, autorizaciones y criterios de entrega." }, { title: "Protección de la información", text: "Antes de manipular almacenamiento o sistema, definimos responsabilidades sobre respaldo y acceso. Cualquier recuperación depende del estado del medio y se cotiza con alcance específico." }],
@@ -71,8 +71,8 @@ export const servicePages: readonly ServicePageData[] = [
   {
     slug: "equipos-componentes",
     eyebrow: "Equipamiento empresarial",
-    title: "Equipos y componentes para empresas",
-    description: "Suministro de equipos y componentes para empresas en México con validación de compatibilidad, configuración, instalación y pruebas.",
+    title: "Equipos y componentes para empresas en Lindavista, CDMX, México",
+    description: "Venta e instalación de equipos y componentes con revisión de compatibilidad, configuración y pruebas en Lindavista, CDMX, México.",
     intro: "Comprar tecnología sin revisar la carga de trabajo crea gasto, incompatibilidad y reemplazos prematuros. IATERA ayuda a seleccionar equipos o componentes a partir del uso, las aplicaciones, el crecimiento previsto y la infraestructura existente.",
     benefits: [["Selección por necesidad", "La recomendación parte de usuarios, aplicaciones y vida útil esperada."], ["Compatibilidad revisada", "Validamos formato, interfaz, capacidad y restricciones antes de instalar."], ["Entrega preparada", "Configuración, pruebas y migración pueden integrarse al alcance."]],
     sections: [{ title: "Equipos para el trabajo real", text: "Revisamos perfiles de uso para evitar especificaciones insuficientes o sobredimensionadas. La propuesta puede incluir laptops, desktops, periféricos o servidores, sujeta a disponibilidad del proveedor." }, { title: "Componentes compatibles", text: "Memoria, almacenamiento, baterías, fuentes, pantallas y otros repuestos se seleccionan después de identificar modelo, revisión, interfaz y requerimientos eléctricos o físicos." }, { title: "Nuevos, seminuevos o reacondicionados", text: "Cuando se consideran equipos no nuevos, explicamos condición, pruebas disponibles, garantía aplicable y limitaciones. No presentamos una categoría comercial como si garantizara por sí sola el estado del activo." }, { title: "Configuración, instalación y entrega", text: "El alcance puede sumar instalación, actualización, migración y pruebas con el usuario. Los accesos, licencias y respaldos necesarios se acuerdan antes del trabajo." }],
@@ -82,8 +82,8 @@ export const servicePages: readonly ServicePageData[] = [
   {
     slug: "desarrollo-web-empresarial",
     eyebrow: "Desarrollo web para empresas",
-    title: "Páginas web empresariales orientadas a negocio",
-    description: "Desarrollo web empresarial en México con arquitectura clara, diseño responsive, rendimiento, accesibilidad y bases técnicas preparadas para SEO.",
+    title: "Desarrollo web empresarial en Lindavista, CDMX, México",
+    description: "Desarrollo de páginas web empresariales con diseño responsive, rendimiento y bases técnicas de SEO en Lindavista, CDMX, México.",
     intro: "IATERA diseña y desarrolla sitios empresariales que explican con claridad qué ofrece la empresa, facilitan el contacto y pueden mantenerse sin acumular complejidad innecesaria. El trabajo parte de objetivos, audiencias y contenido real antes de definir componentes, integraciones y tecnología.",
     benefits: [["Objetivo antes que efectos", "La estructura responde a las decisiones que debe tomar el visitante y a la información que necesita para confiar."], ["Experiencia en cualquier pantalla", "La interfaz se revisa en móvil y escritorio, con navegación, contraste y formularios accesibles."], ["Base técnica mantenible", "Organizamos componentes, contenido y metadatos para facilitar futuras mejoras sin reconstruir el sitio."]],
     sections: [
@@ -98,8 +98,8 @@ export const servicePages: readonly ServicePageData[] = [
   {
     slug: "seo-mexico",
     eyebrow: "Posicionamiento SEO",
-    title: "SEO en México para búsquedas con intención real",
-    description: "Servicio SEO en México para empresas: diagnóstico técnico, arquitectura, contenido útil, SEO local y medición orientada a oportunidades relevantes.",
+    title: "SEO local para empresas en Lindavista, CDMX, México",
+    description: "SEO local para empresas: diagnóstico técnico, contenido, arquitectura y medición para búsquedas de servicios en Lindavista, CDMX, México.",
     intro: "IATERA ayuda a las empresas a construir visibilidad orgánica sobre una base medible. Revisamos cómo rastrean e interpretan el sitio los buscadores, qué necesita encontrar el cliente potencial y qué contenido puede responder con evidencia, sin prometer posiciones ni tráfico fuera de control.",
     benefits: [["Prioridades justificadas", "Cada recomendación se vincula con un problema técnico, una búsqueda relevante o una oportunidad de contenido."], ["Contenido con intención", "La estrategia conecta servicios reales con preguntas y decisiones de clientes potenciales en México."], ["Medición comprensible", "Definimos indicadores y eventos que permiten evaluar visibilidad, interacción y oportunidades comerciales."]],
     sections: [

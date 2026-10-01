@@ -10,10 +10,10 @@ export const site = {
   name: "IATERA",
   legalName: "IATERA",
   baseline: "Infraestructura tecnológica empresarial",
-  description: "Soporte TI, infraestructura y ciberseguridad para empresas en México.",
+  description: "Soporte TI, infraestructura y ciberseguridad para empresas en Lindavista, CDMX, México.",
   url: SITE_URL,
   locale: "es_MX",
-  areaServed: ["Ciudad de México", "Estado de México", "México"],
+  areaServed: ["Lindavista, Ciudad de México", "Ciudad de México", "Estado de México", "México"],
   address: {
     country: "MX",
     region: "Ciudad de México",

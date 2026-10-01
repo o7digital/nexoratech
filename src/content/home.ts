@@ -28,8 +28,8 @@ const homeByLanguage = {
     trustTitle: "Claridad antes, durante y después del servicio.",
     trustItems: [["Alcance definido", "Acordamos qué se revisará, qué acceso se necesita y cuál es el resultado esperado."], ["Evidencia útil", "Registramos hallazgos, acciones realizadas y pendientes sin inflar métricas ni promesas."], ["Cobertura flexible", "Atención remota en México y visitas en Ciudad de México y Estado de México, según alcance."]],
     coverageKicker: "Cobertura",
-    coverageTitle: "Soporte donde opera tu empresa.",
-    coverageText: "Atendemos de forma remota a empresas en México y coordinamos asistencia en sitio en Ciudad de México y Estado de México. La modalidad se define según el incidente, los accesos disponibles y la necesidad de intervención física.",
+    coverageTitle: "Soporte técnico en Lindavista, CDMX, México.",
+    coverageText: "Atendemos empresas en Lindavista, Ciudad de México (CDMX), con soporte remoto y visitas técnicas coordinadas según el alcance. También coordinamos atención en otras zonas de CDMX y Estado de México. La modalidad se define según el incidente, los accesos disponibles y la necesidad de intervención física.",
   },
   en: {
     intro: ["IATERA", "Enterprise technology infrastructure", "We bring together IT support, infrastructure and cybersecurity so companies in Mexico can resolve incidents, keep systems available and make technical decisions with clear information."],

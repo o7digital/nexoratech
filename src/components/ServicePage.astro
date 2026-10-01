@@ -28,6 +28,11 @@ const related = page.related.map((slug) => serviceBySlug[slug]).filter(Boolean);
 
   <div class="service-content section-pad">
     {page.sections.map((section) => <section><h2>{section.title}</h2><p>{section.text}</p>{section.items && <ul>{section.items.map((item) => <li>{item}</li>)}</ul>}</section>)}
+    <section aria-labelledby="local-coverage-title">
+      <h2 id="local-coverage-title">{page.eyebrow} en Lindavista, CDMX, México</h2>
+      <p>Si tu empresa opera en Lindavista, Ciudad de México, comparte tu ubicación y el servicio que necesitas. Coordinamos una evaluación remota y, cuando el trabajo requiere intervención física, una visita en sitio según el alcance y la disponibilidad acordados.</p>
+      <p>Para empresas en otras zonas de CDMX y Estado de México, confirmamos la modalidad de atención al revisar la solicitud. <a href="#contacto">Solicita información para tu empresa en Lindavista, CDMX, México.</a></p>
+    </section>
   </div>
 
   <section class="related-services section-pad" aria-labelledby="related-title">
