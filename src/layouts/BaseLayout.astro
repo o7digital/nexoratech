@@ -39,6 +39,13 @@ const ogImage = new URL("/brand/iatera-og.png", site.url).toString();
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script is:inline async src="https://www.googletagmanager.com/gtm.js?id=GTM-KW9C4G96"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      // eslint-disable-next-line prefer-rest-params -- Preserve the supplied Google tag snippet.
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    </script>
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="robots" content={SITE_IS_FINAL ? "index, follow" : "noindex, nofollow"} />
