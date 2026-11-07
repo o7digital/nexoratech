@@ -36,6 +36,8 @@ Remplacer uniquement lorsque les informations réelles du client sont fournies :
 
 Ne jamais inventer de témoignages, certifications, clients ou résultats. Si une donnée manque, conserver clairement un placeholder ou demander l’information.
 
+Le client a volontairement choisi de ne pas publier de numéro de téléphone ou de WhatsApp pour limiter les risques de fraude et d’extorsion. Respecter ce choix et conserver le formulaire comme canal de contact public.
+
 ## Exigences techniques
 
 - Conserver la stack actuelle Astro / React / TypeScript.
